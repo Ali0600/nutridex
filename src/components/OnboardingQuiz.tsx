@@ -43,6 +43,9 @@ export function OnboardingQuiz({ conditions, items }: { conditions: Condition[];
       role="dialog"
       aria-modal="true"
       aria-label="Welcome quiz"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) close();
+      }}
     >
       <div className="relative w-full max-w-2xl rounded-2xl bg-white p-6 shadow-xl">
         <button
