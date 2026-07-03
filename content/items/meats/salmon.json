@@ -1,0 +1,44 @@
+{
+  "slug": "salmon",
+  "name": "Salmon",
+  "category": "meats",
+  "aliases": ["atlantic salmon", "wild salmon"],
+  "summary": "A fatty fish that's a leading source of the long-chain omega-3s EPA and DHA, plus one of the few natural food sources of vitamin D.",
+  "superfood": true,
+  "superfoodReason": "Delivers the marine omega-3s EPA and DHA that the body uses directly, plus vitamin D and B12 — a combination few foods offer.",
+  "benefits": [
+    {
+      "claim": "Omega-3 fats support heart and triglycerides",
+      "mechanism": "Salmon supplies EPA and DHA, long-chain omega-3 fatty acids that lower blood triglycerides, reduce inflammation, and are incorporated into cell membranes. Dietary guidelines recommend two servings of fatty fish weekly for cardiovascular health.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "A rare food source of vitamin D",
+      "mechanism": "Vitamin D — which most people make from sunlight — is scarce in food, but fatty fish like salmon is one of the richest natural sources. Vitamin D helps the gut absorb calcium for bones and supports immune function.",
+      "organs": ["bones", "immune"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin D — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The pink colour comes from astaxanthin, a carotenoid antioxidant salmon get from eating krill and algae — farmed salmon are fed it to match the wild colour." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "peppermint-tea",
+  "name": "Peppermint Tea",
+  "category": "tea",
+  "aliases": ["peppermint", "mint tea"],
+  "summary": "A caffeine-free herbal infusion whose active compound, menthol, relaxes the smooth muscle of the digestive tract.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Eases irritable bowel and digestive cramping",
+      "mechanism": "Menthol blocks calcium channels in gut smooth muscle, relaxing it (an antispasmodic effect). In randomized trials, peppermint oil — the concentrated form — improved global symptoms and abdominal pain in irritable bowel syndrome.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The impact of peppermint oil on the irritable bowel syndrome: a meta-analysis of the pooled clinical data (Alammar et al., BMC Complement Altern Med 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30654773/",
+          "pmid": "30654773",
+          "year": 2019
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The strongest evidence is for enteric-coated peppermint oil capsules, which survive the stomach to release menthol in the intestine — tea is gentler but works through the same menthol." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

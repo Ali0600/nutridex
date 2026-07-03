@@ -1,0 +1,43 @@
+{
+  "slug": "chicken-breast",
+  "name": "Chicken Breast",
+  "category": "meats",
+  "aliases": ["chicken", "skinless chicken breast"],
+  "summary": "A lean, high-protein staple that's also a good source of selenium and the B-vitamins niacin and B6.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Lean complete protein for muscle",
+      "mechanism": "Chicken breast is one of the leanest sources of complete protein — supplying all essential amino acids the body needs to build and repair muscle — with little saturated fat once the skin is removed.",
+      "organs": ["muscles"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Protein — The Nutrition Source, Harvard T.H. Chan School of Public Health",
+          "source": "other",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+        }
+      ]
+    },
+    {
+      "claim": "Good source of selenium and B-vitamins",
+      "mechanism": "Chicken supplies selenium — a mineral built into antioxidant enzymes and needed for thyroid hormone — along with niacin and vitamin B6, B-vitamins that power energy metabolism.",
+      "organs": ["immune", "metabolism"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Selenium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Cooked chicken breast is roughly 31% protein by weight — one of the highest protein-to-calorie ratios of any whole food, which is why it's a staple of physique diets." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

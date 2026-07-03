@@ -1,0 +1,44 @@
+{
+  "slug": "sardine",
+  "name": "Sardines",
+  "category": "meats",
+  "aliases": ["sardine", "canned sardines"],
+  "summary": "Small oily fish eaten whole — so you get omega-3s, vitamin D, and, uniquely, calcium from their soft edible bones, all with very low mercury.",
+  "superfood": true,
+  "superfoodReason": "A low-mercury fish eaten with its bones, combining omega-3s, vitamin D, B12, and a rare animal source of calcium.",
+  "benefits": [
+    {
+      "claim": "Omega-3 fats for heart and brain",
+      "mechanism": "Like other oily fish, sardines are rich in EPA and DHA, which lower triglycerides, dampen inflammation, and are built into brain and cell membranes.",
+      "organs": ["heart", "brain"],
+      "conditions": ["high-blood-pressure", "brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Calcium from edible bones",
+      "mechanism": "Because sardines are eaten whole with their soft bones, they're one of the few animal foods that supply meaningful calcium — the mineral bones and teeth are built from and that muscles and nerves need to function.",
+      "organs": ["bones"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Calcium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Being small and short-lived, sardines sit low on the food chain and accumulate very little mercury — so they're among the safest fish to eat frequently." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

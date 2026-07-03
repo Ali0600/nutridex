@@ -1,0 +1,48 @@
+{
+  "slug": "matcha",
+  "name": "Matcha",
+  "category": "tea",
+  "aliases": ["matcha green tea", "powdered green tea"],
+  "summary": "Stone-ground whole green-tea leaf — so you drink the entire leaf and get a bigger dose of the same catechins and L-theanine that make green tea worth drinking.",
+  "superfood": true,
+  "superfoodReason": "Because you consume the powdered whole leaf rather than a steeped infusion, matcha delivers a higher concentration of catechins (EGCG) and L-theanine than regular green tea.",
+  "benefits": [
+    {
+      "claim": "Concentrated catechins for heart health",
+      "mechanism": "Matcha is powdered whole green-tea leaf, so a serving carries more of the catechin EGCG than steeped tea. These catechins reduce cholesterol absorption and support blood-vessel function — the same pathway shown to lower LDL cholesterol in green-tea trials.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Green tea intake lowers fasting serum total and LDL cholesterol in adults: a meta-analysis of 14 randomized controlled trials (Zheng et al., Am J Clin Nutr 2011)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21715508/",
+          "pmid": "21715508",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "claim": "Calm, focused alertness",
+      "mechanism": "Matcha pairs caffeine with a high dose of L-theanine, which raises alpha brain-wave activity — together improving attention while smoothing out caffeine's jitteriness.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The combined effects of L-theanine and caffeine on cognitive performance and mood (Owen et al., Nutr Neurosci 2008)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18681988/",
+          "pmid": "18681988",
+          "year": 2008
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Because you ingest the whole ground leaf instead of discarding steeped leaves, matcha gives you several times the catechins of an equivalent cup of brewed green tea." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}
