@@ -1,0 +1,33 @@
+name: Preflight
+
+# Dogfoods the Preflight GitHub Action cross-repo (subdirectory action from
+# Ali0600/preflight): diffs the PR's dependency changes, posts a sticky comment
+# with per-dependency verdicts, and fails on violations of preflight.config.json.
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+  security-events: write # upload the SARIF to the Security tab
+
+concurrency:
+  group: preflight-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  preflight:
+    name: preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Ali0600/preflight/packages/action@main
+        with:
+          node-version: '22'
+          policy-file: preflight.config.json
+      - name: Upload findings to the Security tab
+        if: always() && hashFiles('preflight.sarif') != ''
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: preflight.sarif
