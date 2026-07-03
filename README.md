@@ -3,7 +3,10 @@
 > Every food, explained — a science-backed nutrition database of teas, fruits, vegetables,
 > meats, and nuts, with the mechanism behind each benefit and the studies to back it up.
 
-**Status: under construction.**
+[![CI](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml)
+[![Preflight](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml)
+
+**Live:** [nutridex.vercel.app](https://nutridex.vercel.app) · deploys from `main` on green CI.
 
 ## What it will do
 
