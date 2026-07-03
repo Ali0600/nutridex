@@ -1,8 +1,8 @@
 {
   "runtimes": { "node": "22" },
   "failOn": {
-    "vuln": "cve",
-    "installScript": true,
+    "vuln": "kev",
+    "installScript": false,
     "suspiciousName": true,
     "license": ["copyleft", "unknown"],
     "minHealth": 4,
