@@ -154,19 +154,42 @@ no allowlist, a permanently-red local gate would just train us to ignore it. Tun
 `minHealth`, `runtime`. The weekly `mode: repo` scan + Dependabot remain the net for
 post-merge CVEs like the vendored postcss.
 
-<!-- T7+: scheduled scan · content-phase PRs — appended as they happen -->
+### T7 — content-phase PRs (PRs #6–#9, 2026-07-03)
+
+Four more PRs (data layer, pages/API/quiz, content batch, OG images) each triggered the
+Action. **Zero new dependencies across all four**, and the Action correctly reported nothing
+to flag and stayed green every time — no false alarms on pure app/content changes. This is the
+happy path the gate is meant to guard, and it behaved: it's quiet when it should be quiet.
 
 ## What it caught
 
-_(accumulating)_
+- **A real transitive CVE, keyless:** `postcss@8.4.31` (GHSA-qx2v-qp2m-jg93) vendored inside
+  `next@16.2.10` — found independently of and identically to `npm audit`, with no API key (T4).
+- **The Next.js lockstep set**, correctly, at design time — and generated a `dependabot.yml`
+  that ignores it with the right upgrade command, closing the exact "auto-updater breaks the
+  framework" hole Preflight exists to prevent (T1).
+- **Current, runtime-safe versions** for a 20-package greenfield stack in one command, all
+  confirmed installable on Node 22 (T1–T3).
 
 ## False positives
 
-_(accumulating)_
+- **`react`/`react-dom` labeled "coordinated by Expo"** in an explicitly `--framework next.js`
+  plan (BUG-1) — wrong framework, and it leaves React out of the generated dependabot ignores.
+- **4 install-script "violations"** (`esbuild`, `fsevents`, `sharp`, `unrs-resolver`) that are
+  all legitimate native-binary packages in a normal Next.js tree — actionable only by turning
+  the whole check off, since there's no allowlist (T4).
+- No typosquat/suspicious-name or license false positives fired — that side was clean.
 
 ## UX friction
 
-_(accumulating)_
+- **CLI vs Action disagree** on the same commit + policy (BUG-3) — the most important friction:
+  the thing gating `main` is weaker than the local CLI, and says "No new CVEs" when the PR adds
+  a CVE-carrying lockfile.
+- **`--dev` swallowed only one package** (BUG-2), silently putting 9 dev tools in `dependencies`.
+- **No lockfile → silent direct-only scan** (T3) with no note that coverage changed.
+- **`plan` recommended an internally incompatible set** (eslint 10 × eslint-config-next 16, T5).
+- Exit-code hygiene: piping `check` into `grep`/`tail` masks its exit 1 — must run unpiped to
+  gate (a general shell gotcha, but worth a note in Preflight's docs).
 
 ## Missing features / bugs to file
 
@@ -182,4 +205,33 @@ _(accumulating)_
 
 ## Verdict
 
-_(written at the end of the build)_
+**Would I keep it on? Yes for `plan`, yes for the CI comment — but not yet as the sole gate.**
+
+The single most useful moment was the very first: `preflight plan --framework next.js` chose a
+current, Node-22-safe dependency set *and* generated the lockstep-aware `dependabot.yml` in one
+command, before a single `npm install`. That's a genuinely better greenfield start than picking
+versions by hand and hoping Dependabot doesn't break the framework later. The design-phase idea
+is the product's strongest feature and it delivered.
+
+As an **informational PR comment**, the Action is also a keeper — it resolved cross-repo with
+zero config, rendered a clean per-dependency verdict table, populated the Security tab via SARIF,
+and stayed correctly quiet across four dependency-free PRs. For a solo dev it's a nice always-on
+second opinion.
+
+Where it falls short is as a **hard gate you trust blindly**: the Action's PR mode is weaker than
+its own CLI (BUG-3) — it demoted a real, newly-introduced transitive CVE to an informational line
+and still printed "No new CVEs introduced." And the strict policy is unusable in practice because
+`installScript: true` fires on every native binary in a normal Next.js tree with no allowlist to
+adjudicate them. Both are fixable, and both are the difference between "useful advisor" and
+"thing that guards `main`."
+
+Net: Preflight earned its place in this project. The bugs it surfaced are exactly the kind a real
+build finds and a synthetic test wouldn't — which is the whole point of dogfooding. Filed issues:
+
+- BUG-1 — [lockstep attribution ignores `--framework`](https://github.com/Ali0600/preflight/issues/18) (react/react-dom → "Expo" in a Next plan; missing from generated dependabot ignores)
+- BUG-2 — [`plan --dev` applies to only the next argument](https://github.com/Ali0600/preflight/issues/19)
+- BUG-3 — [Action PR mode passes what the CLI fails](https://github.com/Ali0600/preflight/issues/20) (transitive/policy findings not gated; "No new CVEs" is wrong)
+- FEAT — [policy allowlist / per-advisory ignore](https://github.com/Ali0600/preflight/issues/21) (so `installScript`/vendored-CVE rules are usable on real trees)
+- FEAT — [`plan` emits a `github-actions` ecosystem block](https://github.com/Ali0600/preflight/issues/22)
+- UX — [`check` should note "direct deps only" when no lockfile is present](https://github.com/Ali0600/preflight/issues/23)
+- CHORE — [action `runs.using: node20` is deprecated](https://github.com/Ali0600/preflight/issues/24) → node24
