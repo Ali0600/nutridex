@@ -1,9 +1,10 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Condition, Item } from '@/lib/schema';
 import { recommendItems, scoreConditions, type QuizAnswers } from '@/lib/quiz';
+import { saveQuizResult } from '@/lib/quiz-storage';
 import { ItemCard } from './ItemCard';
 
 type Step = 'problems' | 'questions' | 'results';
@@ -11,16 +12,19 @@ type Step = 'problems' | 'questions' | 'results';
 /**
  * The data-driven symptom quiz. Runs entirely client-side: pick the problems you're
  * dealing with, answer their symptom questions, and get foods whose benefits are tagged
- * to those conditions. `onDone` lets the onboarding modal close itself on finish.
+ * to those conditions. `onDone` lets the onboarding modal close itself on finish;
+ * `persist` saves the result so it can be revisited later (see LastResults).
  */
 export function Quiz({
   conditions,
   items,
   onDone,
+  persist = false,
 }: {
   conditions: Condition[];
   items: Item[];
   onDone?: () => void;
+  persist?: boolean;
 }) {
   const quizConditions = useMemo(() => conditions.filter((c) => c.quiz), [conditions]);
   const [step, setStep] = useState<Step>('problems');
@@ -34,6 +38,22 @@ export function Quiz({
     const scores = scoreConditions(chosenConditions, answers);
     return { scores, recs: recommendItems(scores, items) };
   }, [step, chosenConditions, answers, items]);
+
+  // A value-stable signature of the result, so the persist effect fires once per outcome
+  // rather than on every render (chosenConditions is a fresh array each render).
+  const resultSignature =
+    step === 'results' && results && results.scores.length > 0
+      ? JSON.stringify({
+          c: results.scores.map((s) => s.condition.id),
+          i: results.recs.map((r) => r.item.slug),
+        })
+      : null;
+
+  useEffect(() => {
+    if (!persist || !resultSignature) return;
+    const { c, i } = JSON.parse(resultSignature) as { c: string[]; i: string[] };
+    saveQuizResult({ conditionIds: c, itemSlugs: i, at: new Date().toISOString() });
+  }, [persist, resultSignature]);
 
   function toggle(id: string) {
     setSelected((prev) => {
@@ -179,6 +199,15 @@ export function Quiz({
                 </p>
               )}
             </>
+          )}
+          {onDone && results.scores.length > 0 && (
+            <p className="mt-4 text-sm text-neutral-500">
+              Saved — revisit these anytime from the{' '}
+              <Link href="/quiz" className="text-leaf-700 underline">
+                Quiz page
+              </Link>
+              .
+            </p>
           )}
           <div className="mt-5 flex gap-2">
             <button
