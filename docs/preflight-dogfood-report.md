@@ -124,7 +124,37 @@ not that the set works together.** Possible mitigations: a known-bad-combo advis
 or preferring the framework's blessed toolchain versions (create-next-app ships
 `eslint ^9`). Resolved by downgrading to `eslint@^9.39.4`.
 
-<!-- T6+: CI Action on PRs · scheduled scan — appended as they happen -->
+### T6 — the GitHub Action's first cross-repo run (PR #1, 2026-07-03)
+
+**Wins:**
+- `uses: Ali0600/preflight/packages/action@main` (cross-repo, subdirectory action)
+  resolved with zero workarounds and ran in 15s.
+- The sticky PR comment rendered every direct dep with verdict/license, and the SARIF
+  upload lit up the repo's Security tab on the first try.
+
+**Headline finding — the Action and the CLI disagree on the same commit + policy:**
+the local CLI exits 1 with 5 policy violations (T4); the Action **passes**. Its comment
+even *mentions* the transitive CVE ("🔎 1 transitive dependency in the tree carry known
+CVEs: `postcss@8.4.31`") but still concludes "✅ No new CVEs introduced" — in a PR where
+every dependency, including that one, is newly introduced. The install-script policy
+violations don't appear at all. So in PR mode the gate evaluates **direct diffed deps
+only**, with transitive findings demoted to an informational line, and (apparently)
+`policy-file` rules not applied to the transitive tree. The CI gate — the one that
+actually protects `main` — is strictly weaker than the local CLI. This is the classic
+"gated one path, left the sibling open" hole and the most valuable finding of the test.
+
+**Nits:** comment grammar ("1 transitive dependency … carry known CVEs"); the action
+targets Node 20, which GitHub Actions has deprecated (runners force Node 24 with a
+warning) — bump `runs.using` to node24.
+
+**Policy consequence:** since the Action doesn't enforce the strict rules and the CLI has
+no allowlist, a permanently-red local gate would just train us to ignore it. Tuned
+`preflight.config.json` to the enforceable subset — `vuln: "kev"`, `installScript: false`
+(same concessions Preflight's own repo makes), keeping `suspiciousName`, `license`,
+`minHealth`, `runtime`. The weekly `mode: repo` scan + Dependabot remain the net for
+post-merge CVEs like the vendored postcss.
+
+<!-- T7+: scheduled scan · content-phase PRs — appended as they happen -->
 
 ## What it caught
 
@@ -146,6 +176,9 @@ _(accumulating)_
 - [ ] FEAT: policy allowlist / per-advisory ignore — without it, `installScript: true` and unactionable vendored CVEs make the gate permanently red on real Next.js trees (T4).
 - [ ] UX: `check` without a lockfile should say it's scanning direct deps only (T3 vs T4).
 - [ ] IDEA: `plan` can recommend an internally incompatible set (eslint 10 × eslint-config-next 16, T5); consider a known-bad-combos list or framework-blessed toolchain versions.
+- [ ] BUG-3 (headline): Action PR mode passes what the CLI fails — transitive CVEs newly introduced by the PR are informational-only and `policy-file` rules aren't applied to the transitive tree; "No new CVEs introduced" is wrong when the PR adds the whole lockfile (T6).
+- [ ] NIT: sticky-comment grammar "1 transitive dependency … carry known CVEs" (T6).
+- [ ] CHORE: action `runs.using: node20` is deprecated on GitHub runners — move to node24 (T6).
 
 ## Verdict
 

@@ -1,0 +1,11 @@
+{
+  "runtimes": { "node": "22" },
+  "failOn": {
+    "vuln": "kev",
+    "installScript": false,
+    "suspiciousName": true,
+    "license": ["copyleft", "unknown"],
+    "minHealth": 4,
+    "runtime": "incompatible"
+  }
+}
