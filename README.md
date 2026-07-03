@@ -43,6 +43,30 @@ npm run content:validate # zod-validate all content (also runs in CI)
 npm run usda:import      # regenerate data/usda/nutrients.generated.json
 ```
 
+## Experience Gained
+
+- Architected and shipped a **content-in-git nutrition platform** on **Next.js 16 (App Router,
+  React 19) + TypeScript**, where a structured JSON/MDX database is the single source of truth,
+  **schema-validated in CI with zod** and served both as fully static pages and a versioned
+  **JSON API** (`/api/v1`, `force-static` + CORS) designed for a future iOS client.
+- Built a **schema-enforced content model** with cross-file referential integrity (organ/condition
+  tags, citation-per-claim, superfood justification) and a custom `content:validate` gate that
+  fails the build on any uncited claim or dangling tag.
+- Engineered a **keyless data-import pipeline** distilling per-100g nutrient values from **USDA
+  FoodData Central** into committed JSON that powers build-time vitamin-ranking pages — no API key
+  in CI or runtime.
+- Implemented a **data-driven, backend-free recommendation quiz** (pure scoring in TypeScript,
+  unit-tested with Vitest) mapping user-reported symptoms → conditions → tagged foods.
+- Stood up a **CI/CD pipeline with branch-protection merge-gating**: lint · typecheck ·
+  content-validation · tests · build on every PR, plus a **third-party security Action** gating
+  dependency changes and a **scheduled weekly re-scan** — with production deploys (Vercel) wired to
+  only ever build already-green commits.
+- Applied **SEO/structured-data engineering** end to end: per-route metadata, dynamic sitemap &
+  robots, schema.org JSON-LD per page type, and dynamically-generated per-item OpenGraph images.
+- **Dogfooded a supply-chain scanner** (Preflight) across the whole build and produced an
+  evidence-based [usefulness report](docs/preflight-dogfood-report.md), filing 7 upstream issues
+  (including a gate-correctness bug where the CI Action passed a CVE the CLI failed on).
+
 ## Disclaimer
 
 NutriDex is general education, not medical advice. Talk to a clinician before changing
