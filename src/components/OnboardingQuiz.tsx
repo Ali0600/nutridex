@@ -1,10 +1,13 @@
 'use client';
 
-import { useState, useSyncExternalStore } from 'react';
+import { useEffect, useState, useSyncExternalStore } from 'react';
 import type { Condition, Item } from '@/lib/schema';
 import { Quiz } from './Quiz';
 
 const SEEN_KEY = 'nutridex.onboarded';
+// Wait before offering the quiz, so it doesn't ambush people the instant the page loads —
+// they get a moment to see the site first.
+const APPEAR_AFTER_MS = 6000;
 
 // Reading localStorage as an external store keeps the server snapshot `false` (so the modal
 // never flashes during hydration) while the client decides after mount — no setState-in-effect.
@@ -18,13 +21,20 @@ function getFirstVisitSnapshot(): boolean {
 }
 
 /**
- * First-visit modal wrapper around the quiz. Shows once for new visitors, then never again
- * (a localStorage flag). Purely client-side — no accounts, no backend.
+ * First-visit modal wrapper around the quiz. Appears once for new visitors after a short
+ * delay, then never again (a localStorage flag). Purely client-side — no accounts, no backend.
  */
 export function OnboardingQuiz({ conditions, items }: { conditions: Condition[]; items: Item[] }) {
   const firstVisit = useSyncExternalStore(noopSubscribe, getFirstVisitSnapshot, () => false);
   const [dismissed, setDismissed] = useState(false);
-  const open = firstVisit && !dismissed;
+  const [delayElapsed, setDelayElapsed] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDelayElapsed(true), APPEAR_AFTER_MS);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const open = firstVisit && delayElapsed && !dismissed;
 
   function close() {
     try {
@@ -57,7 +67,7 @@ export function OnboardingQuiz({ conditions, items }: { conditions: Condition[];
           Skip ✕
         </button>
         <p className="text-sm font-medium tracking-wide text-leaf-600 uppercase">Welcome to NutriDex</p>
-        <Quiz conditions={conditions} items={items} onDone={close} />
+        <Quiz conditions={conditions} items={items} onDone={close} persist />
       </div>
     </div>
   );

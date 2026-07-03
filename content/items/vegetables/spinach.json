@@ -40,9 +40,9 @@
     },
     {
       "claim": "Provides plant-based (non-heme) iron",
-      "mechanism": "Spinach supplies non-heme iron, the form found in plants. It's absorbed less efficiently than the heme iron in meat, but pairing spinach with a vitamin C source markedly increases how much iron the gut takes up.",
-      "organs": ["blood"],
-      "conditions": ["iron-deficiency"],
+      "mechanism": "Spinach supplies non-heme iron, the form found in plants. It's absorbed less efficiently than the heme iron in meat, but pairing spinach with a vitamin C source markedly increases how much iron the gut takes up. Because iron deficiency is a common and reversible cause of hair shedding, keeping iron stores up supports hair as well as red-blood-cell production.",
+      "organs": ["blood", "hair"],
+      "conditions": ["iron-deficiency", "hair-loss"],
       "strength": "moderate",
       "citations": [
         {
