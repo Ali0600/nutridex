@@ -1,0 +1,57 @@
+{
+  "slug": "walnut",
+  "name": "Walnut",
+  "category": "nuts",
+  "aliases": ["english walnut", "walnuts"],
+  "summary": "The nut with the most plant omega-3 (ALA) by far — studied for cholesterol, heart health, and, in its own trials, cognition.",
+  "superfood": true,
+  "superfoodReason": "Uniquely high in the plant omega-3 alpha-linolenic acid, with heart-health evidence from large trials including PREDIMED.",
+  "fdcId": 170187,
+  "benefits": [
+    {
+      "claim": "Improves cholesterol and heart-disease risk factors",
+      "mechanism": "Walnuts are dense in polyunsaturated fat, including the plant omega-3 ALA. Replacing saturated fat with these fats lowers LDL cholesterol; in the PREDIMED trial, a Mediterranean diet supplemented with mixed nuts reduced major cardiovascular events.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts (Estruch et al., PREDIMED, N Engl J Med 2018)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+          "pmid": "29897866",
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "claim": "May support brain function and mood",
+      "mechanism": "Walnuts supply ALA, polyphenols, and vitamin E, which reduce oxidative stress and inflammation in the brain. Trials feeding walnuts have reported small improvements in cognitive measures and mood.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Effects of walnut consumption on cognitive performance in young adults (Pribis et al., Br J Nutr 2012)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21923981/",
+          "pmid": "21923981",
+          "year": 2012
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    {
+      "text": "A walnut half looks strikingly like a tiny brain — and it happens to be the nut most studied for cognitive benefits, thanks to its omega-3 content."
+    }
+  ],
+  "affiliateSlots": [
+    {
+      "label": "Raw shelled walnuts (example affiliate slot)",
+      "url": "https://example.com/affiliate/walnuts",
+      "disclosure": "affiliate"
+    }
+  ],
+  "updatedAt": "2026-07-03"
+}

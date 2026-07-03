@@ -1,0 +1,63 @@
+{
+  "slug": "spinach",
+  "name": "Spinach",
+  "category": "vegetables",
+  "aliases": ["baby spinach"],
+  "summary": "A leafy green that's a top source of vitamin K and the eye-protecting carotenoids lutein and zeaxanthin, plus plant iron and dietary nitrate.",
+  "superfood": true,
+  "superfoodReason": "Nutrient-dense and low-calorie, combining vitamin K, folate, plant iron, nitrate, and the highest dietary concentrations of lutein and zeaxanthin.",
+  "fdcId": 168462,
+  "benefits": [
+    {
+      "claim": "Supports long-term eye health",
+      "mechanism": "Spinach is one of the richest sources of lutein and zeaxanthin — carotenoids that concentrate in the retina's macula, where they filter blue light and act as antioxidants. Higher intake is linked to slower progression of age-related macular degeneration.",
+      "organs": ["eyes"],
+      "conditions": ["eye-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the AREDS2 randomized clinical trial (AREDS2 Research Group, JAMA 2013)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23644932/",
+          "pmid": "23644932",
+          "year": 2013
+        }
+      ]
+    },
+    {
+      "claim": "Rich in vitamin K for bone and blood health",
+      "mechanism": "Spinach is exceptionally high in vitamin K1, which the body uses to activate proteins involved in blood clotting and in binding calcium into bone.",
+      "organs": ["bones", "blood"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin K (National Institutes of Health, Office of Dietary Supplements — Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Provides plant-based (non-heme) iron",
+      "mechanism": "Spinach supplies non-heme iron, the form found in plants. It's absorbed less efficiently than the heme iron in meat, but pairing spinach with a vitamin C source markedly increases how much iron the gut takes up.",
+      "organs": ["blood"],
+      "conditions": ["iron-deficiency"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Iron (National Institutes of Health, Office of Dietary Supplements — Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    {
+      "text": "Spinach's iron is real, but the Popeye-era myth of it being uniquely iron-rich was overstated — pairing it with vitamin C to boost absorption matters more than the raw amount."
+    }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,17 @@
+[
+  { "id": "heart", "label": "Heart & circulation", "synonyms": ["cardiovascular", "blood pressure", "arteries"], "blurb": "The heart and blood vessels — circulation, cholesterol, and blood pressure." },
+  { "id": "brain", "label": "Brain & mood", "synonyms": ["cognition", "memory", "mental health", "nervous system"], "blurb": "Cognition, memory, focus, mood, and the nervous system." },
+  { "id": "gut", "label": "Gut & digestion", "synonyms": ["digestive", "microbiome", "stomach", "intestines"], "blurb": "Digestion, the gut microbiome, and regularity." },
+  { "id": "liver", "label": "Liver", "synonyms": ["hepatic", "detox"], "blurb": "The body's detox organ — metabolism and filtering." },
+  { "id": "kidney", "label": "Kidneys", "synonyms": ["renal", "urinary"], "blurb": "Filtering waste, fluid balance, and the urinary tract." },
+  { "id": "lungs", "label": "Lungs & airways", "synonyms": ["respiratory", "breathing"], "blurb": "The respiratory system — breathing and airway health." },
+  { "id": "skin", "label": "Skin", "synonyms": ["dermatological", "complexion"], "blurb": "Skin barrier, collagen, and complexion." },
+  { "id": "hair", "label": "Hair & nails", "synonyms": ["scalp", "keratin"], "blurb": "Hair growth, scalp health, and nail strength." },
+  { "id": "eyes", "label": "Eyes & vision", "synonyms": ["ocular", "sight"], "blurb": "Vision and long-term eye health." },
+  { "id": "bones", "label": "Bones & joints", "synonyms": ["skeletal", "teeth"], "blurb": "Bone density, joints, and teeth." },
+  { "id": "muscles", "label": "Muscles", "synonyms": ["strength", "recovery"], "blurb": "Muscle building, strength, and recovery." },
+  { "id": "immune", "label": "Immune system", "synonyms": ["immunity", "inflammation"], "blurb": "Immune defense and inflammation." },
+  { "id": "metabolism", "label": "Metabolism & blood sugar", "synonyms": ["blood sugar", "insulin", "weight"], "blurb": "Blood sugar regulation, insulin sensitivity, and weight." },
+  { "id": "hormones", "label": "Hormones", "synonyms": ["endocrine", "thyroid"], "blurb": "Endocrine and hormonal balance." },
+  { "id": "blood", "label": "Blood", "synonyms": ["hematologic", "iron", "circulation"], "blurb": "Red blood cells, iron status, and clotting." }
+]
