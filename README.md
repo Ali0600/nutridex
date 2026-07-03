@@ -6,7 +6,7 @@
 [![CI](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml)
 [![Preflight](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml)
 
-**Live:** [nutridex.vercel.app](https://nutridex.vercel.app) · deploys from `main` on green CI.
+**Live:** [nutridex-neon.vercel.app](https://nutridex-neon.vercel.app) · deploys from `main` on green CI.
 
 ## What it will do
 
