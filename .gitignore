@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# builds & coverage
+build/
+coverage/
+*.tsbuildinfo
+
+# env — personal/host-specific values never land in the repo
+.env*
+!.env.example
+
+# vercel
+.vercel/
+
+# raw USDA CSV downloads (hundreds of MB) — only the distilled JSON is committed
+data/.cache/
+
+# os
+.DS_Store
