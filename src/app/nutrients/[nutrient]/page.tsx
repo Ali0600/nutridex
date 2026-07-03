@@ -1,0 +1,66 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { NUTRIENTS, NUTRIENT_BY_KEY } from '@/lib/nutrients-config';
+import { rankByNutrient } from '@/lib/nutrients';
+import { NutrientRankTable } from '@/components/NutrientRankTable';
+
+export function generateStaticParams() {
+  return NUTRIENTS.map((n) => ({ nutrient: n.key }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ nutrient: string }>;
+}): Promise<Metadata> {
+  const { nutrient } = await params;
+  const def = NUTRIENT_BY_KEY[nutrient];
+  if (!def) return {};
+  return {
+    title: `Which foods have the most ${def.label}?`,
+    description: `Foods ranked by ${def.label} per 100g, from USDA FoodData Central.`,
+    alternates: { canonical: `/nutrients/${nutrient}` },
+  };
+}
+
+export default async function NutrientPage({
+  params,
+}: {
+  params: Promise<{ nutrient: string }>;
+}) {
+  const { nutrient } = await params;
+  const def = NUTRIENT_BY_KEY[nutrient];
+  if (!def) notFound();
+  const rows = rankByNutrient(def.key);
+
+  return (
+    <section className="py-6">
+      <h1 className="text-3xl font-bold text-neutral-900">
+        Most {def.label} <span className="text-neutral-400">per 100g</span>
+      </h1>
+      <p className="mt-2 text-neutral-600">
+        Foods in the NutriDex database ranked by {def.label} content. Data: USDA FoodData Central.
+      </p>
+      <div className="mt-6">
+        <NutrientRankTable def={def} rows={rows} />
+      </div>
+      <div className="mt-8">
+        <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">
+          Other nutrients
+        </h2>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {NUTRIENTS.filter((n) => n.key !== def.key).map((n) => (
+            <Link
+              key={n.key}
+              href={`/nutrients/${n.key}`}
+              className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-700 hover:border-leaf-300"
+            >
+              {n.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

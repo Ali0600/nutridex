@@ -21,11 +21,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="min-h-screen bg-white font-sans text-neutral-900 antialiased">
         <header className="border-b border-leaf-100">
-          <div className="mx-auto flex max-w-5xl items-baseline gap-3 px-4 py-4">
+          <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-5 gap-y-2 px-4 py-4">
             <Link href="/" className="text-xl font-bold text-leaf-700">
               NutriDex
             </Link>
-            <span className="text-sm text-neutral-500">every food, explained</span>
+            <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-neutral-600">
+              <Link href="/super-foods" className="hover:text-leaf-700">
+                Super Foods
+              </Link>
+              <Link href="/nutrients/vitamin-c" className="hover:text-leaf-700">
+                Nutrients
+              </Link>
+              <Link href="/quiz" className="hover:text-leaf-700">
+                Quiz
+              </Link>
+              <Link href="/blog" className="hover:text-leaf-700">
+                Blog
+              </Link>
+            </nav>
           </div>
         </header>
         <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
