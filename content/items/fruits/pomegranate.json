@@ -1,0 +1,32 @@
+{
+  "slug": "pomegranate",
+  "name": "Pomegranate",
+  "category": "fruits",
+  "aliases": ["pomegranate seeds", "pomegranate juice"],
+  "summary": "A jewel-seeded fruit rich in punicalagins — unusually large antioxidant polyphenols studied mainly for blood pressure.",
+  "superfood": true,
+  "superfoodReason": "Exceptionally high in punicalagin antioxidants, with meta-analysed trial evidence for lowering blood pressure.",
+  "benefits": [
+    {
+      "claim": "Can lower blood pressure",
+      "mechanism": "Pomegranate polyphenols support nitric-oxide availability and reduce oxidative stress in blood vessels, helping arteries relax. A meta-analysis of randomized trials found pomegranate juice lowered both systolic and diastolic blood pressure.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effects of pomegranate juice on blood pressure: A systematic review and meta-analysis of randomized controlled trials (Sahebkar et al., Pharmacol Res 2017)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27888156/",
+          "pmid": "27888156",
+          "year": 2017
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Punicalagins are among the largest polyphenol molecules in the human diet — and pomegranate juice's antioxidant activity in lab assays often outmeasures green tea or red wine." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ginger",
+  "name": "Ginger",
+  "category": "tea",
+  "aliases": ["ginger root", "ginger tea"],
+  "summary": "A pungent root — brewed as tea or eaten fresh — with one of the strongest evidence bases in all of food science for one thing: settling nausea.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Reduces nausea and vomiting",
+      "mechanism": "Ginger's gingerols and shogaols act on serotonin (5-HT3) receptors in the gut and on gastric motility, which is why it eases nausea. Meta-analyses of randomized trials find it effective for pregnancy-related nausea, and other reviews support it for post-operative and motion sickness.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "A systematic review and meta-analysis of the effect and safety of ginger in the treatment of pregnancy-associated nausea and vomiting (Viljoen et al., Nutr J 2014)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24642205/",
+          "pmid": "24642205",
+          "year": 2014
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Cooking transforms ginger's sharp gingerol into zingerone — milder and sweeter — which is why baked ginger tastes gentler than raw." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

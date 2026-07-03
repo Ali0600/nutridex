@@ -1,0 +1,45 @@
+{
+  "slug": "avocado",
+  "name": "Avocado",
+  "category": "fruits",
+  "aliases": ["avocados", "hass avocado"],
+  "summary": "A fatty fruit whose monounsaturated fat improves cholesterol, plus more potassium per gram than a banana.",
+  "superfood": true,
+  "superfoodReason": "A rare fruit rich in heart-healthy monounsaturated fat, fiber, and potassium, with randomized-trial evidence for improving LDL cholesterol.",
+  "benefits": [
+    {
+      "claim": "Improves LDL cholesterol",
+      "mechanism": "Avocado's monounsaturated fat replaces saturated fat in the diet, lowering LDL cholesterol, and its antioxidants reduce oxidation of small, dense LDL particles — the more atherogenic kind. A randomized controlled trial of one avocado a day showed both effects.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "A moderate-fat diet with one avocado per day increases plasma antioxidants and decreases the oxidation of small, dense LDL: a randomized controlled trial (Wang et al., J Nutr 2020)",
+          "source": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7373821/",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "claim": "Rich in potassium for blood pressure",
+      "mechanism": "Potassium counteracts sodium and relaxes blood-vessel walls, helping lower blood pressure. Avocado is one of the most potassium-dense fruits — gram for gram, more than a banana.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Potassium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Botanically a single-seeded berry, the avocado has more potassium per 100g than a banana — despite the banana's reputation as the potassium fruit." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

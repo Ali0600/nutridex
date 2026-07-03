@@ -1,0 +1,32 @@
+{
+  "slug": "garlic",
+  "name": "Garlic",
+  "category": "vegetables",
+  "aliases": ["garlic clove", "allium sativum"],
+  "summary": "A pungent allium whose sulfur compound allicin has meta-analysed evidence for modestly lowering blood pressure.",
+  "superfood": true,
+  "superfoodReason": "Its organosulfur compounds, chiefly allicin, have randomized-trial evidence for reducing blood pressure and cholesterol.",
+  "benefits": [
+    {
+      "claim": "Can modestly lower blood pressure",
+      "mechanism": "Crushing garlic forms allicin, which is converted to hydrogen-sulfide and nitric-oxide signalling molecules that relax blood vessels. A meta-analysis of randomized trials found garlic lowered systolic and diastolic blood pressure, with the largest effect in people who were hypertensive.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effect of garlic on blood pressure: a systematic review and meta-analysis (Rohner et al., Am J Hypertens 2015)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25557383/",
+          "pmid": "25557383",
+          "year": 2015
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Allicin doesn't exist in an intact clove — it's created when garlic is crushed or chopped and two compounds meet. Letting crushed garlic rest ~10 minutes before cooking lets more allicin form and survive the heat." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

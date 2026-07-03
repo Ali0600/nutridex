@@ -1,7 +1,22 @@
 {
-  "beetroot": { "fdcId": 169145, "dataset": "sr_legacy" },
-  "green-tea": { "fdcId": 171917, "dataset": "sr_legacy" },
-  "kiwi": { "fdcId": 168153, "dataset": "sr_legacy" },
-  "spinach": { "fdcId": 168462, "dataset": "sr_legacy" },
-  "walnut": { "fdcId": 170187, "dataset": "sr_legacy" }
+  "beetroot": {
+    "fdcId": 169145,
+    "dataset": "sr_legacy"
+  },
+  "green-tea": {
+    "fdcId": 171917,
+    "dataset": "sr_legacy"
+  },
+  "kiwi": {
+    "fdcId": 168153,
+    "dataset": "sr_legacy"
+  },
+  "spinach": {
+    "fdcId": 168462,
+    "dataset": "sr_legacy"
+  },
+  "walnut": {
+    "fdcId": 170187,
+    "dataset": "sr_legacy"
+  }
 }

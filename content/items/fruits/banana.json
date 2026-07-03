@@ -1,0 +1,43 @@
+{
+  "slug": "banana",
+  "name": "Banana",
+  "category": "fruits",
+  "aliases": ["bananas"],
+  "summary": "A convenient source of potassium and vitamin B6, and — with tryptophan on board — a small contributor to serotonin production.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Potassium for healthy blood pressure",
+      "mechanism": "Potassium helps the body excrete sodium and relaxes blood-vessel walls, both of which lower blood pressure. A banana is a portable, reliable source.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Potassium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Vitamin B6 for metabolism and mood chemistry",
+      "mechanism": "Bananas are a good source of vitamin B6, a cofactor in over 100 enzyme reactions — including the conversion of tryptophan into serotonin and the metabolism of protein and glycogen.",
+      "organs": ["brain", "metabolism"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Vitamin B6 — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB6-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Bananas carry both tryptophan and the vitamin B6 needed to turn it into serotonin — though the amounts are modest, so the 'bananas make you happy' claim is more chemistry than pharmacology." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

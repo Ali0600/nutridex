@@ -1,0 +1,44 @@
+{
+  "slug": "beef-liver",
+  "name": "Beef Liver",
+  "category": "meats",
+  "aliases": ["liver", "organ meat"],
+  "summary": "One of the most nutrient-dense foods on earth — a small serving delivers many times a day's vitamin B12 and preformed vitamin A, plus highly-absorbable iron.",
+  "superfood": true,
+  "superfoodReason": "Gram for gram among the most nutrient-dense foods available, concentrating vitamin B12, preformed vitamin A, iron, copper, and folate.",
+  "benefits": [
+    {
+      "claim": "Exceptional vitamin B12 for blood and energy",
+      "mechanism": "Vitamin B12 is required to make red blood cells and myelin and to run energy metabolism; deficiency causes fatigue and anemia. Liver is one of the densest B12 sources, and the heme iron alongside it is far better absorbed than plant iron.",
+      "organs": ["blood"],
+      "conditions": ["iron-deficiency"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin B12 — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Rich in preformed vitamin A",
+      "mechanism": "Liver supplies vitamin A as retinol — the ready-to-use form — supporting vision, immunity, and skin. It's so concentrated that a little goes a long way (and pregnant people are advised not to overdo it).",
+      "organs": ["eyes", "immune", "skin"],
+      "conditions": ["immune-support"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin A and Carotenoids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Liver is so dense in preformed vitamin A that polar-explorer accounts describe vitamin A poisoning from eating polar-bear or seal liver — a reminder that with liver, more is not better." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

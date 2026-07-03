@@ -1,0 +1,47 @@
+{
+  "slug": "blueberry",
+  "name": "Blueberry",
+  "category": "fruits",
+  "aliases": ["blueberries", "wild blueberry"],
+  "summary": "A small berry packed with anthocyanins — the blue-purple pigments studied for memory, brain aging, and blood-vessel function.",
+  "superfood": true,
+  "superfoodReason": "One of the highest-anthocyanin common fruits, with randomized human trials linking it to better memory and vascular function.",
+  "benefits": [
+    {
+      "claim": "Supports memory and brain aging",
+      "mechanism": "Blueberry anthocyanins cross into the brain and reduce oxidative stress and inflammation in regions tied to memory, and may improve blood flow there. In a trial of older adults with early memory decline, daily blueberry improved memory measures.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Blueberry supplementation improves memory in older adults (Krikorian et al., J Agric Food Chem 2010)",
+          "source": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2850944/",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "claim": "Improves blood-vessel function",
+      "mechanism": "The same polyphenols improve endothelial function — how well the lining of your arteries dilates — which supports healthy circulation and blood pressure. A double-blind RCT in older adults found wild-blueberry polyphenols improved vascular function.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Wild blueberry (poly)phenols can improve vascular function and cognitive performance in healthy older individuals: a double-blind randomized controlled trial (Wood et al., Am J Clin Nutr 2023)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36972800/",
+          "pmid": "36972800",
+          "year": 2023
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Wild (lowbush) blueberries are smaller than cultivated ones but pack noticeably more anthocyanin per gram — the pigment is concentrated in the skin, and wild berries have more skin per volume." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

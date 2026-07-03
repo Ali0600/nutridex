@@ -1,0 +1,46 @@
+{
+  "slug": "almond",
+  "name": "Almond",
+  "category": "nuts",
+  "aliases": ["almonds"],
+  "summary": "The most vitamin-E-dense common nut, with heart-healthy monounsaturated fat and magnesium.",
+  "superfood": true,
+  "superfoodReason": "One of the richest whole-food sources of vitamin E, combined with monounsaturated fat and magnesium, backed by nut-and-heart trial evidence.",
+  "benefits": [
+    {
+      "claim": "Top source of vitamin E for skin and cells",
+      "mechanism": "Almonds are among the most vitamin-E-dense foods. Vitamin E is a fat-soluble antioxidant that protects cell membranes — including skin cells — from oxidative damage.",
+      "organs": ["skin", "immune"],
+      "conditions": ["skin-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin E — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Supports heart health and cholesterol",
+      "mechanism": "Almonds' monounsaturated fat, fiber, and plant sterols help lower LDL cholesterol when they replace less-healthy snacks. In the PREDIMED trial, a Mediterranean diet supplemented with nuts reduced cardiovascular events.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts (Estruch et al., PREDIMED, N Engl J Med 2018)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+          "pmid": "29897866",
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Whole almonds deliver fewer calories than their label implies — some fat stays locked in the nut's cell walls and passes through undigested, an effect measured in controlled feeding studies." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

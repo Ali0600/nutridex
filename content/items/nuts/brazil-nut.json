@@ -1,0 +1,30 @@
+{
+  "slug": "brazil-nut",
+  "name": "Brazil Nut",
+  "category": "nuts",
+  "aliases": ["brazil nuts"],
+  "summary": "The single richest food source of selenium — so concentrated that one or two nuts can cover a day's requirement.",
+  "superfood": true,
+  "superfoodReason": "By far the most selenium-dense food known; a single nut can supply an entire day's selenium.",
+  "benefits": [
+    {
+      "claim": "Unmatched source of selenium",
+      "mechanism": "Selenium is built into antioxidant enzymes (glutathione peroxidases) and is required to produce active thyroid hormone. Brazil nuts concentrate it like no other food — which is also why you shouldn't eat many, as excess selenium is toxic.",
+      "organs": ["immune", "hormones"],
+      "conditions": ["immune-support"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Selenium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Selenium content varies enormously with the soil the tree grew in — a single Brazil nut can range from about 70 to more than 90 micrograms, meaning one nut can exceed the daily requirement. Two to three a day is plenty; more risks toxicity." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "kale",
+  "name": "Kale",
+  "category": "vegetables",
+  "aliases": ["curly kale", "leafy greens"],
+  "summary": "A hardy leafy green exceptionally high in vitamin K and in the eye-protecting carotenoids lutein and zeaxanthin.",
+  "superfood": true,
+  "superfoodReason": "One of the most vitamin-K-dense foods, and a top source of lutein and zeaxanthin for eye health.",
+  "benefits": [
+    {
+      "claim": "Very high in vitamin K for bones and clotting",
+      "mechanism": "Kale is one of the richest sources of vitamin K1, which activates proteins that direct calcium into bone and enable normal blood clotting.",
+      "organs": ["bones", "blood"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin K — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Supports eye health",
+      "mechanism": "Kale is loaded with lutein and zeaxanthin, carotenoids that accumulate in the retina's macula to filter blue light and act as antioxidants. Higher intake is linked to slower age-related macular degeneration.",
+      "organs": ["eyes"],
+      "conditions": ["eye-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the AREDS2 randomized clinical trial (JAMA 2013)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23644932/",
+          "pmid": "23644932",
+          "year": 2013
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The carotenoids in kale are fat-soluble, so a little olive oil or another fat with your greens meaningfully increases how much lutein and zeaxanthin you absorb." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

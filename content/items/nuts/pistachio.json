@@ -1,0 +1,47 @@
+{
+  "slug": "pistachio",
+  "name": "Pistachio",
+  "category": "nuts",
+  "aliases": ["pistachios"],
+  "summary": "A green nut that's among the highest in the eye-protecting carotenoids lutein and zeaxanthin, with heart-healthy fats and protein.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Among the highest-lutein nuts for eye health",
+      "mechanism": "Pistachios' green colour comes partly from lutein and zeaxanthin — the carotenoids that concentrate in the retina to filter blue light and protect against age-related macular degeneration. Pistachios contain more of them than other common nuts.",
+      "organs": ["eyes"],
+      "conditions": ["eye-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the AREDS2 randomized clinical trial (JAMA 2013)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23644932/",
+          "pmid": "23644932",
+          "year": 2013
+        }
+      ]
+    },
+    {
+      "claim": "Heart-healthy fats and plant protein",
+      "mechanism": "Pistachios pair monounsaturated fat and fiber — which help lower LDL cholesterol when they replace refined snacks — with more protein than most nuts. In the PREDIMED trial, nut-supplemented diets reduced cardiovascular events.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Primary prevention of cardiovascular disease with a Mediterranean diet supplemented with extra-virgin olive oil or nuts (Estruch et al., PREDIMED, N Engl J Med 2018)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+          "pmid": "29897866",
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Buying pistachios in the shell makes you eat more slowly and see the empty shells pile up — studies find this 'evidence-based' portion cue leads people to eat fewer calories." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

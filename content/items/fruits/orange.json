@@ -1,0 +1,43 @@
+{
+  "slug": "orange",
+  "name": "Orange",
+  "category": "fruits",
+  "aliases": ["oranges"],
+  "summary": "The classic vitamin C fruit — also a solid source of folate and the flavonoid hesperidin.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Vitamin C for immunity and skin",
+      "mechanism": "One orange covers most of a day's vitamin C, which immune cells depend on for function and which the body needs as a cofactor to synthesize collagen for skin, blood vessels, and wound healing.",
+      "organs": ["immune", "skin"],
+      "conditions": ["immune-support", "skin-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin C — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Folate for cell growth",
+      "mechanism": "Oranges provide folate, a B-vitamin essential for making DNA and new cells — especially important before and during pregnancy for healthy neural-tube development.",
+      "organs": ["blood"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Folate — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Most of an orange's flavonoids — like hesperidin — are concentrated in the white pith and membranes, so juice strained of pulp loses much of them." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "broccoli",
+  "name": "Broccoli",
+  "category": "vegetables",
+  "aliases": ["broccoli florets"],
+  "summary": "A cruciferous vegetable that's both a strong vitamin C and fiber source and the best-known dietary source of sulforaphane.",
+  "superfood": true,
+  "superfoodReason": "Combines high vitamin C and fiber with glucoraphanin, the precursor to sulforaphane — a compound under active clinical study for its effects on inflammation and metabolism.",
+  "benefits": [
+    {
+      "claim": "Delivers sulforaphane, a well-studied plant compound",
+      "mechanism": "When you chop or chew broccoli, the enzyme myrosinase converts its glucoraphanin into sulforaphane, which activates the body's Nrf2 pathway — switching on antioxidant and detoxification genes. Human trials are exploring effects on inflammation and metabolic markers.",
+      "organs": ["immune", "metabolism"],
+      "conditions": [],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Clinical and molecular evidence of the consumption of broccoli, glucoraphanin and sulforaphane in humans (Yagishita et al., Nutrients 2015)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25617536/",
+          "pmid": "25617536",
+          "year": 2015
+        }
+      ]
+    },
+    {
+      "claim": "High in vitamin C and fiber",
+      "mechanism": "Broccoli rivals citrus for vitamin C — supporting immune function and collagen — and its fiber feeds gut bacteria and supports regularity.",
+      "organs": ["immune", "gut"],
+      "conditions": ["immune-support", "gut-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin C — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The enzyme that makes sulforaphane is destroyed by heat, so hard-boiled broccoli makes little — chopping it and letting it rest, or a quick steam, preserves far more." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

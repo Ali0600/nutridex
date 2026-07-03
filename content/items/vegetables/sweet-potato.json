@@ -1,0 +1,29 @@
+{
+  "slug": "sweet-potato",
+  "name": "Sweet Potato",
+  "category": "vegetables",
+  "aliases": ["sweet potatoes", "yam (US)"],
+  "summary": "An orange-fleshed root whose beta-carotene makes it one of the best plant sources of vitamin A, with gut-friendly fiber.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Outstanding source of vitamin A (as beta-carotene)",
+      "mechanism": "The orange pigment is beta-carotene, which the body converts to vitamin A — essential for vision (it forms the light-sensing pigment in the retina), immune function, and skin cell turnover. A single sweet potato can exceed a day's vitamin A.",
+      "organs": ["eyes", "immune", "skin"],
+      "conditions": ["eye-health", "immune-support", "skin-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin A and Carotenoids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Boiling actually gives sweet potato a lower blood-sugar impact than baking or roasting, which break the starch down into more quickly-absorbed forms." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}
