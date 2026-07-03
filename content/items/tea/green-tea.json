@@ -1,0 +1,51 @@
+{
+  "slug": "green-tea",
+  "name": "Green Tea",
+  "category": "tea",
+  "aliases": ["sencha", "matcha (loose)"],
+  "summary": "An unoxidised tea rich in the catechin EGCG and the calming amino acid L-theanine — a combination studied for cholesterol and for steady, focused alertness.",
+  "superfood": true,
+  "superfoodReason": "A near-calorie-free drink delivering EGCG and L-theanine, each with its own body of randomized-trial evidence for heart and cognitive effects.",
+  "fdcId": 171917,
+  "benefits": [
+    {
+      "claim": "Can modestly lower LDL cholesterol",
+      "mechanism": "Green tea's catechins (chiefly EGCG) reduce how much cholesterol the gut absorbs and influence its handling by the liver. A meta-analysis of 14 randomized trials found green tea lowered total and LDL cholesterol.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Green tea intake lowers fasting serum total and LDL cholesterol in adults: a meta-analysis of 14 randomized controlled trials (Zheng et al., Am J Clin Nutr 2011)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21715508/",
+          "pmid": "21715508",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "claim": "Promotes calm, focused alertness",
+      "mechanism": "Green tea pairs caffeine with L-theanine, an amino acid that increases alpha brain-wave activity. Taken together they improve attention and reaction time while blunting the jittery edge caffeine alone can cause.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The combined effects of L-theanine and caffeine on cognitive performance and mood (Owen et al., Nutr Neurosci 2008)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18681988/",
+          "pmid": "18681988",
+          "year": 2008
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    {
+      "text": "L-theanine is found almost nowhere in the human diet except tea (and one rare mushroom), which is why tea's alertness feels different from coffee's."
+    }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

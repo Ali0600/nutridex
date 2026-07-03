@@ -1,0 +1,58 @@
+{
+  "slug": "beetroot",
+  "name": "Beetroot",
+  "category": "vegetables",
+  "aliases": ["beet", "beets", "red beet"],
+  "summary": "A root vegetable exceptionally high in dietary nitrate — the compound behind its best-studied effect: lowering blood pressure.",
+  "superfood": true,
+  "superfoodReason": "One of the richest dietary sources of inorganic nitrate, with repeated randomized trials showing measurable blood-pressure reductions from a single glass of juice.",
+  "fdcId": 169145,
+  "benefits": [
+    {
+      "claim": "Helps lower high blood pressure",
+      "mechanism": "Beetroot is rich in inorganic nitrate. Mouth bacteria reduce it to nitrite, which the body converts to nitric oxide — a signalling molecule that relaxes and widens blood vessels (vasodilation), lowering the pressure blood exerts on artery walls.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Acute blood pressure lowering, vasoprotective, and antiplatelet properties of dietary nitrate via bioconversion to nitrite (Webb et al., Hypertension 2008)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18250365/",
+          "pmid": "18250365",
+          "year": 2008
+        },
+        {
+          "title": "Dietary nitrate provides sustained blood pressure lowering in hypertensive patients: a randomized, phase 2, double-blind, placebo-controlled study (Kapil et al., Hypertension 2015)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25421976/",
+          "pmid": "25421976",
+          "year": 2015
+        }
+      ]
+    },
+    {
+      "claim": "May improve exercise stamina and oxygen efficiency",
+      "mechanism": "The same nitrate-to-nitric-oxide pathway improves blood flow to working muscles and reduces the oxygen cost of exercise, so a given effort feels easier — an effect measured in endurance-performance trials.",
+      "organs": ["heart", "muscles"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Dietary nitrate supplementation reduces the O2 cost of low-intensity exercise and enhances tolerance to high-intensity exercise in humans (Bailey et al., J Appl Physiol 2009)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19661447/",
+          "pmid": "19661447",
+          "year": 2009
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    {
+      "text": "The deep red colour comes from betalain pigments — the same family used as a natural food dye (E162), and studied in their own right as antioxidants."
+    }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "kiwi",
+  "name": "Kiwifruit",
+  "category": "fruits",
+  "aliases": ["kiwi", "kiwifruit", "chinese gooseberry"],
+  "summary": "A small fruit with more vitamin C than an orange, gut-friendly enzymes, and enough naturally-occurring serotonin to show up in sleep research.",
+  "superfood": true,
+  "superfoodReason": "Exceptional vitamin C density plus two distinctive, separately-studied benefits — the digestive enzyme actinidin and a measured effect on sleep quality.",
+  "fdcId": 168153,
+  "benefits": [
+    {
+      "claim": "Very high in vitamin C for immune and skin health",
+      "mechanism": "A single green kiwifruit covers a day's vitamin C. Vitamin C is a cofactor the body needs to build collagen (skin structure) and to support the function of immune cells.",
+      "organs": ["immune", "skin"],
+      "conditions": ["immune-support", "skin-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin C and immune function (Carr & Maggini, Nutrients 2017)",
+          "source": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5707683/",
+          "year": 2017
+        }
+      ]
+    },
+    {
+      "claim": "May improve sleep quality",
+      "mechanism": "In a 4-week trial, adults eating two kiwifruit an hour before bed fell asleep faster and slept longer. Kiwifruit's antioxidants and its naturally-occurring serotonin — a precursor in the sleep–wake cycle — are the proposed reasons.",
+      "organs": ["brain"],
+      "conditions": [],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Effect of kiwifruit consumption on sleep quality in adults with sleep problems (Lin et al., Asia Pac J Clin Nutr 2011)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21669584/",
+          "pmid": "21669584",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "claim": "Supports digestion of protein",
+      "mechanism": "Kiwifruit contains actinidin, a protein-digesting enzyme. In lab and human studies it speeds the breakdown of dietary proteins in the stomach and upper small intestine, which may ease the feeling of heaviness after protein-rich meals.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Actinidin enhances gastric protein digestion as assessed using an in vitro gastric digestion model (Kaur et al., J Agric Food Chem 2010)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20476733/",
+          "pmid": "20476733",
+          "year": 2010
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    {
+      "text": "Kiwifruit is one of the few foods with measurable serotonin — about 5.8 micrograms per gram — enough that eating it raises the body's excretion of serotonin's breakdown product.",
+      "citation": {
+        "title": "Serotonin content of foods: effect on urinary excretion of 5-hydroxyindoleacetic acid (Feldman & Lee, Am J Clin Nutr 1985)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2413754/",
+        "pmid": "2413754",
+        "year": 1985
+      }
+    }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-03"
+}

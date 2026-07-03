@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run --passWithNoTests",
     "content:validate": "tsx scripts/validate-content.ts",
     "usda:import": "tsx scripts/import-usda.ts",
     "format": "prettier --write ."

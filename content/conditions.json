@@ -1,0 +1,267 @@
+[
+  {
+    "id": "high-blood-pressure",
+    "label": "High blood pressure",
+    "kind": "condition",
+    "organs": ["heart"],
+    "intro": "Foods that support healthy blood pressure — often through dietary nitrates, potassium, or effects on blood-vessel function.",
+    "quiz": {
+      "triggerLabel": "High blood pressure",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "hbp-known",
+          "text": "Have you been told your blood pressure runs high?",
+          "answers": [
+            { "label": "Yes", "weight": 3 },
+            { "label": "Borderline", "weight": 2 },
+            { "label": "No / not sure", "weight": 0 }
+          ]
+        },
+        {
+          "id": "hbp-salt",
+          "text": "Is your diet high in salt / processed food?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "Somewhat", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "kidney-cleanse",
+    "label": "Kidney support (for drinkers)",
+    "kind": "goal",
+    "organs": ["kidney", "liver"],
+    "intro": "Foods and drinks that support the kidneys and liver — hydration, antioxidants, and compounds studied for protecting filtering tissue, useful if you drink alcohol regularly.",
+    "quiz": {
+      "triggerLabel": "Kidney cleanse (drinkers)",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "kidney-alcohol",
+          "text": "How often do you drink alcohol?",
+          "answers": [
+            { "label": "Several times a week", "weight": 3 },
+            { "label": "Occasionally", "weight": 1 },
+            { "label": "Rarely / never", "weight": 0 }
+          ]
+        },
+        {
+          "id": "kidney-water",
+          "text": "Do you struggle to drink enough water?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "lung-detox",
+    "label": "Lung & airway support",
+    "kind": "goal",
+    "organs": ["lungs"],
+    "intro": "Foods rich in antioxidants and compounds studied for airway and lung function — of interest to ex-smokers or people in polluted air.",
+    "quiz": {
+      "triggerLabel": "Lung detox",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "lung-smoke",
+          "text": "Do you smoke, vape, or did you in the past?",
+          "answers": [
+            { "label": "Currently", "weight": 3 },
+            { "label": "In the past", "weight": 2 },
+            { "label": "Never", "weight": 0 }
+          ]
+        },
+        {
+          "id": "lung-air",
+          "text": "Are you often around polluted or smoky air?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "hair-loss",
+    "label": "Hair loss & thinning",
+    "kind": "condition",
+    "organs": ["hair", "skin"],
+    "intro": "Foods providing the protein, iron, zinc, biotin, and other nutrients hair follicles need — deficiencies in these are a common, reversible driver of shedding.",
+    "quiz": {
+      "triggerLabel": "Hair loss",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "hair-shedding",
+          "text": "Are you noticing more shedding or thinning than usual?",
+          "answers": [
+            { "label": "Yes, clearly", "weight": 3 },
+            { "label": "A little", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        },
+        {
+          "id": "hair-nails",
+          "text": "Do your nails chip or peel easily?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "iron-deficiency",
+    "label": "Low iron / anemia",
+    "kind": "deficiency",
+    "organs": ["blood"],
+    "intro": "Iron-rich foods and the vitamin C pairings that boost absorption — for the tiredness, dizziness, and pallor of low iron.",
+    "quiz": {
+      "triggerLabel": "Vitamin/iron deficiency",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "iron-dizzy",
+          "text": "Do you feel dizzy or lightheaded when you stand up quickly?",
+          "answers": [
+            { "label": "Often", "weight": 2 },
+            { "label": "Sometimes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        },
+        {
+          "id": "iron-tired",
+          "text": "Are you unusually tired or short of breath on light activity?",
+          "answers": [
+            { "label": "Yes", "weight": 2 },
+            { "label": "Sometimes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        },
+        {
+          "id": "iron-pale",
+          "text": "Do you look paler than usual, or crave ice/non-foods?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "immune-support",
+    "label": "Immune support",
+    "kind": "goal",
+    "organs": ["immune"],
+    "intro": "Foods high in vitamin C, zinc, and polyphenols studied for supporting immune defense.",
+    "quiz": {
+      "triggerLabel": "Getting sick often",
+      "threshold": 1,
+      "questions": [
+        {
+          "id": "immune-frequency",
+          "text": "Do you catch colds or infections more than most people?",
+          "answers": [
+            { "label": "Yes", "weight": 2 },
+            { "label": "Average", "weight": 0 },
+            { "label": "Rarely sick", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "skin-health",
+    "label": "Skin health",
+    "kind": "goal",
+    "organs": ["skin"],
+    "intro": "Foods supplying the vitamin C, carotenoids, and healthy fats the skin uses for collagen and barrier function.",
+    "quiz": {
+      "triggerLabel": "Skin & complexion",
+      "threshold": 1,
+      "questions": [
+        {
+          "id": "skin-concern",
+          "text": "Are you working on skin health or complexion?",
+          "answers": [
+            { "label": "Yes", "weight": 2 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "gut-health",
+    "label": "Gut & digestion",
+    "kind": "goal",
+    "organs": ["gut"],
+    "intro": "Fiber-rich and fermented foods that feed the gut microbiome and support digestion.",
+    "quiz": {
+      "triggerLabel": "Digestion & gut",
+      "threshold": 1,
+      "questions": [
+        {
+          "id": "gut-issues",
+          "text": "Do you deal with bloating, irregularity, or digestive discomfort?",
+          "answers": [
+            { "label": "Often", "weight": 2 },
+            { "label": "Sometimes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "blood-sugar",
+    "label": "Blood sugar & metabolism",
+    "kind": "condition",
+    "organs": ["metabolism"],
+    "intro": "Foods with a gentle effect on blood sugar, plus compounds studied for insulin sensitivity.",
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "brain-focus",
+    "label": "Brain, focus & mood",
+    "kind": "goal",
+    "organs": ["brain"],
+    "intro": "Foods supplying omega-3s, polyphenols, and micronutrients studied for cognition and mood.",
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "bone-health",
+    "label": "Bone & joint health",
+    "kind": "goal",
+    "organs": ["bones"],
+    "intro": "Foods rich in calcium, vitamin K, magnesium, and vitamin D for bone density and joints.",
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "eye-health",
+    "label": "Eye & vision health",
+    "kind": "goal",
+    "organs": ["eyes"],
+    "intro": "Foods high in lutein, zeaxanthin, and vitamin A that support long-term vision.",
+    "recommends": { "boostSuperfoods": true }
+  }
+]
