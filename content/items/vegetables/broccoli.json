@@ -36,11 +36,27 @@
           "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/"
         }
       ]
+    },
+    {
+      "claim": "Helps the body clear inhaled air pollutants",
+      "mechanism": "Sulforaphane switches on the NRF2 pathway, which ramps up the detoxification enzymes (glutathione S-transferases) that tag toxins for excretion. In a randomized trial in a heavily polluted region of China, a daily broccoli-sprout beverage measurably sped up the body's excretion of inhaled pollutants such as benzene and acrolein — of interest to ex-smokers and people in dirty air.",
+      "organs": ["lungs"],
+      "conditions": ["lung-detox"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Rapid and sustainable detoxication of airborne pollutants by broccoli sprout beverage: results of a randomized clinical trial in China (Egner et al., Cancer Prev Res 2014)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24913818/",
+          "pmid": "24913818",
+          "year": 2014
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "The enzyme that makes sulforaphane is destroyed by heat, so hard-boiled broccoli makes little — chopping it and letting it rest, or a quick steam, preserves far more." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }

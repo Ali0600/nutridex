@@ -33,11 +33,26 @@
           "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
         }
       ]
+    },
+    {
+      "claim": "Vitamin C is linked to better lung function",
+      "mechanism": "The airway lining is constantly exposed to oxygen and inhaled oxidants, and vitamin C is a key antioxidant in the fluid that coats it. Higher dietary vitamin C tracks with better lung function, and a meta-analysis found vitamin C supplementation improved airflow (FEV1) in people with COPD.",
+      "organs": ["lungs"],
+      "conditions": ["lung-detox"],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Efficacy of vitamin C supplementation on chronic obstructive pulmonary disease (COPD): a systematic review and meta-analysis (Lei et al., Int J Chron Obstruct Pulmon Dis 2022)",
+          "source": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9473551/",
+          "year": 2022
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "Most of an orange's flavonoids — like hesperidin — are concentrated in the white pith and membranes, so juice strained of pulp loses much of them." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }
