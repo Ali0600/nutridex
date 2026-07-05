@@ -2,6 +2,7 @@
   "slug": "avocado",
   "name": "Avocado",
   "category": "fruits",
+  "fdcId": 171705,
   "aliases": ["avocados", "hass avocado"],
   "summary": "A fatty fruit whose monounsaturated fat improves cholesterol, plus more potassium per gram than a banana.",
   "superfood": true,

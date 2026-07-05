@@ -2,6 +2,7 @@
   "slug": "chicken-breast",
   "name": "Chicken Breast",
   "category": "meats",
+  "fdcId": 171077,
   "aliases": ["chicken", "skinless chicken breast"],
   "summary": "A lean, high-protein staple that's also a good source of selenium and the B-vitamins niacin and B6.",
   "superfood": false,

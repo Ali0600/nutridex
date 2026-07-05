@@ -2,6 +2,7 @@
   "slug": "orange",
   "name": "Orange",
   "category": "fruits",
+  "fdcId": 169097,
   "aliases": ["oranges"],
   "summary": "The classic vitamin C fruit — also a solid source of folate and the flavonoid hesperidin.",
   "superfood": false,
