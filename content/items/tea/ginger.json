@@ -37,6 +37,22 @@
           "year": 2023
         }
       ]
+    },
+    {
+      "claim": "May improve blood-sugar control",
+      "mechanism": "Ginger's gingerols appear to improve insulin sensitivity and how muscle cells take up glucose. A meta-analysis of randomized trials in type 2 diabetes found ginger supplementation lowered fasting blood glucose and HbA1c, though results across trials are mixed.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effects of ginger (Zingiber officinale Roscoe) on type 2 diabetes mellitus and components of the metabolic syndrome: a systematic review and meta-analysis of randomized controlled trials (Zhu et al., Evid Based Complement Alternat Med 2018)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29541142/",
+          "pmid": "29541142",
+          "year": 2018
+        }
+      ]
     }
   ],
   "surprisingFacts": [
