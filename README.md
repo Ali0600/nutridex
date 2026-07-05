@@ -45,6 +45,7 @@ npm test                 # vitest
 npm run content:validate # zod-validate all content (also runs in CI)
 npm run usda:import      # regenerate data/usda/nutrients.generated.json
 npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe PMC)
+npm run blog:research    # weekly auto-blog brief: fresh studies + coverage gaps
 ```
 
 ## Experience Gained
@@ -70,6 +71,9 @@ npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe 
 - **Dogfooded a supply-chain scanner** (Preflight) across the whole build and produced an
   evidence-based [usefulness report](docs/preflight-dogfood-report.md), filing 7 upstream issues
   (including a gate-correctness bug where the CI Action passed a CVE the CLI failed on).
+- **Automated the content pipeline** with a keyless literature-research tool over the Europe PMC API
+  (ranks studies by evidence level, emits schema-ready citations) and a **weekly scheduled agent**
+  that drafts new, cited blog posts as review PRs — see [docs/auto-blog.md](docs/auto-blog.md).
 
 ## Disclaimer
 
