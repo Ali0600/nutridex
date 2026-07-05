@@ -21,11 +21,27 @@
           "year": 2014
         }
       ]
+    },
+    {
+      "claim": "May help protect the liver",
+      "mechanism": "Ginger's antioxidant compounds lower reactive oxygen species and boost the liver's own antioxidant enzymes. A meta-analysis of randomized trials found ginger supplementation reduced ALT — a blood marker of liver stress — in non-alcoholic fatty liver disease, an angle of interest to anyone whose liver takes regular hits, such as from alcohol.",
+      "organs": ["liver"],
+      "conditions": ["kidney-cleanse"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Ginger supplementation for the treatment of non-alcoholic fatty liver disease: a meta-analysis of randomized controlled trials (Zhu et al., 2023)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37545930/",
+          "pmid": "37545930",
+          "year": 2023
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "Cooking transforms ginger's sharp gingerol into zingerone — milder and sweeter — which is why baked ginger tastes gentler than raw." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }

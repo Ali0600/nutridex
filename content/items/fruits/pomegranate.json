@@ -22,11 +22,27 @@
           "year": 2017
         }
       ]
+    },
+    {
+      "claim": "Reduces oxidative stress on the kidneys",
+      "mechanism": "Pomegranate's punicalagin polyphenols are potent antioxidants. In a year-long randomized placebo-controlled trial in hemodialysis patients — people under heavy kidney-related oxidative stress — daily pomegranate juice lowered markers of oxidative damage and inflammation and cut infection-related hospitalisations.",
+      "organs": ["kidney"],
+      "conditions": ["kidney-cleanse"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "One year of pomegranate juice intake decreases oxidative stress, inflammation, and incidence of infections in hemodialysis patients: a randomized placebo-controlled trial (Shema-Didi et al., Free Radic Biol Med 2012)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22609423/",
+          "pmid": "22609423",
+          "year": 2012
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "Punicalagins are among the largest polyphenol molecules in the human diet — and pomegranate juice's antioxidant activity in lab assays often outmeasures green tea or red wine." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }
