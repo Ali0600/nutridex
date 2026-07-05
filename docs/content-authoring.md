@@ -26,6 +26,30 @@ for whoever (human or an AI session) adds entries. The golden rule: **no claim w
 4. Run `npm run content:validate` locally — it must pass.
 5. Open a PR. `ci` (which runs `content:validate`) and `preflight` must be green before merge.
 
+## Finding research — `npm run research`
+
+Don't cite from memory. `scripts/research.ts` queries **Europe PMC** (europepmc.org) — a free,
+**keyless** index of PubMed + PMC + preprints — and returns citation-ready studies. This is how
+you source both **database citations** and **blog topics**, and every result is a real, indexed
+paper (no hallucinated PMIDs).
+
+```bash
+npm run research -- kiwi sleep                     # a food + a benefit/topic
+npm run research -- "green tea" cholesterol --type meta   # only meta-analyses / systematic reviews
+npm run research -- beetroot "blood pressure" --recent    # last 3 years (for fresh blog angles)
+npm run research -- broccoli lung --json           # copy-paste Citation objects for the JSON
+```
+
+- **Always pair a food with a topic** (`kiwi sleep`, not just `kiwi`) — a bare food name pulls in
+  agriculture/plant-science noise, since Europe PMC also indexes those.
+- `--type meta|review|rct` filters by evidence level; results are otherwise ranked meta-analysis →
+  systematic review → RCT → review → study, then by citation count.
+- Each result prints a **suggested `strength`** (meta/systematic → strong, RCT/review → moderate,
+  else preliminary) to drop straight into the schema, and `--json` emits ready-made `Citation`
+  objects. Preprints are excluded by default (`--include-preprints` to see them).
+- Still confirm the study actually supports the specific claim (read the abstract) before pasting —
+  the tool finds candidates, it doesn't adjudicate them.
+
 ## Citations — keep them real and matched
 
 - **The citation must support the specific claim.** Don't cite a vitamin-A fact sheet for a fiber
