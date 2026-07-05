@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'do-nuts-help-blood-sugar',
+    title: 'Do nuts really help your blood sugar?',
+    description:
+      'What the trials actually show about almonds, pistachios, and other tree nuts for blood-sugar control — the mechanism, the evidence, and the honest caveats.',
+    date: '2026-07-05',
+    author: 'NutriDex',
+    tags: ['metabolism', 'blood-sugar', 'nuts'],
+  },
+  {
     slug: 'why-beetroot-lowers-blood-pressure',
     title: 'Why beetroot lowers blood pressure — the nitrate-to-nitric-oxide pathway',
     description:

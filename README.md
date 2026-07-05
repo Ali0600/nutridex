@@ -44,6 +44,7 @@ npm run typecheck        # tsc --noEmit
 npm test                 # vitest
 npm run content:validate # zod-validate all content (also runs in CI)
 npm run usda:import      # regenerate data/usda/nutrients.generated.json
+npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe PMC)
 ```
 
 ## Experience Gained
