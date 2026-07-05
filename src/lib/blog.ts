@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-pomegranate-lower-blood-pressure',
+    title: 'Does pomegranate lower blood pressure?',
+    description:
+      'Three recent meta-analyses (2023–2025) pooled the pomegranate-and-blood-pressure trials. Here is what they actually found, the likely mechanism, and the honest caveats.',
+    date: '2026-07-05',
+    author: 'NutriDex',
+    tags: ['heart', 'high-blood-pressure', 'pomegranate'],
+  },
+  {
     slug: 'do-nuts-help-blood-sugar',
     title: 'Do nuts really help your blood sugar?',
     description:
