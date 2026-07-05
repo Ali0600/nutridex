@@ -47,18 +47,29 @@ export default async function NutrientPage({
       </div>
       <div className="mt-8">
         <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">
-          Other nutrients
+          Browse by nutrient
         </h2>
         <div className="mt-3 flex flex-wrap gap-2">
-          {NUTRIENTS.filter((n) => n.key !== def.key).map((n) => (
-            <Link
-              key={n.key}
-              href={`/nutrients/${n.key}`}
-              className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-700 hover:border-leaf-300"
-            >
-              {n.label}
-            </Link>
-          ))}
+          {NUTRIENTS.map((n) => {
+            const active = n.key === def.key;
+            return active ? (
+              <span
+                key={n.key}
+                aria-current="page"
+                className="rounded-full border border-leaf-600 bg-leaf-600 px-3 py-1 text-sm font-medium text-white"
+              >
+                {n.label}
+              </span>
+            ) : (
+              <Link
+                key={n.key}
+                href={`/nutrients/${n.key}`}
+                className="rounded-full border border-neutral-200 px-3 py-1 text-sm text-neutral-700 hover:border-leaf-300 hover:bg-leaf-50"
+              >
+                {n.label}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
