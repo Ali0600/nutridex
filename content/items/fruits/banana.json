@@ -2,6 +2,7 @@
   "slug": "banana",
   "name": "Banana",
   "category": "fruits",
+  "fdcId": 173944,
   "aliases": ["bananas"],
   "summary": "A convenient source of potassium and vitamin B6, and — with tryptophan on board — a small contributor to serotonin production.",
   "superfood": false,

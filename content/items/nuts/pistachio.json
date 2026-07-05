@@ -2,6 +2,7 @@
   "slug": "pistachio",
   "name": "Pistachio",
   "category": "nuts",
+  "fdcId": 170184,
   "aliases": ["pistachios"],
   "summary": "A green nut that's among the highest in the eye-protecting carotenoids lutein and zeaxanthin, with heart-healthy fats and protein.",
   "superfood": false,

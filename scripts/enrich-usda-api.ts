@@ -30,7 +30,6 @@ const API = 'https://api.nal.usda.gov/fdc/v1';
 const FOOD_QUERIES: Record<string, string> = {
   beetroot: 'Beets, raw',
   'green-tea': 'Beverages, tea, green, brewed, regular',
-  'black-tea': 'Beverages, tea, black, brewed, prepared with tap water',
   ginger: 'Ginger root, raw',
   kiwi: 'Kiwifruit, green, raw',
   blueberry: 'Blueberries, raw',
@@ -51,6 +50,13 @@ const FOOD_QUERIES: Record<string, string> = {
   almond: 'Nuts, almonds',
   'brazil-nut': 'Nuts, brazilnuts, dried, unblanched',
   pistachio: 'Nuts, pistachio nuts, raw',
+};
+
+// A few foods that keyword search mis-ranks (e.g. "Sweet Potato puffs" outranks the raw root,
+// and generic chicken outranks the breast). Pin these to the correct SR Legacy fdcId.
+const FOOD_FDC_OVERRIDE: Record<string, number> = {
+  'sweet-potato': 168482, // Sweet potato, raw, unprepared
+  'chicken-breast': 171077, // Chicken, broilers or fryers, breast, meat only, raw
 };
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -85,12 +91,17 @@ async function searchFdcId(
   key: string,
   query: string,
 ): Promise<{ fdcId: number; description: string; dataset: Dataset } | null> {
-  const url = `${API}/foods/search?api_key=${key}&pageSize=1&dataType=${encodeURIComponent('SR Legacy,Foundation')}&query=${encodeURIComponent(query)}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`search ${res.status}`);
-  const data = (await res.json()) as { foods?: { fdcId: number; description: string; dataType?: string }[] };
-  const f = data.foods?.[0];
-  return f ? { fdcId: f.fdcId, description: f.description, dataset: normalizeDataset(f.dataType) } : null;
+  // Prefer SR Legacy — it carries the fullest per-100g nutrient profiles for whole foods;
+  // Foundation entries are often sparse (a handful of nutrients) or oddly-matched products.
+  for (const dataType of ['SR Legacy', 'Foundation']) {
+    const url = `${API}/foods/search?api_key=${key}&pageSize=1&dataType=${encodeURIComponent(dataType)}&query=${encodeURIComponent(query)}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`search ${res.status}`);
+    const data = (await res.json()) as { foods?: { fdcId: number; description: string; dataType?: string }[] };
+    const f = data.foods?.[0];
+    if (f) return { fdcId: f.fdcId, description: f.description, dataset: normalizeDataset(f.dataType) };
+  }
+  return null;
 }
 
 async function fetchNutrients(key: string, fdcId: number): Promise<{ description: string; per100g: Record<string, number> }> {
@@ -124,7 +135,10 @@ async function main(): Promise<void> {
   let ok = 0;
   for (const slug of slugs) {
     try {
-      const hit = await searchFdcId(key, FOOD_QUERIES[slug]);
+      const override = FOOD_FDC_OVERRIDE[slug];
+      const hit = override
+        ? { fdcId: override, description: '(pinned)', dataset: 'sr_legacy' as Dataset }
+        : await searchFdcId(key, FOOD_QUERIES[slug]);
       if (!hit) {
         console.warn(`⚠️  ${slug}: no FDC match for "${FOOD_QUERIES[slug]}"`);
         continue;

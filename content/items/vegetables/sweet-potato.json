@@ -2,6 +2,7 @@
   "slug": "sweet-potato",
   "name": "Sweet Potato",
   "category": "vegetables",
+  "fdcId": 168482,
   "aliases": ["sweet potatoes", "yam (US)"],
   "summary": "An orange-fleshed root whose beta-carotene makes it one of the best plant sources of vitamin A, with gut-friendly fiber.",
   "superfood": false,

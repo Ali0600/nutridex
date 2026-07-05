@@ -2,6 +2,7 @@
   "slug": "salmon",
   "name": "Salmon",
   "category": "meats",
+  "fdcId": 173686,
   "aliases": ["atlantic salmon", "wild salmon"],
   "summary": "A fatty fish that's a leading source of the long-chain omega-3s EPA and DHA, plus one of the few natural food sources of vitamin D.",
   "superfood": true,

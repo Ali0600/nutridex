@@ -1,18 +1,86 @@
 {
+  "almond": {
+    "fdcId": 170567,
+    "dataset": "sr_legacy"
+  },
+  "avocado": {
+    "fdcId": 171705,
+    "dataset": "sr_legacy"
+  },
+  "banana": {
+    "fdcId": 173944,
+    "dataset": "sr_legacy"
+  },
+  "beef-liver": {
+    "fdcId": 169451,
+    "dataset": "sr_legacy"
+  },
   "beetroot": {
     "fdcId": 169145,
+    "dataset": "sr_legacy"
+  },
+  "blueberry": {
+    "fdcId": 171711,
+    "dataset": "sr_legacy"
+  },
+  "brazil-nut": {
+    "fdcId": 170569,
+    "dataset": "sr_legacy"
+  },
+  "broccoli": {
+    "fdcId": 170379,
+    "dataset": "sr_legacy"
+  },
+  "chicken-breast": {
+    "fdcId": 171077,
+    "dataset": "sr_legacy"
+  },
+  "garlic": {
+    "fdcId": 169230,
+    "dataset": "sr_legacy"
+  },
+  "ginger": {
+    "fdcId": 169231,
     "dataset": "sr_legacy"
   },
   "green-tea": {
     "fdcId": 171917,
     "dataset": "sr_legacy"
   },
+  "kale": {
+    "fdcId": 168421,
+    "dataset": "sr_legacy"
+  },
   "kiwi": {
     "fdcId": 168153,
     "dataset": "sr_legacy"
   },
+  "orange": {
+    "fdcId": 169097,
+    "dataset": "sr_legacy"
+  },
+  "pistachio": {
+    "fdcId": 170184,
+    "dataset": "sr_legacy"
+  },
+  "pomegranate": {
+    "fdcId": 169134,
+    "dataset": "sr_legacy"
+  },
+  "salmon": {
+    "fdcId": 173686,
+    "dataset": "sr_legacy"
+  },
+  "sardine": {
+    "fdcId": 175139,
+    "dataset": "sr_legacy"
+  },
   "spinach": {
     "fdcId": 168462,
+    "dataset": "sr_legacy"
+  },
+  "sweet-potato": {
+    "fdcId": 168482,
     "dataset": "sr_legacy"
   },
   "walnut": {

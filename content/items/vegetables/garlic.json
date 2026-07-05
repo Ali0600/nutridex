@@ -2,6 +2,7 @@
   "slug": "garlic",
   "name": "Garlic",
   "category": "vegetables",
+  "fdcId": 169230,
   "aliases": ["garlic clove", "allium sativum"],
   "summary": "A pungent allium whose sulfur compound allicin has meta-analysed evidence for modestly lowering blood pressure.",
   "superfood": true,

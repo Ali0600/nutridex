@@ -2,6 +2,7 @@
   "slug": "blueberry",
   "name": "Blueberry",
   "category": "fruits",
+  "fdcId": 171711,
   "aliases": ["blueberries", "wild blueberry"],
   "summary": "A small berry packed with anthocyanins — the blue-purple pigments studied for memory, brain aging, and blood-vessel function.",
   "superfood": true,
