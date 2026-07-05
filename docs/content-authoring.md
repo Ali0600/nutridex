@@ -50,6 +50,10 @@ npm run research -- broccoli lung --json           # copy-paste Citation objects
 - Still confirm the study actually supports the specific claim (read the abstract) before pasting —
   the tool finds candidates, it doesn't adjudicate them.
 
+A weekly **scheduled routine** automates this for the blog — `npm run blog:research` builds a brief
+of fresh, un-cited studies + coverage gaps, and a Claude Code session drafts a post as a review PR.
+See [auto-blog.md](auto-blog.md).
+
 ## Citations — keep them real and matched
 
 - **The citation must support the specific claim.** Don't cite a vitamin-A fact sheet for a fiber
