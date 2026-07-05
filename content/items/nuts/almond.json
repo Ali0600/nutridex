@@ -36,11 +36,27 @@
           "year": 2018
         }
       ]
+    },
+    {
+      "claim": "Blunts the post-meal blood-sugar spike",
+      "mechanism": "Almonds' fat, fiber, and protein slow how fast the stomach empties and carbohydrates are absorbed, so eating them with or before a carb-rich meal lowers the resulting glucose rise. A dose-response meta-analysis of randomized trials found almond intake improved glycemic control.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The effect of almond intake on glycemic control: a systematic review and dose-response meta-analysis of randomized controlled trials (Asbaghi et al., Phytother Res 2022)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34841609/",
+          "pmid": "34841609",
+          "year": 2022
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "Whole almonds deliver fewer calories than their label implies — some fat stays locked in the nut's cell walls and passes through undigested, an effect measured in controlled feeding studies." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }

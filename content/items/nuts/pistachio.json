@@ -37,11 +37,26 @@
           "year": 2018
         }
       ]
+    },
+    {
+      "claim": "Lowers the glucose response to a meal",
+      "mechanism": "Adding pistachios to a carbohydrate meal slows digestion and reduces the post-meal rise in blood glucose and insulin. In a randomized crossover trial in people with type 2 diabetes, daily pistachios improved fasting glucose and HbA1c.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effects of pistachio nut supplementation on blood glucose in patients with type 2 diabetes: a randomized crossover trial (Parham et al., Rev Diabet Stud 2014)",
+          "source": "PMC",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4310069/",
+          "year": 2014
+        }
+      ]
     }
   ],
   "surprisingFacts": [
     { "text": "Buying pistachios in the shell makes you eat more slowly and see the empty shells pile up — studies find this 'evidence-based' portion cue leads people to eat fewer calories." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-05"
 }
