@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { Disclaimer } from '@/components/Disclaimer';
+import { ItemSearchBox } from '@/components/ItemSearchBox';
 import './globals.css';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
@@ -38,7 +39,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/blog" className="hover:text-leaf-700">
                 Blog
               </Link>
+              <Link href="/compare" className="hover:text-leaf-700">
+                Compare
+              </Link>
             </nav>
+            <div className="ms-auto">
+              <ItemSearchBox compact placeholder="Search foods…" />
+            </div>
           </div>
         </header>
         <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
