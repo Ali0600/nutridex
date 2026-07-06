@@ -51,9 +51,12 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
         }}
       />
 
-      <nav className="text-sm text-neutral-500">
+      <nav className="flex items-center justify-between text-sm text-neutral-500">
         <Link href={`/categories/${item.category}`} className="hover:text-leaf-700">
           {CATEGORY_LABELS[item.category]}
+        </Link>
+        <Link href={`/compare?items=${item.slug}`} className="text-leaf-700 hover:underline">
+          Compare →
         </Link>
       </nav>
 
