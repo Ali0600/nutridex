@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { getSuperfoods } from '@/lib/content';
 import { SITE_URL } from '@/lib/site';
 import { ItemCard } from '@/components/ItemCard';
@@ -32,7 +33,11 @@ export default function SuperFoodsPage() {
       <h1 className="text-3xl font-bold text-neutral-900">Super Foods 🌟</h1>
       <p className="mt-2 max-w-2xl text-neutral-600">
         Nutrient-dense standouts with unusually strong or well-studied benefits. Each entry explains
-        exactly why it earns the label.
+        exactly why it earns the label. Just after the fruit? See{' '}
+        <Link href="/super-fruits" className="text-leaf-700 underline">
+          Super Fruits
+        </Link>
+        .
       </p>
       {superfoods.length === 0 ? (
         <p className="mt-6 text-neutral-500">No super foods flagged yet.</p>
