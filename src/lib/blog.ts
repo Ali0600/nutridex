@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-pistachio-lower-blood-pressure',
+    title: 'Does eating pistachios lower blood pressure?',
+    description:
+      'A 2022 meta-analysis pooled 17 randomized trials of pistachio supplementation. Here is what it found on blood pressure, blood sugar, and cholesterol — and what it didn\'t.',
+    date: '2026-07-06',
+    author: 'NutriDex',
+    tags: ['heart', 'high-blood-pressure', 'pistachio'],
+  },
+  {
     slug: 'does-pomegranate-lower-blood-pressure',
     title: 'Does pomegranate lower blood pressure?',
     description:

@@ -36,6 +36,13 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
           "pmid": "29897866",
           "year": 2018
+        },
+        {
+          "title": "The effect of pistachio supplementation on metabolic syndrome and its components in adults: a systematic review and meta-analysis of randomized controlled trials (Baghery et al., Nutrition Reviews 2022)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35689651/",
+          "pmid": "35689651",
+          "year": 2022
         }
       ]
     },
@@ -59,5 +66,5 @@
     { "text": "Buying pistachios in the shell makes you eat more slowly and see the empty shells pile up — studies find this 'evidence-based' portion cue leads people to eat fewer calories." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-05"
+  "updatedAt": "2026-07-06"
 }
