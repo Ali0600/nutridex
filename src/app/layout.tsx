@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
+import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Disclaimer } from '@/components/Disclaimer';
 import { ItemSearchBox } from '@/components/ItemSearchBox';
 import './globals.css';
@@ -55,6 +57,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <p className="mt-2">© {new Date().getFullYear()} NutriDex</p>
           </div>
         </footer>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
