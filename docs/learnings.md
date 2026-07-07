@@ -66,3 +66,37 @@ evidence bar in `docs/content-authoring.md` demands the citation actually suppor
 **Takeaway:** for each PMID, pull its abstract (Europe PMC `resultType=core`) and confirm the
 title, year, study type, and *direction of effect* before writing it into content — never cite from
 a search-results title alone, and prefer the corrected/republished version of any landmark trial.
+
+## Two test runners in one repo need non-overlapping file globs
+
+Vitest and Playwright both default to picking up `*.test.*` / `*.spec.*` files. When the E2E specs
+(`e2e/*.spec.ts`) were added, `npm test` (vitest) would have tried to run them as unit tests — and
+they import `@playwright/test`, which only works under the Playwright runner. Fixed by scoping vitest
+to `include: ['src/**/*.test.ts']` in `vitest.config.ts`; Playwright's `testDir: './e2e'` keeps it to
+the E2E folder. Convention here: **unit = `src/**/*.test.ts` (vitest), E2E = `e2e/**/*.spec.ts`
+(Playwright)**.
+**Why it came up:** adding Playwright E2E alongside the existing vitest suite (Phase 5).
+**Takeaway:** when a repo has two test runners, give each an explicit, disjoint file glob — don't rely
+on defaults, or one runner will try to execute the other's tests.
+
+## Lighthouse CI: gate hard on deterministic categories, warn on flaky ones
+
+The Lighthouse budget (`lighthouserc.json`) sets **accessibility and SEO as `error`** (hard-fail
+≥0.9) but **performance and best-practices as `warn`**. Performance scores swing on shared CI runners,
+and best-practices dings the Vercel analytics scripts that no-op when the build runs off-Vercel — so
+gating hard on those would produce flaky red checks unrelated to real regressions. a11y and SEO are
+deterministic and are the site's actual investment, so they're worth failing on.
+**Why it came up:** wiring `treosh/lighthouse-ci-action` into CI (Phase 5) without making it a flaky gate.
+**Takeaway:** in a CI quality gate, hard-fail only on signals that are stable and meaningful in that
+environment; make environment-sensitive metrics advisory (`warn`) so the gate stays trustworthy.
+
+## A test harness that binds a fixed port collides with other local apps
+
+The Playwright `webServer` initially hardcoded port 3000; running it locally failed with `EADDRINUSE`
+because a *different* project (the Preflight dashboard) was already serving on 3000. Playwright's
+`reuseExistingServer` doesn't help — it only reuses a server that answers *your* health URL, not an
+unrelated app squatting the port. Fixed by reading `PORT` from the env (`Number(process.env.PORT ?? 3000)`)
+so a local run can pick a free port while CI keeps 3000.
+**Why it came up:** verifying the E2E suite locally while another dev server was running (Phase 5).
+**Takeaway:** make a dev/test harness's port configurable (env or auto-pick a free one) instead of
+hardcoding — and don't `kill` a process on a "busy" port until you've confirmed it's actually yours.
