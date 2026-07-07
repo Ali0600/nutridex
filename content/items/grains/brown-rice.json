@@ -27,7 +27,7 @@
       "claim": "Supplies magnesium",
       "mechanism": "The bran that brown rice keeps is a good source of magnesium — a mineral involved in hundreds of enzyme reactions, in muscle and nerve function, and in bone — much of which is lost when rice is milled to white.",
       "organs": ["bones", "muscles"],
-      "conditions": ["bone-health"],
+      "conditions": ["bone-health", "magnesium-deficiency"],
       "strength": "strong",
       "citations": [
         {

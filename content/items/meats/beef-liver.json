@@ -12,7 +12,7 @@
       "claim": "Exceptional vitamin B12 and iron for blood and hair",
       "mechanism": "Vitamin B12 is required to make red blood cells and myelin and to run energy metabolism; deficiency causes fatigue and anemia. Liver is one of the densest B12 sources, and the heme iron alongside it is far better absorbed than plant iron. Iron and B12 deficiency are both recognised, reversible contributors to hair shedding, so nutrient-dense liver supports hair too.",
       "organs": ["blood", "hair"],
-      "conditions": ["iron-deficiency", "hair-loss"],
+      "conditions": ["iron-deficiency", "hair-loss", "b12-deficiency"],
       "strength": "strong",
       "citations": [
         {

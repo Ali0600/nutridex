@@ -35,6 +35,20 @@
           "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
         }
       ]
+    },
+    {
+      "claim": "Also a source of vitamin D and B12",
+      "mechanism": "As an oily fish, sardines are one of the few foods that naturally contain vitamin D — which most people otherwise rely on sunlight for — and, like all animal foods, they supply vitamin B12, which vegans and older adults commonly run low on.",
+      "organs": ["bones", "blood"],
+      "conditions": ["vitamin-d-deficiency", "b12-deficiency"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin D — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
+        }
+      ]
     }
   ],
   "surprisingFacts": [

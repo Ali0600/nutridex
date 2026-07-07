@@ -11,7 +11,7 @@
       "claim": "One of the most magnesium-rich foods",
       "mechanism": "Pumpkin seeds are exceptionally high in magnesium — a mineral involved in hundreds of enzyme reactions, in muscle and nerve function, blood-pressure regulation, and building bone. Many people fall short of magnesium, so a handful of seeds is a dense top-up.",
       "organs": ["bones", "heart", "muscles"],
-      "conditions": ["bone-health"],
+      "conditions": ["bone-health", "magnesium-deficiency"],
       "strength": "strong",
       "citations": [
         {
