@@ -40,7 +40,7 @@
     },
     {
       "claim": "Provides plant-based (non-heme) iron",
-      "mechanism": "Spinach supplies non-heme iron, the form found in plants. It's absorbed less efficiently than the heme iron in meat, but pairing spinach with a vitamin C source markedly increases how much iron the gut takes up. Because iron deficiency is a common and reversible cause of hair shedding, keeping iron stores up supports hair as well as red-blood-cell production.",
+      "mechanism": "Spinach supplies non-heme iron, the form found in plants. It's absorbed less efficiently than the heme iron in meat, but pairing spinach with a vitamin C source markedly increases how much iron the gut takes up. A 2019 review of vitamins and minerals in hair loss notes that iron deficiency — tracked by low ferritin — is a common and reversible contributor to hair shedding, so keeping iron stores up supports hair as well as red-blood-cell production.",
       "organs": ["blood", "hair"],
       "conditions": ["iron-deficiency", "hair-loss"],
       "strength": "moderate",
@@ -49,6 +49,13 @@
           "title": "Iron (National Institutes of Health, Office of Dietary Supplements — Health Professional Fact Sheet)",
           "source": "other",
           "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        },
+        {
+          "title": "The Role of Vitamins and Minerals in Hair Loss: A Review (Almohanna et al., Dermatol Ther 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30547302/",
+          "pmid": "30547302",
+          "year": 2019
         }
       ]
     }
@@ -59,5 +66,5 @@
     }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-07"
 }

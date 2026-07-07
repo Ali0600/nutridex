@@ -1,0 +1,47 @@
+{
+  "slug": "avocado-oil",
+  "name": "Avocado Oil",
+  "category": "oils",
+  "aliases": ["avocado oil"],
+  "summary": "A mild, high-smoke-point oil that, like olive oil, is mostly monounsaturated fat — and adding it to vegetables markedly boosts how much of their fat-soluble nutrients you absorb.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Helps your body absorb more nutrients from vegetables",
+      "mechanism": "Carotenoids like lutein and beta-carotene are fat-soluble, so they need dietary fat to be absorbed — and most vegetables have almost none. In a human crossover study, adding avocado or avocado oil to salad and salsa multiplied the absorption of lutein, beta-carotene, alpha-carotene, and lycopene several-fold, turning the same vegetables into a much better source of eye- and skin-protecting carotenoids.",
+      "organs": ["eyes"],
+      "conditions": ["eye-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Carotenoid absorption from salad and salsa by humans is enhanced by the addition of avocado or avocado oil (Unlu et al., J Nutr 2005)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15735074/",
+          "pmid": "15735074",
+          "year": 2005
+        }
+      ]
+    },
+    {
+      "claim": "Mostly monounsaturated fat, like olive oil",
+      "mechanism": "Avocado oil is predominantly oleic acid — the same monounsaturated fat that dominates olive oil — with little saturated fat, so it supports healthy cholesterol when it replaces butter or other hard fats. An umbrella review of the evidence on edible vegetable oils places oils high in monounsaturated fat among the more favourable choices for cardiometabolic health, though avocado oil has fewer long-term trials of its own than olive oil.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Health Effects of Various Edible Vegetable Oil: An Umbrella Review (Adv Nutr 2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39053603/",
+          "pmid": "39053603",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Avocado oil is pressed from the fruit's flesh, not a seed — one of only a handful of oils (with olive and palm) made this way, which is why unrefined versions can taste faintly of avocado." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

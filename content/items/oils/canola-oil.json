@@ -1,0 +1,47 @@
+{
+  "slug": "canola-oil",
+  "name": "Canola Oil",
+  "category": "oils",
+  "aliases": ["rapeseed oil", "canola"],
+  "summary": "A neutral, low-saturated-fat cooking oil that is high in monounsaturated fat and one of the few common oils to supply the plant omega-3 ALA — with trial evidence for lowering LDL cholesterol.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Lowers LDL and total cholesterol",
+      "mechanism": "Canola oil is low in saturated fat and high in monounsaturated fat, a combination that improves blood lipids when it replaces harder fats. A meta-analysis of 13 randomized trials found that canola oil significantly reduced LDL ('bad') cholesterol, total cholesterol, and the LDL-to-HDL ratio — in fact even more than olive oil in the pooled comparison.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Comparison of canola oil and olive oil consumption on the serum lipid profile in adults: a systematic review and meta-analysis of randomized controlled trials (Pourrajab et al., Crit Rev Food Sci Nutr 2023)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35866510/",
+          "pmid": "35866510",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "claim": "A rare cooking-oil source of the plant omega-3 ALA",
+      "mechanism": "Unlike most cooking oils, canola supplies alpha-linolenic acid (ALA), the plant-based omega-3 fatty acid the body can partly convert into the same EPA and DHA found in fish. A meta-analysis of randomized trials linked ALA supplementation to an improved cardiovascular risk profile in people with overweight or obesity.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effect of Alpha-Linolenic Acid Supplementation on Cardiovascular Disease Risk Profile in Individuals with Obesity or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials (Yin et al., Adv Nutr 2023)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37778442/",
+          "pmid": "37778442",
+          "year": 2023
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "'Canola' isn't a plant — it's rapeseed bred in 1970s Canada to strip out bitter, heart-toxic erucic acid. The name is short for 'Canadian oil, low acid.'" }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

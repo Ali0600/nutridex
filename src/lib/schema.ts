@@ -18,6 +18,7 @@ export const CATEGORIES = [
   'legumes',
   'grains',
   'herbs-spices',
+  'oils',
 ] as const;
 export const categorySchema = z.enum(CATEGORIES);
 export type Category = z.infer<typeof categorySchema>;
