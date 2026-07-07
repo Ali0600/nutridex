@@ -8,7 +8,7 @@ import { z } from 'zod';
  * real ids) is checked in `validate-content.ts`, which has the full id sets in hand.
  */
 
-export const CATEGORIES = ['tea', 'fruits', 'vegetables', 'meats', 'nuts'] as const;
+export const CATEGORIES = ['tea', 'fruits', 'vegetables', 'meats', 'nuts', 'seeds'] as const;
 export const categorySchema = z.enum(CATEGORIES);
 export type Category = z.infer<typeof categorySchema>;
 

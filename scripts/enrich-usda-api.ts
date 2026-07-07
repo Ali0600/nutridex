@@ -50,6 +50,11 @@ const FOOD_QUERIES: Record<string, string> = {
   almond: 'Nuts, almonds',
   'brazil-nut': 'Nuts, brazilnuts, dried, unblanched',
   pistachio: 'Nuts, pistachio nuts, raw',
+  flaxseed: 'Seeds, flaxseed',
+  'chia-seed': 'Seeds, chia seeds, dried',
+  'sesame-seed': 'Seeds, sesame seeds, whole, dried',
+  'pumpkin-seed': 'Seeds, pumpkin and squash seed kernels, dried',
+  'sunflower-seed': 'Seeds, sunflower seed kernels, dried',
 };
 
 // A few foods that keyword search mis-ranks (e.g. "Sweet Potato puffs" outranks the raw root,

@@ -1,0 +1,46 @@
+{
+  "slug": "flaxseed",
+  "name": "Flaxseed",
+  "category": "seeds",
+  "aliases": ["flax", "linseed", "ground flaxseed"],
+  "summary": "The richest dietary source of lignans and the plant omega-3 ALA — a small seed studied mainly for cholesterol and cardiometabolic markers.",
+  "superfood": true,
+  "superfoodReason": "By far the highest dietary source of lignans, plus soluble fiber and the plant omega-3 ALA, with meta-analysed trial evidence for improving lipids.",
+  "benefits": [
+    {
+      "claim": "May improve cholesterol and cardiometabolic markers",
+      "mechanism": "Flaxseed combines soluble fiber (which binds bile acids so the body pulls cholesterol from the blood to replace them), lignans, and the plant omega-3 ALA. A GRADE-assessed meta-analysis of 16 randomized trials found flaxseed supplementation improved lipid profile and body weight; effects on blood pressure were smaller and less consistent.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The effect of flaxseed supplementation on anthropometric indices, blood pressure, and lipid profile in diabetic patients: a GRADE-assessed systematic review and meta-analysis of randomized controlled trials (2025)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40499336/",
+          "pmid": "40499336",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "claim": "Plant omega-3 (ALA) and soluble fiber",
+      "mechanism": "Flaxseed is one of the densest sources of alpha-linolenic acid (ALA), the plant omega-3 the body partly converts to EPA/DHA, and its soluble fiber supports regularity and feeds gut bacteria.",
+      "organs": ["heart", "gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Whole flaxseeds pass through the gut largely undigested — you have to grind them to absorb the lignans and ALA. Buy them whole and grind as needed, since the ground fat goes rancid faster." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

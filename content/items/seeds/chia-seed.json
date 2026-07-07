@@ -1,0 +1,46 @@
+{
+  "slug": "chia-seed",
+  "name": "Chia Seeds",
+  "category": "seeds",
+  "aliases": ["chia", "chia seed"],
+  "summary": "Tiny seeds that swell into a gel — exceptionally high in soluble fiber and the plant omega-3 ALA, studied for steadying blood sugar.",
+  "superfood": true,
+  "superfoodReason": "One of the most fiber- and ALA-dense foods, whose gel-forming soluble fiber has trial evidence for improving glycemic markers.",
+  "benefits": [
+    {
+      "claim": "May help steady blood sugar",
+      "mechanism": "Chia's soluble fiber absorbs many times its weight in water and forms a viscous gel that slows how fast carbohydrates are digested and glucose enters the blood. A systematic review and meta-analysis of randomized trials found chia improved glycemic status (fasting glucose and HbA1c).",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The effectiveness of chia seed in improving glycemic status: a systematic review and meta-analysis (2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38917708/",
+          "pmid": "38917708",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "claim": "Very high in fiber and plant omega-3 (ALA)",
+      "mechanism": "Chia is among the richest whole-food sources of both fiber (which feeds gut bacteria and supports regularity) and the plant omega-3 ALA, plus a useful amount of calcium.",
+      "organs": ["gut", "bones"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Chia can soak up roughly 10–12 times its weight in liquid, turning into a pudding-like gel — the same gel that slows digestion in the gut." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

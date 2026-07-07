@@ -1,0 +1,43 @@
+{
+  "slug": "pumpkin-seed",
+  "name": "Pumpkin Seeds",
+  "category": "seeds",
+  "aliases": ["pepitas", "pumpkin seed kernels"],
+  "summary": "Green kernels that are one of the most magnesium-dense foods around, and a strong source of zinc.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "One of the most magnesium-rich foods",
+      "mechanism": "Pumpkin seeds are exceptionally high in magnesium — a mineral involved in hundreds of enzyme reactions, in muscle and nerve function, blood-pressure regulation, and building bone. Many people fall short of magnesium, so a handful of seeds is a dense top-up.",
+      "organs": ["bones", "heart", "muscles"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Magnesium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "High in zinc for immunity",
+      "mechanism": "Pumpkin seeds are a good plant source of zinc, a mineral immune cells depend on and that the body also uses for wound healing, taste, and normal growth.",
+      "organs": ["immune"],
+      "conditions": ["immune-support"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Zinc — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Pepitas — the hull-less green seeds — come from specific 'naked-seed' pumpkin varieties bred so the seeds grow without a tough white shell." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

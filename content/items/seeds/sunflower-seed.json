@@ -1,0 +1,43 @@
+{
+  "slug": "sunflower-seed",
+  "name": "Sunflower Seeds",
+  "category": "seeds",
+  "aliases": ["sunflower kernels"],
+  "summary": "One of the richest whole-food sources of vitamin E, with magnesium and healthy unsaturated fats.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Top source of vitamin E for skin and cells",
+      "mechanism": "Sunflower seeds are among the most vitamin-E-dense foods. Vitamin E is a fat-soluble antioxidant that protects cell membranes — including skin cells — from oxidative damage.",
+      "organs": ["skin", "immune"],
+      "conditions": ["skin-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Vitamin E — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminE-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "claim": "Magnesium and healthy unsaturated fats",
+      "mechanism": "Alongside vitamin E, sunflower seeds provide magnesium — needed for muscle, nerve, and bone health — and mostly unsaturated fats that support healthy cholesterol when they replace saturated fat.",
+      "organs": ["heart", "bones"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Magnesium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "A single ounce of sunflower seeds covers roughly half a day's vitamin E — one of the most concentrated food sources of the vitamin." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}
