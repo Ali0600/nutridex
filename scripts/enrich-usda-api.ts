@@ -59,6 +59,10 @@ const FOOD_QUERIES: Record<string, string> = {
   chickpea: 'Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt',
   'black-bean': 'Beans, black, mature seeds, cooked, boiled, without salt',
   soybean: 'Soybeans, mature cooked, boiled, without salt',
+  oats: 'Oatmeal, regular and quick, unenriched, cooked with water, without salt',
+  quinoa: 'Quinoa, cooked',
+  barley: 'Barley, pearled, cooked',
+  'brown-rice': 'Rice, brown, long-grain, cooked',
 };
 
 // A few foods that keyword search mis-ranks (e.g. "Sweet Potato puffs" outranks the raw root,

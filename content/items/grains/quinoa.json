@@ -1,0 +1,47 @@
+{
+  "slug": "quinoa",
+  "name": "Quinoa",
+  "category": "grains",
+  "fdcId": 168917,
+  "aliases": ["quinoa seeds"],
+  "summary": "A gluten-free pseudo-grain that's a complete plant protein — all nine essential amino acids — plus whole-grain fiber and minerals.",
+  "superfood": true,
+  "superfoodReason": "One of the few plant staples that's a complete protein, cooked and eaten like a whole grain, and naturally gluten-free.",
+  "benefits": [
+    {
+      "claim": "A complete plant protein",
+      "mechanism": "Most grains are low in the amino acid lysine, but quinoa supplies all nine essential amino acids in usable amounts — so it counts as a complete protein for building and maintaining muscle, unusual for a plant food.",
+      "organs": ["muscles"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Protein — The Nutrition Source, Harvard T.H. Chan School of Public Health",
+          "source": "other",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+        }
+      ]
+    },
+    {
+      "claim": "Whole-grain fiber and minerals",
+      "mechanism": "Eaten as a whole grain, quinoa provides fiber, magnesium, and iron. Higher whole-grain intake is consistently linked to lower risk of heart disease, type 2 diabetes, and premature death.",
+      "organs": ["heart", "metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses (Reynolds et al., Lancet 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30638909/",
+          "pmid": "30638909",
+          "year": 2019
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Quinoa isn't a true cereal grain — it's the seed of a plant related to spinach and beets. Rinse it before cooking to wash off the bitter saponin coating that protects the seeds from birds." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

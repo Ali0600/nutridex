@@ -1,0 +1,48 @@
+{
+  "slug": "barley",
+  "name": "Barley",
+  "category": "grains",
+  "fdcId": 170285,
+  "aliases": ["pearl barley", "hulled barley"],
+  "summary": "A chewy whole grain rich in the same beta-glucan fiber as oats — good for blood sugar and heart health.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Beta-glucan fiber for steadier blood sugar",
+      "mechanism": "Barley is one of the richest sources of beta-glucan, a soluble fiber that thickens gut contents and slows carbohydrate absorption, flattening the post-meal glucose rise. Reviews of dietary fibre and whole grains show improved glycemic control.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Dietary fibre and whole grains in diabetes management: systematic review and meta-analyses (Reynolds et al., PLoS Med 2020)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32142510/",
+          "pmid": "32142510",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "claim": "A whole grain for heart health",
+      "mechanism": "As a fiber-rich whole grain, barley fits the dietary pattern repeatedly linked to lower rates of heart disease and premature death — its beta-glucan also helps lower LDL cholesterol, much like oats.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses (Reynolds et al., Lancet 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30638909/",
+          "pmid": "30638909",
+          "year": 2019
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Common 'pearl' barley has been polished to remove the bran, so it cooks faster but loses fiber — hulled or hull-less barley keeps the whole grain and its beta-glucan." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}
