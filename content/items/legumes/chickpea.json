@@ -1,0 +1,48 @@
+{
+  "slug": "chickpea",
+  "name": "Chickpeas",
+  "category": "legumes",
+  "fdcId": 173757,
+  "aliases": ["chickpea", "garbanzo beans", "hummus (base)"],
+  "summary": "A versatile pulse high in fiber and plant protein, studied as part of the legume family for improving cardiometabolic markers.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Supports heart and metabolic health",
+      "mechanism": "Chickpeas are high in soluble fiber and plant protein and naturally low in saturated fat and sodium. A 2024 systematic review and meta-analysis of randomized trials found higher legume intake improved the cardiometabolic risk profile (including lipids and glycemic markers).",
+      "organs": ["heart", "metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Legume intakes on cardiometabolic profile and gut microbiome function: systematic review and meta-analyses of randomised controlled trials (2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39739131/",
+          "pmid": "39739131",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "claim": "Fiber that feeds the gut and keeps you full",
+      "mechanism": "The mix of soluble and insoluble fiber in chickpeas slows digestion — flattening the post-meal blood-sugar rise and prolonging fullness — and feeds beneficial gut bacteria that ferment it into short-chain fatty acids.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Legume intakes on cardiometabolic profile and gut microbiome function: systematic review and meta-analyses of randomised controlled trials (2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39739131/",
+          "pmid": "39739131",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The starchy water from a can of chickpeas — aquafaba — whips up like egg whites and is used as a vegan meringue and mayonnaise base." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

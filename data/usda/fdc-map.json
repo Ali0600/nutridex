@@ -19,6 +19,10 @@
     "fdcId": 169145,
     "dataset": "sr_legacy"
   },
+  "black-bean": {
+    "fdcId": 173735,
+    "dataset": "sr_legacy"
+  },
   "blueberry": {
     "fdcId": 171711,
     "dataset": "sr_legacy"
@@ -31,8 +35,20 @@
     "fdcId": 170379,
     "dataset": "sr_legacy"
   },
+  "chia-seed": {
+    "fdcId": 170554,
+    "dataset": "sr_legacy"
+  },
   "chicken-breast": {
     "fdcId": 171077,
+    "dataset": "sr_legacy"
+  },
+  "chickpea": {
+    "fdcId": 173757,
+    "dataset": "sr_legacy"
+  },
+  "flaxseed": {
+    "fdcId": 169414,
     "dataset": "sr_legacy"
   },
   "garlic": {
@@ -55,6 +71,10 @@
     "fdcId": 168153,
     "dataset": "sr_legacy"
   },
+  "lentil": {
+    "fdcId": 172421,
+    "dataset": "sr_legacy"
+  },
   "orange": {
     "fdcId": 169097,
     "dataset": "sr_legacy"
@@ -67,6 +87,10 @@
     "fdcId": 169134,
     "dataset": "sr_legacy"
   },
+  "pumpkin-seed": {
+    "fdcId": 170556,
+    "dataset": "sr_legacy"
+  },
   "salmon": {
     "fdcId": 173686,
     "dataset": "sr_legacy"
@@ -75,8 +99,20 @@
     "fdcId": 175139,
     "dataset": "sr_legacy"
   },
+  "sesame-seed": {
+    "fdcId": 170150,
+    "dataset": "sr_legacy"
+  },
+  "soybean": {
+    "fdcId": 174271,
+    "dataset": "sr_legacy"
+  },
   "spinach": {
     "fdcId": 168462,
+    "dataset": "sr_legacy"
+  },
+  "sunflower-seed": {
+    "fdcId": 170562,
     "dataset": "sr_legacy"
   },
   "sweet-potato": {

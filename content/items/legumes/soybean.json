@@ -1,0 +1,47 @@
+{
+  "slug": "soybean",
+  "name": "Soybeans",
+  "category": "legumes",
+  "fdcId": 174271,
+  "aliases": ["soy", "edamame", "soya beans"],
+  "summary": "The one common plant food that's a complete protein — and whose soy protein has long-standing evidence for modestly lowering LDL cholesterol.",
+  "superfood": true,
+  "superfoodReason": "A rare complete plant protein (all essential amino acids) with a decades-old evidence base and an FDA health claim for lowering cholesterol.",
+  "benefits": [
+    {
+      "claim": "A complete plant protein",
+      "mechanism": "Unlike most plant foods, soybeans supply all nine essential amino acids in usable amounts, making them a full protein source for building and maintaining muscle without the saturated fat of meat.",
+      "organs": ["muscles"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Protein — The Nutrition Source, Harvard T.H. Chan School of Public Health",
+          "source": "other",
+          "url": "https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/"
+        }
+      ]
+    },
+    {
+      "claim": "Soy protein can lower LDL cholesterol",
+      "mechanism": "Replacing animal protein with soy protein modestly lowers LDL cholesterol — the effect behind the FDA's soy-and-heart-disease health claim. A landmark meta-analysis quantified the reduction in serum cholesterol from soy protein intake; later reviews find a smaller but real effect.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Meta-analysis of the effects of soy protein intake on serum lipids (Anderson et al., N Engl J Med 1995)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7596371/",
+          "pmid": "7596371",
+          "year": 1995
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Edamame are just immature green soybeans, harvested before they harden — which is why they're eaten fresh from the pod rather than dried." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

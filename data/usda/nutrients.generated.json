@@ -109,6 +109,28 @@
       "vitamin-k": 0.2
     }
   },
+  "black-bean": {
+    "fdcId": 173735,
+    "description": "Beans, black, mature seeds, cooked, boiled, without salt",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 8.86,
+      "fiber": 8.7,
+      "calcium": 27,
+      "iron": 2.1,
+      "magnesium": 70,
+      "potassium": 355,
+      "zinc": 1.12,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.069,
+      "folate": 149,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.87,
+      "vitamin-d": 0,
+      "vitamin-k": 3.3
+    }
+  },
   "blueberry": {
     "fdcId": 171711,
     "description": "Blueberries, raw",
@@ -175,6 +197,24 @@
       "vitamin-k": 101.6
     }
   },
+  "chia-seed": {
+    "fdcId": 170554,
+    "description": "Seeds, chia seeds, dried",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 16.54,
+      "fiber": 34.4,
+      "calcium": 631,
+      "iron": 7.72,
+      "magnesium": 335,
+      "potassium": 407,
+      "zinc": 4.58,
+      "vitamin-c": 1.6,
+      "folate": 49,
+      "vitamin-b12": 0,
+      "vitamin-e": 0.5
+    }
+  },
   "chicken-breast": {
     "fdcId": 171077,
     "description": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
@@ -195,6 +235,50 @@
       "vitamin-e": 0.56,
       "vitamin-d": 0,
       "vitamin-k": 0
+    }
+  },
+  "chickpea": {
+    "fdcId": 173757,
+    "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 8.86,
+      "fiber": 7.6,
+      "calcium": 49,
+      "iron": 2.89,
+      "magnesium": 48,
+      "potassium": 291,
+      "zinc": 1.53,
+      "vitamin-c": 1.3,
+      "vitamin-b6": 0.139,
+      "folate": 172,
+      "vitamin-b12": 0,
+      "vitamin-a": 1,
+      "vitamin-e": 0.35,
+      "vitamin-d": 0,
+      "vitamin-k": 4
+    }
+  },
+  "flaxseed": {
+    "fdcId": 169414,
+    "description": "Seeds, flaxseed",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 18.29,
+      "fiber": 27.3,
+      "calcium": 255,
+      "iron": 5.73,
+      "magnesium": 392,
+      "potassium": 813,
+      "zinc": 4.34,
+      "vitamin-c": 0.6,
+      "vitamin-b6": 0.473,
+      "folate": 87,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.31,
+      "vitamin-d": 0,
+      "vitamin-k": 4.3
     }
   },
   "garlic": {
@@ -307,6 +391,28 @@
       "vitamin-k": 40.3
     }
   },
+  "lentil": {
+    "fdcId": 172421,
+    "description": "Lentils, mature seeds, cooked, boiled, without salt",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 9.02,
+      "fiber": 7.9,
+      "calcium": 19,
+      "iron": 3.33,
+      "magnesium": 36,
+      "potassium": 369,
+      "zinc": 1.27,
+      "vitamin-c": 1.5,
+      "vitamin-b6": 0.178,
+      "folate": 181,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.11,
+      "vitamin-d": 0,
+      "vitamin-k": 1.7
+    }
+  },
   "orange": {
     "fdcId": 169097,
     "description": "Oranges, raw, all commercial varieties",
@@ -372,6 +478,28 @@
       "vitamin-k": 16.4
     }
   },
+  "pumpkin-seed": {
+    "fdcId": 170556,
+    "description": "Seeds, pumpkin and squash seed kernels, dried",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 30.23,
+      "fiber": 6,
+      "calcium": 46,
+      "iron": 8.82,
+      "magnesium": 592,
+      "potassium": 809,
+      "zinc": 7.81,
+      "vitamin-c": 1.9,
+      "vitamin-b6": 0.143,
+      "folate": 58,
+      "vitamin-b12": 0,
+      "vitamin-a": 1,
+      "vitamin-e": 2.18,
+      "vitamin-d": 0,
+      "vitamin-k": 7.3
+    }
+  },
   "salmon": {
     "fdcId": 173686,
     "description": "Fish, salmon, Atlantic, wild, raw",
@@ -413,6 +541,50 @@
       "vitamin-k": 2.6
     }
   },
+  "sesame-seed": {
+    "fdcId": 170150,
+    "description": "Seeds, sesame seeds, whole, dried",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 17.73,
+      "fiber": 11.8,
+      "calcium": 975,
+      "iron": 14.55,
+      "magnesium": 351,
+      "potassium": 468,
+      "zinc": 7.75,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.79,
+      "folate": 97,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.25,
+      "vitamin-d": 0,
+      "vitamin-k": 0
+    }
+  },
+  "soybean": {
+    "fdcId": 174271,
+    "description": "Soybeans, mature cooked, boiled, without salt",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 18.21,
+      "fiber": 6,
+      "calcium": 102,
+      "iron": 5.14,
+      "magnesium": 86,
+      "potassium": 515,
+      "zinc": 1.15,
+      "vitamin-c": 1.7,
+      "vitamin-b6": 0.234,
+      "folate": 54,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.35,
+      "vitamin-d": 0,
+      "vitamin-k": 19.2
+    }
+  },
   "spinach": {
     "fdcId": 168462,
     "description": "Spinach, raw",
@@ -433,6 +605,28 @@
       "vitamin-e": 2.03,
       "vitamin-d": 0,
       "vitamin-k": 482.9
+    }
+  },
+  "sunflower-seed": {
+    "fdcId": 170562,
+    "description": "Seeds, sunflower seed kernels, dried",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 20.78,
+      "fiber": 8.6,
+      "calcium": 78,
+      "iron": 5.25,
+      "magnesium": 325,
+      "potassium": 645,
+      "zinc": 5,
+      "vitamin-c": 1.4,
+      "vitamin-b6": 1.345,
+      "folate": 227,
+      "vitamin-b12": 0,
+      "vitamin-a": 3,
+      "vitamin-e": 35.17,
+      "vitamin-d": 0,
+      "vitamin-k": 0
     }
   },
   "sweet-potato": {
