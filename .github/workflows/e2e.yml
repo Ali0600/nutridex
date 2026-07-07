@@ -33,7 +33,17 @@ jobs:
           key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
 
       - name: Install Playwright browser + OS deps
-        run: npx playwright install --with-deps chromium
+        # `--with-deps` runs apt-get update, which intermittently fails on the runner's
+        # preinstalled Microsoft/Azure apt repos (bad InRelease / NOSPLIT). Drop those
+        # third-party sources so apt only hits Ubuntu mirrors, and retry on transient blips.
+        run: |
+          sudo rm -f /etc/apt/sources.list.d/*microsoft* /etc/apt/sources.list.d/*azure* 2>/dev/null || true
+          for attempt in 1 2 3; do
+            if npx playwright install --with-deps chromium; then exit 0; fi
+            echo "playwright install attempt ${attempt} failed; retrying in 15s…"
+            sleep 15
+          done
+          echo "::error::playwright install failed after 3 attempts"; exit 1
 
       - name: Run E2E tests (builds + serves the app)
         run: npm run test:e2e
