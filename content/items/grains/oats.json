@@ -1,0 +1,49 @@
+{
+  "slug": "oats",
+  "name": "Oats",
+  "category": "grains",
+  "fdcId": 173905,
+  "aliases": ["oatmeal", "rolled oats", "porridge"],
+  "summary": "A whole grain whose soluble fiber, beta-glucan, has some of the strongest evidence of any food for lowering LDL cholesterol.",
+  "superfood": true,
+  "superfoodReason": "The beta-glucan in oats has a large, consistent evidence base — and an authorised health claim — for lowering LDL cholesterol.",
+  "benefits": [
+    {
+      "claim": "Lowers LDL cholesterol",
+      "mechanism": "Oats are rich in beta-glucan, a soluble fiber that forms a thick gel in the gut. The gel traps bile acids (which are made from cholesterol) and carries them out, so the liver pulls cholesterol from the blood to make more — lowering LDL. A meta-analysis in adults with high cholesterol confirmed the lipid-lowering effect.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Effects of oat beta-glucan intake on lipid profiles in hypercholesterolemic adults: a systematic review and meta-analysis of randomized controlled trials (Nutrients 2022)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35631184/",
+          "pmid": "35631184",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "claim": "Helps steady blood sugar",
+      "mechanism": "The same viscous beta-glucan slows how quickly the stomach empties and carbohydrates are absorbed, blunting the post-meal glucose rise. Systematic reviews find dietary fibre and whole grains improve glycemic control in diabetes management.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Dietary fibre and whole grains in diabetes management: systematic review and meta-analyses (Reynolds et al., PLoS Med 2020)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32142510/",
+          "pmid": "32142510",
+          "year": 2020
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Steel-cut, rolled, and instant oats are the same grain at different processing levels — the more they're cut and flattened, the faster they digest and the higher the blood-sugar spike." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

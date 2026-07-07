@@ -1,0 +1,46 @@
+{
+  "slug": "brown-rice",
+  "name": "Brown Rice",
+  "category": "grains",
+  "fdcId": 169704,
+  "aliases": ["wholegrain rice"],
+  "summary": "Whole-grain rice that keeps the fiber-, magnesium-, and B-vitamin-rich bran that white rice has milled away.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "A whole grain linked to lower disease risk",
+      "mechanism": "Brown rice retains the bran and germ — and with them the fiber, minerals, and plant compounds that milling strips out to make white rice. Higher whole-grain intake is consistently associated with lower risk of heart disease, type 2 diabetes, and premature death.",
+      "organs": ["heart", "metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses (Reynolds et al., Lancet 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30638909/",
+          "pmid": "30638909",
+          "year": 2019
+        }
+      ]
+    },
+    {
+      "claim": "Supplies magnesium",
+      "mechanism": "The bran that brown rice keeps is a good source of magnesium — a mineral involved in hundreds of enzyme reactions, in muscle and nerve function, and in bone — much of which is lost when rice is milled to white.",
+      "organs": ["bones", "muscles"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Magnesium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "White and brown rice start as the same grain — white is simply brown rice with the bran and germ polished off, which removes most of its fiber, magnesium, and B-vitamins." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

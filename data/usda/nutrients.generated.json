@@ -65,6 +65,28 @@
       "vitamin-k": 0.5
     }
   },
+  "barley": {
+    "fdcId": 170285,
+    "description": "Barley, pearled, cooked",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 2.26,
+      "fiber": 3.8,
+      "calcium": 11,
+      "iron": 1.33,
+      "magnesium": 22,
+      "potassium": 93,
+      "zinc": 0.82,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.115,
+      "folate": 16,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.01,
+      "vitamin-d": 0,
+      "vitamin-k": 0.8
+    }
+  },
   "beef-liver": {
     "fdcId": 169451,
     "description": "Beef, variety meats and by-products, liver, raw",
@@ -195,6 +217,28 @@
       "vitamin-e": 0.78,
       "vitamin-d": 0,
       "vitamin-k": 101.6
+    }
+  },
+  "brown-rice": {
+    "fdcId": 169704,
+    "description": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 2.74,
+      "fiber": 1.6,
+      "calcium": 3,
+      "iron": 0.56,
+      "magnesium": 39,
+      "potassium": 86,
+      "zinc": 0.71,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.123,
+      "folate": 9,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.17,
+      "vitamin-d": 0,
+      "vitamin-k": 0.2
     }
   },
   "chia-seed": {
@@ -413,6 +457,28 @@
       "vitamin-k": 1.7
     }
   },
+  "oats": {
+    "fdcId": 173905,
+    "description": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 2.54,
+      "fiber": 1.7,
+      "calcium": 9,
+      "iron": 0.9,
+      "magnesium": 27,
+      "potassium": 70,
+      "zinc": 1,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.005,
+      "folate": 6,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.08,
+      "vitamin-d": 0,
+      "vitamin-k": 0.3
+    }
+  },
   "orange": {
     "fdcId": 169097,
     "description": "Oranges, raw, all commercial varieties",
@@ -498,6 +564,28 @@
       "vitamin-e": 2.18,
       "vitamin-d": 0,
       "vitamin-k": 7.3
+    }
+  },
+  "quinoa": {
+    "fdcId": 168917,
+    "description": "Quinoa, cooked",
+    "dataset": "sr_legacy",
+    "per100g": {
+      "protein": 4.4,
+      "fiber": 2.8,
+      "calcium": 17,
+      "iron": 1.49,
+      "magnesium": 64,
+      "potassium": 172,
+      "zinc": 1.09,
+      "vitamin-c": 0,
+      "vitamin-b6": 0.123,
+      "folate": 42,
+      "vitamin-b12": 0,
+      "vitamin-a": 0,
+      "vitamin-e": 0.63,
+      "vitamin-d": 0,
+      "vitamin-k": 0
     }
   },
   "salmon": {

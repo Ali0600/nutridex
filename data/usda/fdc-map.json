@@ -11,6 +11,10 @@
     "fdcId": 173944,
     "dataset": "sr_legacy"
   },
+  "barley": {
+    "fdcId": 170285,
+    "dataset": "sr_legacy"
+  },
   "beef-liver": {
     "fdcId": 169451,
     "dataset": "sr_legacy"
@@ -33,6 +37,10 @@
   },
   "broccoli": {
     "fdcId": 170379,
+    "dataset": "sr_legacy"
+  },
+  "brown-rice": {
+    "fdcId": 169704,
     "dataset": "sr_legacy"
   },
   "chia-seed": {
@@ -75,6 +83,10 @@
     "fdcId": 172421,
     "dataset": "sr_legacy"
   },
+  "oats": {
+    "fdcId": 173905,
+    "dataset": "sr_legacy"
+  },
   "orange": {
     "fdcId": 169097,
     "dataset": "sr_legacy"
@@ -89,6 +101,10 @@
   },
   "pumpkin-seed": {
     "fdcId": 170556,
+    "dataset": "sr_legacy"
+  },
+  "quinoa": {
+    "fdcId": 168917,
     "dataset": "sr_legacy"
   },
   "salmon": {
