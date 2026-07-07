@@ -1,0 +1,50 @@
+name: Lighthouse
+
+# Performance/SEO/a11y budget: build the site, serve it, and audit representative
+# page types with Lighthouse on every PR. Accessibility and SEO are hard gates
+# (error); performance and best-practices are advisory (warn) because CI runners
+# are slow and the site loads third-party analytics that no-ops off-Vercel.
+on:
+  pull_request:
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lighthouse:
+    name: lighthouse
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Start production server
+        run: |
+          nohup npm run start > /tmp/next-server.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:3000/api/v1/health >/dev/null 2>&1; then
+              echo "server up after ${i} tries"; exit 0
+            fi
+            sleep 2
+          done
+          echo "::error::production server did not start"; cat /tmp/next-server.log; exit 1
+      - name: Lighthouse audit + budget assertions
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            http://localhost:3000/
+            http://localhost:3000/items/salmon
+            http://localhost:3000/quiz
+            http://localhost:3000/about
+          configPath: ./lighthouserc.json
+          temporaryPublicStorage: true
+          uploadArtifacts: true
