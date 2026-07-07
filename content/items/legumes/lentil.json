@@ -1,0 +1,47 @@
+{
+  "slug": "lentil",
+  "name": "Lentils",
+  "category": "legumes",
+  "fdcId": 172421,
+  "aliases": ["lentil", "red lentils", "green lentils"],
+  "summary": "A fast-cooking pulse packing plant protein, fiber, iron, and folate — with meta-analysed evidence for lowering LDL cholesterol.",
+  "superfood": true,
+  "superfoodReason": "A cheap, quick-cooking pulse combining protein, soluble fiber, iron, and folate, with pooled-trial evidence for improving cholesterol.",
+  "benefits": [
+    {
+      "claim": "Can lower LDL cholesterol",
+      "mechanism": "Lentils' soluble fiber binds bile acids in the gut, so the liver pulls cholesterol from the blood to make more — lowering LDL. A meta-analysis of randomized trials found dietary pulses (lentils, beans, chickpeas) reduced LDL cholesterol.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Effect of dietary pulse intake on established therapeutic lipid targets for cardiovascular risk reduction: a systematic review and meta-analysis of randomized controlled trials (Ha et al., CMAJ 2014)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24710915/",
+          "pmid": "24710915",
+          "year": 2014
+        }
+      ]
+    },
+    {
+      "claim": "Plant iron plus folate",
+      "mechanism": "Lentils supply non-heme (plant) iron for red blood cells — best absorbed alongside a vitamin C source — and are rich in folate, the B-vitamin needed to build DNA and new cells.",
+      "organs": ["blood"],
+      "conditions": ["iron-deficiency"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Folate — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Folate-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Unlike most dried beans, lentils need no soaking and cook in about 20 minutes — red lentils collapse into a purée, green and black ones hold their shape." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

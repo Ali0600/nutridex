@@ -1,0 +1,48 @@
+{
+  "slug": "black-bean",
+  "name": "Black Beans",
+  "category": "legumes",
+  "fdcId": 173735,
+  "aliases": ["black bean", "turtle beans"],
+  "summary": "A dark, antioxidant-rich bean high in fiber and plant protein — part of the pulse family shown to modestly lower blood pressure.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "May modestly lower blood pressure",
+      "mechanism": "Beans are rich in potassium and fiber and low in sodium — a combination that supports healthy blood pressure. A meta-analysis of randomized trials found that eating non-oil-seed legumes (beans, lentils, chickpeas) reduced blood pressure.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The effect of non-oil seed legume intake on blood pressure: a systematic review and meta-analysis of randomized controlled trials (2023)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37031751/",
+          "pmid": "37031751",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "claim": "Fiber and antioxidant pigments",
+      "mechanism": "Black beans deliver a large dose of fiber for gut health and steadier blood sugar, and their dark seed coat is rich in anthocyanin antioxidants — the same purple-black pigments found in blueberries.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Legume intakes on cardiometabolic profile and gut microbiome function: systematic review and meta-analyses of randomised controlled trials (2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39739131/",
+          "pmid": "39739131",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Most of black beans' antioxidants live in the black skin — the cooking water turns purple-grey because those anthocyanins leach out." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

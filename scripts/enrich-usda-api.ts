@@ -55,6 +55,10 @@ const FOOD_QUERIES: Record<string, string> = {
   'sesame-seed': 'Seeds, sesame seeds, whole, dried',
   'pumpkin-seed': 'Seeds, pumpkin and squash seed kernels, dried',
   'sunflower-seed': 'Seeds, sunflower seed kernels, dried',
+  lentil: 'Lentils, mature seeds, cooked, boiled, without salt',
+  chickpea: 'Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt',
+  'black-bean': 'Beans, black, mature seeds, cooked, boiled, without salt',
+  soybean: 'Soybeans, mature cooked, boiled, without salt',
 };
 
 // A few foods that keyword search mis-ranks (e.g. "Sweet Potato puffs" outranks the raw root,
