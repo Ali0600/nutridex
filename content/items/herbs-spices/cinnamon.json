@@ -26,6 +26,12 @@
   "surprisingFacts": [
     { "text": "Most supermarket cinnamon is cassia, which is high in coumarin — a compound that can stress the liver in large daily doses. 'True' Ceylon cinnamon contains far less, so it's the safer choice if you use a lot." }
   ],
-  "affiliateSlots": [],
+  "affiliateSlots": [
+    {
+      "label": "Shop Ceylon cinnamon on Amazon",
+      "amazonSearch": "ceylon cinnamon",
+      "disclosure": "affiliate"
+    }
+  ],
   "updatedAt": "2026-07-07"
 }

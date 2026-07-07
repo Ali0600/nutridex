@@ -46,6 +46,12 @@
       "text": "L-theanine is found almost nowhere in the human diet except tea (and one rare mushroom), which is why tea's alertness feels different from coffee's."
     }
   ],
-  "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "affiliateSlots": [
+    {
+      "label": "Shop green tea on Amazon",
+      "amazonSearch": "green tea",
+      "disclosure": "affiliate"
+    }
+  ],
+  "updatedAt": "2026-07-07"
 }

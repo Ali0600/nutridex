@@ -42,6 +42,12 @@
   "surprisingFacts": [
     { "text": "Quinoa isn't a true cereal grain — it's the seed of a plant related to spinach and beets. Rinse it before cooking to wash off the bitter saponin coating that protects the seeds from birds." }
   ],
-  "affiliateSlots": [],
+  "affiliateSlots": [
+    {
+      "label": "Shop quinoa on Amazon",
+      "amazonSearch": "quinoa",
+      "disclosure": "affiliate"
+    }
+  ],
   "updatedAt": "2026-07-07"
 }

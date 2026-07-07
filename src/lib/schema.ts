@@ -52,12 +52,22 @@ export const factSchema = z.object({
   citation: citationSchema.optional(),
 });
 
-export const affiliateSlotSchema = z.object({
-  label: z.string().min(1),
-  url: z.url(),
-  sponsor: z.string().optional(),
-  disclosure: z.enum(['affiliate', 'sponsored']),
-});
+export const affiliateSlotSchema = z
+  .object({
+    label: z.string().min(1),
+    /** Explicit outbound URL (legacy/manual links). */
+    url: z.url().optional(),
+    /** Amazon search term — the URL (with our tag) is built at render time. */
+    amazonSearch: z.string().min(1).optional(),
+    /** Specific Amazon product id — takes precedence over amazonSearch. */
+    asin: z.string().min(1).optional(),
+    sponsor: z.string().optional(),
+    disclosure: z.enum(['affiliate', 'sponsored']),
+  })
+  .refine((v) => Boolean(v.url || v.amazonSearch || v.asin), {
+    error: 'an affiliate slot needs a url, amazonSearch, or asin',
+    path: ['url'],
+  });
 export type AffiliateSlot = z.infer<typeof affiliateSlotSchema>;
 
 export const itemSchema = z

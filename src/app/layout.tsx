@@ -54,7 +54,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <footer className="border-t border-leaf-100">
           <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-neutral-500">
             <Disclaimer />
-            <p className="mt-2">© {new Date().getFullYear()} NutriDex</p>
+            <p className="mt-2">
+              <Link href="/about" className="hover:text-leaf-700">
+                About &amp; disclosures
+              </Link>
+              <span className="mx-2">·</span>© {new Date().getFullYear()} NutriDex
+            </p>
           </div>
         </footer>
         <Analytics />
