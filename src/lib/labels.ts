@@ -9,6 +9,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   seeds: 'Seeds',
   legumes: 'Legumes',
   grains: 'Grains',
+  'herbs-spices': 'Herbs & Spices',
 };
 
 export const CATEGORY_EMOJI: Record<Category, string> = {
@@ -20,6 +21,7 @@ export const CATEGORY_EMOJI: Record<Category, string> = {
   seeds: '🌱',
   legumes: '🫘',
   grains: '🌾',
+  'herbs-spices': '🌿',
 };
 
 export const STRENGTH_LABELS: Record<string, { label: string; className: string }> = {
