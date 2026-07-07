@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getCondition, getConditions, getItemsForCondition } from '@/lib/content';
 import { SITE_URL } from '@/lib/site';
@@ -41,7 +42,10 @@ export default async function GoalPage({ params }: { params: Promise<{ condition
           url: `${SITE_URL}/goals/${c.id}`,
         }}
       />
-      <p className="text-sm font-medium tracking-wide text-leaf-600 uppercase">{c.kind}</p>
+      <Link href="/goals" className="text-sm text-neutral-500 hover:text-leaf-700">
+        ← All goals
+      </Link>
+      <p className="mt-3 text-sm font-medium tracking-wide text-leaf-600 uppercase">{c.kind}</p>
       <h1 className="mt-1 text-3xl font-bold text-neutral-900">{c.label}</h1>
       <p className="mt-2 max-w-2xl text-neutral-600">{c.intro}</p>
       <p className="mt-3 rounded-lg bg-neutral-50 p-3 text-sm text-neutral-500">

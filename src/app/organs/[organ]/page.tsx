@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getItemsForOrgan, getOrgans } from '@/lib/content';
 import { ItemCard } from '@/components/ItemCard';
@@ -30,7 +31,10 @@ export default async function OrganPage({ params }: { params: Promise<{ organ: s
 
   return (
     <section className="py-6">
-      <p className="text-sm font-medium tracking-wide text-leaf-600 uppercase">Foods for your</p>
+      <Link href="/organs" className="text-sm text-neutral-500 hover:text-leaf-700">
+        ← All body parts
+      </Link>
+      <p className="mt-3 text-sm font-medium tracking-wide text-leaf-600 uppercase">Foods for your</p>
       <h1 className="mt-1 text-3xl font-bold text-neutral-900">{o.label}</h1>
       {o.blurb && <p className="mt-2 max-w-2xl text-neutral-600">{o.blurb}</p>}
       {items.length === 0 ? (
