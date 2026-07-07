@@ -1,0 +1,45 @@
+{
+  "slug": "sesame-seed",
+  "name": "Sesame Seeds",
+  "category": "seeds",
+  "aliases": ["sesame", "tahini (paste)"],
+  "summary": "Small seeds rich in the lignan sesamin and, when unhulled, an unusually good plant source of calcium.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "May support heart-disease risk factors",
+      "mechanism": "Sesame supplies unsaturated fats and the lignans sesamin and sesamolin, which act as antioxidants and influence cholesterol handling. A GRADE-assessed meta-analysis found sesame products improved cardiovascular disease risk factors — including blood lipids and blood pressure — in people with diabetes.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The beneficial effects of sesame (Sesamum indicum L.) products and their bioactive compounds on cardiovascular disease risk factors in patients with diabetes: a GRADE-assessed systematic review and meta-analysis (2025)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40644772/",
+          "pmid": "40644772",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "claim": "Unhulled sesame is a rare plant source of calcium",
+      "mechanism": "Whole (unhulled) sesame seeds are notably high in calcium — the mineral bones and teeth are built from and that muscles and nerves need — making them a useful plant contributor to calcium intake.",
+      "organs": ["bones"],
+      "conditions": ["bone-health"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Calcium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Calcium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Most of sesame's calcium sits in the hull — so unhulled seeds carry far more than the hulled seeds used for most tahini and burger buns." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}
