@@ -48,10 +48,10 @@
   ],
   "affiliateSlots": [
     {
-      "label": "Raw shelled walnuts (example affiliate slot)",
-      "url": "https://example.com/affiliate/walnuts",
+      "label": "Shop walnuts on Amazon",
+      "amazonSearch": "walnuts",
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-07"
 }

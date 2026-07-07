@@ -50,6 +50,12 @@
   "surprisingFacts": [
     { "text": "The peppery sting good extra-virgin olive oil leaves at the back of your throat comes from oleocanthal — a polyphenol that acts on the same anti-inflammatory pathway as ibuprofen, which is why researchers describe it as a natural anti-inflammatory." }
   ],
-  "affiliateSlots": [],
+  "affiliateSlots": [
+    {
+      "label": "Shop extra-virgin olive oil on Amazon",
+      "amazonSearch": "extra virgin olive oil",
+      "disclosure": "affiliate"
+    }
+  ],
   "updatedAt": "2026-07-07"
 }

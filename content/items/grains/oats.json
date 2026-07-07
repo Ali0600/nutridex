@@ -44,6 +44,12 @@
   "surprisingFacts": [
     { "text": "Steel-cut, rolled, and instant oats are the same grain at different processing levels — the more they're cut and flattened, the faster they digest and the higher the blood-sugar spike." }
   ],
-  "affiliateSlots": [],
+  "affiliateSlots": [
+    {
+      "label": "Shop rolled oats on Amazon",
+      "amazonSearch": "rolled oats",
+      "disclosure": "affiliate"
+    }
+  ],
   "updatedAt": "2026-07-07"
 }
