@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/super-foods" className="hover:text-leaf-700">
                 Super Foods
               </Link>
-              <Link href="/nutrients/vitamin-c" className="hover:text-leaf-700">
+              <Link href="/nutrients" className="hover:text-leaf-700">
                 Nutrients
               </Link>
               <Link href="/quiz" className="hover:text-leaf-700">
@@ -53,6 +53,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main className="mx-auto max-w-5xl px-4 py-8">{children}</main>
         <footer className="border-t border-leaf-100">
           <div className="mx-auto max-w-5xl px-4 py-6 text-sm text-neutral-500">
+            <nav className="mb-4 flex flex-wrap gap-x-4 gap-y-1 text-neutral-600">
+              <Link href="/items" className="hover:text-leaf-700">Foods</Link>
+              <Link href="/categories" className="hover:text-leaf-700">Categories</Link>
+              <Link href="/organs" className="hover:text-leaf-700">Body parts</Link>
+              <Link href="/goals" className="hover:text-leaf-700">Goals</Link>
+              <Link href="/nutrients" className="hover:text-leaf-700">Nutrients</Link>
+              <Link href="/super-foods" className="hover:text-leaf-700">Super Foods</Link>
+            </nav>
             <Disclaimer />
             <p className="mt-2">
               <Link href="/about" className="hover:text-leaf-700">

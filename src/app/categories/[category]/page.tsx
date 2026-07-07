@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getItemsByCategory } from '@/lib/content';
 import { CATEGORIES, categorySchema } from '@/lib/schema';
@@ -37,7 +38,10 @@ export default async function CategoryPage({
 
   return (
     <section className="py-6">
-      <header className="flex items-center gap-3">
+      <Link href="/categories" className="text-sm text-neutral-500 hover:text-leaf-700">
+        ← All categories
+      </Link>
+      <header className="mt-3 flex items-center gap-3">
         <span className="text-4xl" aria-hidden>
           {CATEGORY_EMOJI[parsed.data]}
         </span>

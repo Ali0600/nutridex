@@ -36,7 +36,10 @@ export default async function NutrientPage({
 
   return (
     <section className="py-6">
-      <h1 className="text-3xl font-bold text-neutral-900">
+      <Link href="/nutrients" className="text-sm text-neutral-500 hover:text-leaf-700">
+        ← All nutrients
+      </Link>
+      <h1 className="mt-3 text-3xl font-bold text-neutral-900">
         Most {def.label} <span className="text-neutral-400">per 100g</span>
       </h1>
       <p className="mt-2 text-neutral-600">

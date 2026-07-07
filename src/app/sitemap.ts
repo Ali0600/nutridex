@@ -10,6 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '',
     '/items',
+    '/categories',
+    '/organs',
+    '/goals',
+    '/nutrients',
     '/compare',
     '/quiz',
     '/super-foods',

@@ -4,6 +4,7 @@ import { CATEGORIES } from '@/lib/schema';
 import { CATEGORY_EMOJI, CATEGORY_LABELS } from '@/lib/labels';
 import { SITE_URL } from '@/lib/site';
 import { ItemCard } from '@/components/ItemCard';
+import { LinkTile } from '@/components/LinkTile';
 import { OnboardingQuiz } from '@/components/OnboardingQuiz';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -51,7 +52,12 @@ export default function HomePage() {
       </section>
 
       <section className="py-6">
-        <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">Browse by category</h2>
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">Browse by category</h2>
+          <Link href="/categories" className="text-sm font-medium text-leaf-700 hover:underline">
+            See all →
+          </Link>
+        </div>
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
           {CATEGORIES.map((c) => (
             <Link
@@ -65,6 +71,16 @@ export default function HomePage() {
               <span className="text-sm font-medium text-neutral-700">{CATEGORY_LABELS[c]}</span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="py-6">
+        <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">Explore the database</h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <LinkTile href="/items" emoji="🍽️" title="All foods" subtitle={`${items.length} foods, searchable`} />
+          <LinkTile href="/organs" emoji="🫀" title="By body part" subtitle="Heart, brain, gut, skin…" />
+          <LinkTile href="/goals" emoji="🎯" title="By goal" subtitle="Conditions, goals, deficiencies" />
+          <LinkTile href="/nutrients" emoji="🧪" title="By nutrient" subtitle="Vitamin & mineral rankings" />
         </div>
       </section>
 
