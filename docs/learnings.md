@@ -52,3 +52,17 @@ what actually keeps un-green code from shipping.
 **Why it came up:** the project both *used* a CI gate and *was a test of* one.
 **Takeaway:** verify the gate you rely on actually fails on the thing you think it catches — don't
 trust a green check or a passing comment without confirming what it evaluated.
+
+## Verify a citation's abstract before using it — landmark trials can be retracted & re-published under a new ID
+
+The research tool ranks Europe PMC hits, but the top hit for a broad query is often off-topic (a
+Mediterranean-diet meta-analysis surfaced for "olive oil," a GLP-1 review for "hair loss"). Worse,
+the famous PREDIMED olive-oil RCT was **retracted in 2013 and re-published in 2018 under a new PMID
+(29897866)** — citing the original would cite a withdrawn paper. Every claim in an item's JSON is
+schema-required to have a citation, but the schema can't check that the study *says what the claim
+says*.
+**Why it came up:** adding the Oils category, each benefit needed real primary evidence, and the
+evidence bar in `docs/content-authoring.md` demands the citation actually support the claim.
+**Takeaway:** for each PMID, pull its abstract (Europe PMC `resultType=core`) and confirm the
+title, year, study type, and *direction of effect* before writing it into content — never cite from
+a search-results title alone, and prefer the corrected/republished version of any landmark trial.
