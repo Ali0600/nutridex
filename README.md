@@ -1,7 +1,8 @@
 # NutriDex 🥝
 
 > Every food, explained — a science-backed nutrition database of teas, fruits, vegetables,
-> meats, and nuts, with the mechanism behind each benefit and the studies to back it up.
+> meats, nuts, seeds, legumes, grains, and spices, with the mechanism behind each benefit
+> and the studies to back it up.
 
 [![CI](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml)
 [![Preflight](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml)
@@ -17,12 +18,15 @@
   blood pressure, lung detox, hair loss.
 - **Nutrient rankings** — which foods actually give you the most vitamin C, iron, potassium…
   computed from USDA FoodData Central data, not vibes.
-- **Super Foods** — the standouts and why they earn the label.
-- **Symptom quiz** — pick what you're dealing with, answer a few symptom questions, get
-  matched to the foods most likely to help.
-- **Blog** — SEO articles with citations and disclosed affiliate slots.
+- **Super Foods** (and **Super Fruits**) — the standouts and why they earn the label.
+- **Search & compare** — full-text search at `/items?q=` and a side-by-side food comparison at
+  `/compare` (benefits + per-100g nutrients).
+- **Symptom & deficiency quiz** — pick what you're dealing with (including low vitamin D / B12 /
+  magnesium), answer a few symptom questions, get matched to the foods most likely to help.
+- **Blog** — SEO articles with citations and disclosed affiliate slots, grown by a **daily
+  auto-blog research routine** (see [docs/auto-blog.md](docs/auto-blog.md)).
 
-A JSON API (`/api/v1`) will serve the same dataset to a future iOS app.
+A JSON API (`/api/v1`) serves the same dataset to a future iOS app.
 
 ## Stack
 
@@ -43,10 +47,13 @@ npm run lint             # eslint
 npm run typecheck        # tsc --noEmit
 npm test                 # vitest
 npm run content:validate # zod-validate all content (also runs in CI)
-npm run usda:import      # regenerate data/usda/nutrients.generated.json
+npm run usda:import      # regenerate nutrients from bulk USDA CSVs (keyless)
+npm run usda:enrich      # regenerate nutrients from the USDA API (needs FDC_API_KEY in .env.local)
 npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe PMC)
-npm run blog:research    # weekly auto-blog brief: fresh studies + coverage gaps
+npm run blog:research    # daily auto-blog brief: fresh studies + coverage gaps
 ```
+
+Analytics is via `@vercel/analytics` + `@vercel/speed-insights` (enable both in the Vercel dashboard).
 
 ## Experience Gained
 
