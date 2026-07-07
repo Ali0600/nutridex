@@ -10,7 +10,7 @@
   "benefits": [
     {
       "claim": "Exceptional vitamin B12 and iron for blood and hair",
-      "mechanism": "Vitamin B12 is required to make red blood cells and myelin and to run energy metabolism; deficiency causes fatigue and anemia. Liver is one of the densest B12 sources, and the heme iron alongside it is far better absorbed than plant iron. Iron and B12 deficiency are both recognised, reversible contributors to hair shedding, so nutrient-dense liver supports hair too.",
+      "mechanism": "Vitamin B12 is required to make red blood cells and myelin and to run energy metabolism; deficiency causes fatigue and anemia. Liver is one of the densest B12 sources, and the heme iron alongside it is far better absorbed than plant iron. A 2019 review of vitamins and minerals in hair loss identifies both iron and B12 deficiency as recognised, reversible contributors to hair shedding, so nutrient-dense liver supports hair too.",
       "organs": ["blood", "hair"],
       "conditions": ["iron-deficiency", "hair-loss", "b12-deficiency"],
       "strength": "strong",
@@ -19,6 +19,13 @@
           "title": "Vitamin B12 — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
           "source": "other",
           "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/"
+        },
+        {
+          "title": "The Role of Vitamins and Minerals in Hair Loss: A Review (Almohanna et al., Dermatol Ther 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30547302/",
+          "pmid": "30547302",
+          "year": 2019
         }
       ]
     },
@@ -41,5 +48,5 @@
     { "text": "Liver is so dense in preformed vitamin A that polar-explorer accounts describe vitamin A poisoning from eating polar-bear or seal liver — a reminder that with liver, more is not better." }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-07"
 }

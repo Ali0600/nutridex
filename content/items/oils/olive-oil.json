@@ -1,0 +1,55 @@
+{
+  "slug": "olive-oil",
+  "name": "Extra-Virgin Olive Oil",
+  "category": "oils",
+  "aliases": ["olive oil", "evoo", "extra virgin olive oil"],
+  "summary": "The cornerstone fat of the Mediterranean diet — mostly monounsaturated fat plus protective polyphenols, and the oil with the strongest clinical-trial evidence for heart health.",
+  "superfood": true,
+  "superfoodReason": "It is the fat at the centre of the most rigorously trial-tested dietary pattern (PREDIMED), pairing monounsaturated fat with polyphenols that carry an approved health claim for protecting blood cholesterol from oxidation.",
+  "benefits": [
+    {
+      "claim": "Lowers cardiovascular risk as the core fat of the Mediterranean diet",
+      "mechanism": "Extra-virgin olive oil is rich in the monounsaturated fat oleic acid and in polyphenols. In the PREDIMED randomized trial of 7,447 people at high cardiovascular risk, a Mediterranean diet supplemented with extra-virgin olive oil reduced the rate of major cardiovascular events (heart attack, stroke, or cardiovascular death) compared with a control low-fat diet — one of the strongest pieces of evidence that a specific fat can protect the heart.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "strong",
+      "citations": [
+        {
+          "title": "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts (Estruch et al., N Engl J Med 2018)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29897866/",
+          "pmid": "29897866",
+          "year": 2018
+        },
+        {
+          "title": "Exploring the Benefits of Extra Virgin Olive Oil on Cardiovascular Health Enhancement and Disease Prevention: A Systematic Review (Nutrients 2025)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40507112/",
+          "pmid": "40507112",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "claim": "Its polyphenols protect blood cholesterol from oxidation",
+      "mechanism": "The phenolic compounds in virgin olive oil — hydroxytyrosol and its derivatives — help shield LDL cholesterol from oxidative damage, a step thought to drive artery-clogging plaque. In the EUROLIVE randomized crossover trial, higher-polyphenol olive oil improved the lipid profile and reduced markers of oxidative damage more than low-polyphenol oil. The effect is strong enough that European regulators granted olive-oil polyphenols an approved health claim.",
+      "organs": ["heart"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The effect of polyphenols in olive oil on heart disease risk factors: a randomized trial (Covas et al., EUROLIVE Study, Ann Intern Med 2006)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16954359/",
+          "pmid": "16954359",
+          "year": 2006
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "The peppery sting good extra-virgin olive oil leaves at the back of your throat comes from oleocanthal — a polyphenol that acts on the same anti-inflammatory pathway as ibuprofen, which is why researchers describe it as a natural anti-inflammatory." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}
