@@ -25,7 +25,7 @@
       "claim": "Magnesium and healthy unsaturated fats",
       "mechanism": "Alongside vitamin E, sunflower seeds provide magnesium — needed for muscle, nerve, and bone health — and mostly unsaturated fats that support healthy cholesterol when they replace saturated fat.",
       "organs": ["heart", "bones"],
-      "conditions": ["bone-health"],
+      "conditions": ["bone-health", "magnesium-deficiency"],
       "strength": "strong",
       "citations": [
         {

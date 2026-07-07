@@ -26,7 +26,7 @@
       "claim": "A rare food source of vitamin D",
       "mechanism": "Vitamin D — which most people make from sunlight — is scarce in food, but fatty fish like salmon is one of the richest natural sources. Vitamin D helps the gut absorb calcium for bones and supports immune function.",
       "organs": ["bones", "immune"],
-      "conditions": ["bone-health"],
+      "conditions": ["bone-health", "vitamin-d-deficiency"],
       "strength": "strong",
       "citations": [
         {

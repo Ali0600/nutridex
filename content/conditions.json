@@ -287,5 +287,98 @@
     "organs": ["eyes"],
     "intro": "Foods high in lutein, zeaxanthin, and vitamin A that support long-term vision.",
     "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "vitamin-d-deficiency",
+    "label": "Low vitamin D",
+    "kind": "deficiency",
+    "organs": ["bones", "immune"],
+    "intro": "Vitamin D is hard to get from food and mostly made from sunlight, so it runs low in people with little sun exposure. These are among the few foods that actually contain it.",
+    "quiz": {
+      "triggerLabel": "Low vitamin D (little sun)",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "vitd-sun",
+          "text": "Do you get little sunlight — mostly indoors, covered up, or dark winters?",
+          "answers": [
+            { "label": "Yes", "weight": 2 },
+            { "label": "Somewhat", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        },
+        {
+          "id": "vitd-fish",
+          "text": "Do you rarely eat oily fish?",
+          "answers": [
+            { "label": "Rarely / never", "weight": 1 },
+            { "label": "Sometimes", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "b12-deficiency",
+    "label": "Low vitamin B12",
+    "kind": "deficiency",
+    "organs": ["blood", "brain"],
+    "intro": "Vitamin B12 is found almost only in animal foods, so vegans, vegetarians, and older adults are most at risk. Low B12 can cause fatigue, tingling, and brain fog.",
+    "quiz": {
+      "triggerLabel": "Low B12 (vegan / older)",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "b12-diet",
+          "text": "Do you eat little or no animal food (vegan or mostly vegetarian)?",
+          "answers": [
+            { "label": "Vegan", "weight": 3 },
+            { "label": "Mostly plant-based", "weight": 2 },
+            { "label": "I eat animal foods regularly", "weight": 0 }
+          ]
+        },
+        {
+          "id": "b12-symptoms",
+          "text": "Any unusual fatigue, tingling in hands/feet, or brain fog?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
+  },
+  {
+    "id": "magnesium-deficiency",
+    "label": "Low magnesium",
+    "kind": "deficiency",
+    "organs": ["muscles", "bones"],
+    "intro": "Many people fall short of magnesium, which the body needs for muscle and nerve function, blood pressure, and bone. Nuts, seeds, whole grains, and greens are the richest sources.",
+    "quiz": {
+      "triggerLabel": "Low magnesium",
+      "threshold": 2,
+      "questions": [
+        {
+          "id": "mag-cramps",
+          "text": "Do you get muscle cramps, twitches, or restless legs?",
+          "answers": [
+            { "label": "Often", "weight": 2 },
+            { "label": "Sometimes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        },
+        {
+          "id": "mag-diet",
+          "text": "Is your diet low in nuts, seeds, whole grains, and leafy greens?",
+          "answers": [
+            { "label": "Yes", "weight": 1 },
+            { "label": "No", "weight": 0 }
+          ]
+        }
+      ]
+    },
+    "recommends": { "boostSuperfoods": true }
   }
 ]
