@@ -1,0 +1,31 @@
+{
+  "slug": "cinnamon",
+  "name": "Cinnamon",
+  "category": "herbs-spices",
+  "aliases": ["cassia", "ceylon cinnamon"],
+  "summary": "A warming spice studied for a modest effect on blood sugar — though the trials are small and their results conflict.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "May modestly lower blood sugar",
+      "mechanism": "Compounds in cinnamon appear to slow stomach emptying and improve how cells respond to insulin. A meta-analysis in type 2 diabetes found cinnamon lowered fasting blood glucose — but the authors stress the trials were small and their results conflicting, so treat the effect as modest and unproven.",
+      "organs": ["metabolism"],
+      "conditions": ["blood-sugar"],
+      "strength": "preliminary",
+      "citations": [
+        {
+          "title": "Cinnamon use in type 2 diabetes: an updated systematic review and meta-analysis (Allen et al., Ann Fam Med 2013)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24019277/",
+          "pmid": "24019277",
+          "year": 2013
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Most supermarket cinnamon is cassia, which is high in coumarin — a compound that can stress the liver in large daily doses. 'True' Ceylon cinnamon contains far less, so it's the safer choice if you use a lot." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

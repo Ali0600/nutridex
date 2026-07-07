@@ -1,0 +1,31 @@
+{
+  "slug": "black-pepper",
+  "name": "Black Pepper",
+  "category": "herbs-spices",
+  "aliases": ["peppercorns", "piperine"],
+  "summary": "The everyday spice whose compound piperine dramatically boosts how much of turmeric's curcumin — and other compounds — your body absorbs.",
+  "superfood": false,
+  "benefits": [
+    {
+      "claim": "Boosts absorption of turmeric's curcumin",
+      "mechanism": "Black pepper's active compound, piperine, blocks enzymes and transporters that would otherwise break down or expel curcumin before it's absorbed — sharply raising how much reaches the bloodstream. Trials pairing curcumin with piperine show meaningful effects (for example on glycemic markers) that plain curcumin often can't achieve.",
+      "organs": ["gut"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effects of combination of curcumin and piperine supplementation on glycemic profile in patients with prediabetes and type 2 diabetes mellitus: a systematic review and meta-analysis (2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38863920/",
+          "pmid": "38863920",
+          "year": 2024
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "A pinch of black pepper is why turmeric lattes and curry work: piperine can increase curcumin absorption by up to ~20-fold, turning a poorly-absorbed pigment into something the body can actually use." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}

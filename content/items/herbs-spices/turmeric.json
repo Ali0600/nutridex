@@ -1,0 +1,48 @@
+{
+  "slug": "turmeric",
+  "name": "Turmeric",
+  "category": "herbs-spices",
+  "aliases": ["curcumin", "haldi"],
+  "summary": "The golden spice whose active compound, curcumin, is among the most-studied natural anti-inflammatories — best known for easing joint pain.",
+  "superfood": true,
+  "superfoodReason": "Its active compound curcumin has a large randomized-trial evidence base for reducing inflammation and arthritis symptoms.",
+  "benefits": [
+    {
+      "claim": "May ease arthritis and joint pain",
+      "mechanism": "Curcumin, turmeric's yellow pigment, dampens inflammatory signalling pathways (such as NF-κB) in the joints. A meta-analysis of randomized trials found turmeric extracts and curcumin reduced the symptoms of arthritis, with effects comparable to some anti-inflammatory drugs in the pooled data.",
+      "organs": ["bones"],
+      "conditions": ["bone-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Efficacy of turmeric extracts and curcumin for alleviating the symptoms of joint arthritis: a systematic review and meta-analysis of randomized clinical trials (Daily et al., J Med Food 2016)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27533649/",
+          "pmid": "27533649",
+          "year": 2016
+        }
+      ]
+    },
+    {
+      "claim": "Lowers markers of inflammation",
+      "mechanism": "Beyond the joints, curcumin reduces body-wide inflammation. A meta-analysis found curcuminoid supplements significantly lowered C-reactive protein (CRP), a blood marker of inflammation linked to many chronic diseases.",
+      "organs": ["immune"],
+      "conditions": [],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Are curcuminoids effective C-reactive protein-lowering agents in clinical practice? Evidence from a meta-analysis (Sahebkar, Phytother Res 2014)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23922235/",
+          "pmid": "23922235",
+          "year": 2014
+        }
+      ]
+    }
+  ],
+  "surprisingFacts": [
+    { "text": "Curcumin is poorly absorbed on its own — but the piperine in black pepper can increase its absorption many-fold, which is why turmeric dishes and supplements almost always include pepper." }
+  ],
+  "affiliateSlots": [],
+  "updatedAt": "2026-07-07"
+}
