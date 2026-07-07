@@ -21,6 +21,14 @@ coverage/
 # raw USDA CSV downloads (hundreds of MB) — only the distilled JSON is committed
 data/.cache/
 
+# playwright e2e
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
+# lighthouse ci
+.lighthouseci/
+
 # os
 .DS_Store
 .vercel
