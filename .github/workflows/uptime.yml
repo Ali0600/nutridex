@@ -1,0 +1,74 @@
+name: Uptime
+
+# Keyless production health monitor: pings the public /api/v1/health endpoint on a
+# schedule and opens (or updates) a tracking issue when it's down, closing it on recovery.
+# Uses only the built-in GITHUB_TOKEN — no secrets, no third-party service.
+on:
+  schedule:
+    - cron: '*/15 * * * *' # every 15 minutes (GitHub may delay under load)
+  workflow_dispatch: {}
+
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  HEALTH_URL: https://nutridex-neon.vercel.app/api/v1/health
+  ISSUE_TITLE: '🔴 Production health check is failing'
+
+jobs:
+  check:
+    name: Ping /api/v1/health
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe health endpoint (retry to avoid flapping)
+        id: probe
+        run: |
+          ok=false
+          code=000
+          for attempt in 1 2 3; do
+            code=$(curl -sS -o resp.txt -w '%{http_code}' --max-time 25 "$HEALTH_URL" || echo 000)
+            if [ "$code" = "200" ] && grep -q '"ok":true' resp.txt; then
+              ok=true; break
+            fi
+            echo "attempt $attempt: HTTP $code"
+            [ "$attempt" -lt 3 ] && sleep 15
+          done
+          echo "ok=$ok" >> "$GITHUB_OUTPUT"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update the uptime issue on failure
+        if: steps.probe.outputs.ok == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CODE: ${{ steps.probe.outputs.code }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create uptime --color B60205 --description "Automated uptime alerts" 2>/dev/null || true
+          now=$(date -u '+%Y-%m-%d %H:%M UTC')
+          existing=$(gh issue list --state open --label uptime --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "Still failing at ${now} — last status \`${CODE}\` for ${HEALTH_URL}. [Run](${RUN_URL})."
+          else
+            gh issue create --title "$ISSUE_TITLE" --label uptime \
+              --body "$(printf '`%s` returned status `%s` (expected 200 with `"ok":true`) at %s.\n\nThe automated uptime check will comment here on each failure and close this issue automatically once the endpoint recovers.\n\n[Failing run](%s)' "$HEALTH_URL" "$CODE" "$now" "$RUN_URL")"
+          fi
+          echo "::error::Health check failing (HTTP ${CODE}) for ${HEALTH_URL}"
+          exit 1
+
+      - name: Close the uptime issue on recovery
+        if: steps.probe.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          now=$(date -u '+%Y-%m-%d %H:%M UTC')
+          existing=$(gh issue list --state open --label uptime --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "✅ Recovered at ${now} — ${HEALTH_URL} is back to 200. Closing."
+            gh issue close "$existing"
+          fi
