@@ -45,7 +45,8 @@ npm run dev              # http://localhost:3000
 npm run build            # production build
 npm run lint             # eslint
 npm run typecheck        # tsc --noEmit
-npm test                 # vitest
+npm test                 # vitest unit + API-contract tests
+npm run test:e2e         # Playwright E2E (search, quiz, compare) against a prod build
 npm run content:validate # zod-validate all content (also runs in CI)
 npm run usda:import      # regenerate nutrients from bulk USDA CSVs (keyless)
 npm run usda:enrich      # regenerate nutrients from the USDA API (needs FDC_API_KEY in .env.local)
@@ -81,6 +82,15 @@ Analytics is via `@vercel/analytics` + `@vercel/speed-insights` (enable both in 
 - **Automated the content pipeline** with a keyless literature-research tool over the Europe PMC API
   (ranks studies by evidence level, emits schema-ready citations) and a **weekly scheduled agent**
   that drafts new, cited blog posts as review PRs — see [docs/auto-blog.md](docs/auto-blog.md).
+- Shipped a **compliant affiliate-monetization layer**: a centralized, env-overridable link builder
+  (Amazon Associates tag in one config module, not scattered through content), FTC/Amazon-Operating-
+  Agreement disclosure page wired site-wide, and `rel="sponsored nofollow"` search links on curated
+  items.
+- Hardened delivery with **production observability and quality gates**: a keyless **scheduled uptime
+  monitor** (GitHub Actions pings `/api/v1/health`, auto-files and auto-closes a tracking issue on
+  outage/recovery), a **Lighthouse CI budget** hard-gating accessibility & SEO on every PR, **Playwright
+  end-to-end tests** for the critical journeys (search, quiz, compare) with browser binaries cached in
+  CI, and **Vitest contract tests** for the public JSON API.
 
 ## Disclaimer
 
