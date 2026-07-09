@@ -1,11 +1,14 @@
 name: Lighthouse
 
 # Performance/SEO/a11y budget: build the site, serve it, and audit representative
-# page types with Lighthouse on every PR. Accessibility and SEO are hard gates
-# (error); performance and best-practices are advisory (warn) because CI runners
-# are slow and the site loads third-party analytics that no-ops off-Vercel.
+# page types with Lighthouse on every PR except docs-only ones. Accessibility and SEO
+# are hard gates (error); performance and best-practices are advisory (warn) because CI
+# runners are slow and the site loads third-party analytics that no-ops off-Vercel.
+# NOT a required check, so skipping it on docs PRs can't block a merge.
 on:
   pull_request:
+    paths-ignore:
+      - '**/*.md'
 
 concurrency:
   group: lighthouse-${{ github.ref }}
