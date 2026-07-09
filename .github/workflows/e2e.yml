@@ -1,9 +1,12 @@
 name: E2E
 
 # Playwright end-to-end tests for the critical user flows (search, quiz, compare)
-# against a real production build. Runs on every PR.
+# against a real production build. Runs on every PR except docs-only ones — this is
+# NOT a required check (only ci + preflight are), so skipping it can't block a merge.
 on:
   pull_request:
+    paths-ignore:
+      - '**/*.md'
 
 concurrency:
   group: e2e-${{ github.ref }}
