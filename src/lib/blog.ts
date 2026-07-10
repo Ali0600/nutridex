@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-ginger-help-blood-sugar-weight',
+    title: 'Does ginger help blood sugar or body weight? What two 2024 meta-analyses found',
+    description:
+      'Ginger is claimed to help both blood sugar and weight. Two 2024 meta-analyses tested each claim separately — here is the honest, mixed verdict.',
+    date: '2026-07-10',
+    author: 'NutriDex',
+    tags: ['metabolism', 'blood-sugar', 'ginger'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:
