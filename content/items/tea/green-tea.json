@@ -25,6 +25,22 @@
       ]
     },
     {
+      "claim": "May modestly lower blood pressure",
+      "mechanism": "Green tea's catechins (chiefly EGCG) support nitric-oxide availability in the vessel lining and reduce oxidative stress, which helps arteries relax and widen. A 2025 GRADE-assessed dose-response meta-analysis of 36 randomized trials found green tea lowered systolic and diastolic blood pressure by roughly 1 mmHg each — a small effect, larger in people with elevated baseline pressure, and with high heterogeneity between trials.",
+      "organs": ["heart"],
+      "conditions": ["high-blood-pressure"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Effect of green tea supplementation on blood pressure in adults: a GRADE-assessed systematic review and dose-response meta-analysis of randomised controlled trials (Rezaei et al., Blood Press 2025)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40497293/",
+          "pmid": "40497293",
+          "year": 2025
+        }
+      ]
+    },
+    {
       "claim": "Promotes calm, focused alertness",
       "mechanism": "Green tea pairs caffeine with L-theanine, an amino acid that increases alpha brain-wave activity. Taken together they improve attention and reaction time while blunting the jittery edge caffeine alone can cause.",
       "organs": ["brain"],
@@ -53,5 +69,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-12"
 }

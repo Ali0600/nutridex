@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-green-tea-lower-blood-pressure',
+    title: 'Does green tea lower blood pressure?',
+    description:
+      'A 2025 GRADE-assessed meta-analysis of 36 randomized trials pooled the green-tea-and-blood-pressure evidence. Here is what it actually found, the mechanism, and the honest caveats.',
+    date: '2026-07-12',
+    author: 'NutriDex',
+    tags: ['heart', 'high-blood-pressure', 'green-tea'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:
