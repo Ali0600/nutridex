@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-garlic-lower-blood-pressure',
+    title: 'Does garlic lower blood pressure?',
+    description:
+      'Garlic is one of the most-studied foods for blood pressure. Here is what the pooled trials — including two fresh 2023–2024 meta-analyses — actually found, the allicin mechanism, and the honest caveats.',
+    date: '2026-07-13',
+    author: 'NutriDex',
+    tags: ['heart', 'high-blood-pressure', 'garlic'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:
