@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-green-tea-protect-against-cognitive-decline',
+    title: 'Does green tea protect against cognitive decline?',
+    description:
+      'A 2026 meta-analysis pooled 18 observational studies and 58,929 people on green tea and cognitive impairment. Here is what it found — including the subgroup where it found nothing at all.',
+    date: '2026-07-15',
+    author: 'NutriDex',
+    tags: ['brain', 'brain-focus', 'green-tea'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:

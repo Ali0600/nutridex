@@ -39,6 +39,22 @@
           "year": 2008
         }
       ]
+    },
+    {
+      "claim": "Regular drinkers show lower rates of cognitive impairment — an association, not a proven effect",
+      "mechanism": "Green tea's polyphenols, chiefly EGCG, are antioxidant and anti-inflammatory in the lab, and are proposed to blunt the oxidative stress and neuroinflammation that accompany cognitive decline. A 2026 meta-analysis of 18 observational studies (58,929 participants) found green tea drinkers had lower odds of cognitive impairment (OR 0.63, 95% CI 0.54-0.73). The evidence is observational throughout, so the tea cannot be shown to be the cause, and the association was found in Asian but not European populations.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The Association between Green Tea Consumption and Cognitive Function: A Meta-Analysis of Current Evidence (Zhou et al., Neuroepidemiology 2026)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39947165/",
+          "pmid": "39947165",
+          "year": 2026
+        }
+      ]
     }
   ],
   "surprisingFacts": [
@@ -53,5 +69,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-15"
 }
