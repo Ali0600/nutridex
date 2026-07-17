@@ -32,6 +32,7 @@ export const NUTRIENTS: NutrientDef[] = [
   { key: 'magnesium', label: 'Magnesium', unit: 'mg', nbr: 304, higherIsBetter: true },
   { key: 'potassium', label: 'Potassium', unit: 'mg', nbr: 306, higherIsBetter: true },
   { key: 'zinc', label: 'Zinc', unit: 'mg', nbr: 309, higherIsBetter: true },
+  { key: 'selenium', label: 'Selenium', unit: 'µg', nbr: 317, higherIsBetter: true },
 ];
 
 export const NUTRIENT_BY_KEY: Record<string, NutrientDef> = Object.fromEntries(
