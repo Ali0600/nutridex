@@ -21,6 +21,7 @@ test('browse: every collection index route is reachable and lists entries', asyn
     ['/organs', 'Browse by body part'],
     ['/goals', 'Browse by goal'],
     ['/nutrients', 'Browse by nutrient'],
+    ['/compounds', 'Browse by compound'],
   ] as const) {
     await page.goto(path);
     await expect(page.getByRole('heading', { name: heading })).toBeVisible();

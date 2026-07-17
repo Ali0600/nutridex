@@ -5,6 +5,7 @@ import { GET as items } from './items/route';
 import { GET as conditions } from './conditions/route';
 import { GET as organs } from './organs/route';
 import { GET as dataset } from './dataset/route';
+import { GET as compounds } from './compounds/route';
 import { GET as itemBySlug } from './items/[slug]/route';
 import { GET as nutrientRanking } from './nutrients/[nutrient]/route';
 
@@ -49,6 +50,18 @@ describe('GET /api/v1 route handlers', () => {
     expect(() => new Date(data.generatedAt).toISOString()).not.toThrow();
     expect(data.items.length).toBeGreaterThan(0);
     expect(data.nutrients).toBeTypeOf('object');
+  });
+
+  it('compounds carry a rarity, a cited distribution, and the items that have them', async () => {
+    const data = await body(await compounds());
+    expect(data.compounds.length).toBeGreaterThan(0);
+    for (const c of data.compounds) {
+      expect(['signature', 'rare', 'uncommon', 'common']).toContain(c.rarity);
+      // A rarity claim is an assertion about the world, so it must be cited.
+      expect(c.citations.length).toBeGreaterThan(0);
+      expect(c.distribution).toBeTruthy();
+      expect(Array.isArray(c.itemSlugs)).toBe(true);
+    }
   });
 
   it('item-by-slug returns the item for a real slug', async () => {

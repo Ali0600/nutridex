@@ -43,6 +43,7 @@
   "surprisingFacts": [
     { "text": "Because you ingest the whole ground leaf instead of discarding steeped leaves, matcha gives you several times the catechins of an equivalent cup of brewed green tea." }
   ],
+  "compounds": ["l-theanine"],
   "affiliateSlots": [
     {
       "label": "Shop matcha powder on Amazon",
@@ -50,5 +51,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

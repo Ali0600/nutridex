@@ -26,6 +26,7 @@
   "surprisingFacts": [
     { "text": "A pinch of black pepper is why turmeric lattes and curry work: piperine can increase curcumin absorption by up to ~20-fold, turning a poorly-absorbed pigment into something the body can actually use." }
   ],
+  "compounds": ["piperine"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

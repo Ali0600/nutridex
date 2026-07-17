@@ -82,6 +82,8 @@ export const itemSchema = z
     fdcId: z.number().int().positive().optional(),
     benefits: z.array(benefitSchema).min(1),
     surprisingFacts: z.array(factSchema).default([]),
+    /** Ids from `content/compounds.json` — bioactives this food actually contains. */
+    compounds: z.array(slug).default([]),
     affiliateSlots: z.array(affiliateSlotSchema).default([]),
     updatedAt: z.iso.date(),
   })
@@ -98,6 +100,39 @@ export const organSchema = z.object({
   blurb: z.string().optional(),
 });
 export type Organ = z.infer<typeof organSchema>;
+
+export const COMPOUND_KINDS = [
+  'polyphenol',
+  'carotenoid',
+  'enzyme',
+  'fatty-acid',
+  'organosulfur',
+  'alkaloid',
+  'pigment',
+  'amino-acid',
+  'other',
+] as const;
+
+/**
+ * How rare the compound is **in the human diet** — an authored real-world claim, which is
+ * why `citations` is required. Not to be confused with how many of our own items carry it:
+ * that count is derived from the database and must never be rendered as world-rarity.
+ */
+export const RARITIES = ['signature', 'rare', 'uncommon', 'common'] as const;
+export const raritySchema = z.enum(RARITIES);
+export type Rarity = z.infer<typeof raritySchema>;
+
+export const compoundSchema = z.object({
+  id: slug,
+  name: z.string().min(1),
+  kind: z.enum(COMPOUND_KINDS),
+  rarity: raritySchema,
+  /** One honest sentence on where it occurs in the diet — what `citations` must support. */
+  distribution: z.string().min(1),
+  blurb: z.string().min(1),
+  citations: z.array(citationSchema).min(1, 'a rarity claim needs at least one study'),
+});
+export type Compound = z.infer<typeof compoundSchema>;
 
 const quizAnswerSchema = z.object({
   label: z.string().min(1),
@@ -135,6 +170,7 @@ export type Condition = z.infer<typeof conditionSchema>;
 
 export const organsFileSchema = z.array(organSchema).min(1);
 export const conditionsFileSchema = z.array(conditionSchema).min(1);
+export const compoundsFileSchema = z.array(compoundSchema).min(1);
 
 /** Distilled USDA output (`data/usda/nutrients.generated.json`). */
 export const nutrientsFileSchema = z.record(

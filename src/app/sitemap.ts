@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { getConditions, getItems, getOrgans } from '@/lib/content';
+import { getCompounds, getConditions, getItems, getOrgans } from '@/lib/content';
 import { getBlogPosts } from '@/lib/blog';
 import { NUTRIENTS } from '@/lib/nutrients-config';
 import { CATEGORIES } from '@/lib/schema';
@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/organs',
     '/goals',
     '/nutrients',
+    '/compounds',
     '/compare',
     '/quiz',
     '/super-foods',
@@ -32,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getItems().map((i) => ({ url: url(`/items/${i.slug}`), lastModified: new Date(i.updatedAt) })),
     ...getOrgans().map((o) => ({ url: url(`/organs/${o.id}`) })),
     ...getConditions().map((c) => ({ url: url(`/goals/${c.id}`) })),
+    ...getCompounds().map((c) => ({ url: url(`/compounds/${c.id}`) })),
     ...NUTRIENTS.map((n) => ({ url: url(`/nutrients/${n.key}`) })),
     ...getBlogPosts().map((p) => ({ url: url(`/blog/${p.slug}`), lastModified: new Date(p.date) })),
   ];
