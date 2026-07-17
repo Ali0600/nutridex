@@ -54,6 +54,7 @@
   "surprisingFacts": [
     { "text": "Being small and short-lived, sardines sit low on the food chain and accumulate very little mercury — so they're among the safest fish to eat frequently." }
   ],
+  "compounds": ["epa-dha"],
   "affiliateSlots": [
     {
       "label": "Shop canned sardines on Amazon",
@@ -61,5 +62,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

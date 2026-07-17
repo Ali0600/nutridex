@@ -43,6 +43,7 @@
   "surprisingFacts": [
     { "text": "Common 'pearl' barley has been polished to remove the bran, so it cooks faster but loses fiber — hulled or hull-less barley keeps the whole grain and its beta-glucan." }
   ],
+  "compounds": ["beta-glucan"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

@@ -46,6 +46,7 @@
       "text": "A walnut half looks strikingly like a tiny brain — and it happens to be the nut most studied for cognitive benefits, thanks to its omega-3 content."
     }
   ],
+  "compounds": ["serotonin", "ala"],
   "affiliateSlots": [
     {
       "label": "Shop walnuts on Amazon",
@@ -53,5 +54,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

@@ -42,6 +42,7 @@
   "surprisingFacts": [
     { "text": "Chia can soak up roughly 10–12 times its weight in liquid, turning into a pudding-like gel — the same gel that slows digestion in the gut." }
   ],
+  "compounds": ["ala"],
   "affiliateSlots": [
     {
       "label": "Shop chia seeds on Amazon",
@@ -49,5 +50,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

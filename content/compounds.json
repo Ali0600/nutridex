@@ -245,5 +245,158 @@
         "year": 2011
       }
     ]
+  },
+  {
+    "id": "epa-dha",
+    "name": "EPA & DHA (marine omega-3)",
+    "kind": "fatty-acid",
+    "rarity": "rare",
+    "distribution": "Essentially only oily fish and seafood — salmon, sardines, mackerel, herring, anchovies — plus the algae the fish get them from. No plant food supplies them directly: flax, chia, walnuts and canola give the shorter omega-3 ALA, which the body converts to EPA and DHA only inefficiently.",
+    "blurb": "The two long-chain omega-3s the body actually uses to build brain and cell membranes and to damp down inflammation. This is why \"eat oily fish\" is advice that plant omega-3 sources don't fully replace — and why algae oil, not flaxseed oil, is the vegan substitute.",
+    "citations": [
+      {
+        "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+        "source": "other",
+        "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+      }
+    ]
+  },
+  {
+    "id": "beta-glucan",
+    "name": "Beta-glucan",
+    "kind": "other",
+    "rarity": "rare",
+    "distribution": "Among everyday foods, essentially just oats and barley — the two cereals it is concentrated in, and the reason both carry an approved cholesterol-lowering health claim. Wheat and rice have very little. Mushrooms and yeast make beta-glucans too, but structurally different ones that behave differently.",
+    "blurb": "A soluble fibre that dissolves into a gel in the gut, trapping bile acids so the liver has to pull cholesterol out of the blood to replace them. It's the specific reason porridge lowers LDL — and one of the few food claims regulators have actually approved.",
+    "citations": [
+      {
+        "title": "Oat and Barley in the Food Supply and Use of Beta Glucan Health Claims (Smith et al., Nutrients 2021)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34444720/",
+        "pmid": "34444720",
+        "year": 2021
+      },
+      {
+        "title": "Cholesterol-lowering effects of oat β-glucan: a meta-analysis of randomized controlled trials (Whitehead et al., Am J Clin Nutr 2014)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25411276/",
+        "pmid": "25411276",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "id": "anthocyanin",
+    "name": "Anthocyanins",
+    "kind": "pigment",
+    "rarity": "uncommon",
+    "distribution": "The red, purple and blue plant foods — and only those. When researchers screened over 100 common foods, just 24 contained anthocyanins at all, with concentrations spanning more than a thousandfold. No plant makes both anthocyanins and betalains: beetroot's red is the other kind entirely.",
+    "blurb": "The pigments behind blueberries, blackcurrants, red cabbage and the dark coat of black beans. They are flavonoids, studied mainly as antioxidants, and they are pH-sensitive — which is why red cabbage turns blue in alkaline water.",
+    "citations": [
+      {
+        "title": "Concentrations of anthocyanins in common foods in the United States and estimation of normal consumption (Wu et al., J Agric Food Chem 2006)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16719536/",
+        "pmid": "16719536",
+        "year": 2006
+      }
+    ]
+  },
+  {
+    "id": "lignan",
+    "name": "Lignans",
+    "kind": "polyphenol",
+    "rarity": "uncommon",
+    "distribution": "Seeds and whole grains, with flaxseed in a league of its own — when 68 plant foods were fermented with gut bacteria to measure lignan output, the range spanned from 21 to over 67,000 µg/100 g, and flax sat at the top. Sesame is the other standout, via a different lignan family (sesamin).",
+    "blurb": "Plant compounds your gut bacteria convert into enterolignans, which are weakly oestrogen-like — which is why flaxseed keeps appearing in research on hormone-sensitive conditions. The conversion is done by your microbiome, so how much you actually get varies from person to person.",
+    "citations": [
+      {
+        "title": "Mammalian lignan production from various foods (Thompson et al., Nutr Cancer 1991)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1656395/",
+        "pmid": "1656395",
+        "year": 1991
+      }
+    ]
+  },
+  {
+    "id": "serotonin",
+    "name": "Serotonin",
+    "kind": "other",
+    "rarity": "uncommon",
+    "distribution": "A handful of foods contain it outright. Measuring 80 foods found plantain (30 µg/g), pineapple (17), banana (15), kiwifruit (5.8) and tomato (3.2) — but the real outlier is walnuts, at around 87 µg/g, far above any fruit. Note this is serotonin you eat, which does not cross into the brain.",
+    "blurb": "The same signalling molecule your body makes — and a few plants make it too. Eating it doesn't raise brain serotonin (it can't cross the blood–brain barrier), but it does show up in your urine as its breakdown product, and kiwifruit's serotonin is one thread in the research on it and sleep.",
+    "citations": [
+      {
+        "title": "Serotonin content of foods: effect on urinary excretion of 5-hydroxyindoleacetic acid (Feldman & Lee, Am J Clin Nutr 1985)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/2413754/",
+        "pmid": "2413754",
+        "year": 1985
+      }
+    ]
+  },
+  {
+    "id": "lutein-zeaxanthin",
+    "name": "Lutein & zeaxanthin",
+    "kind": "carotenoid",
+    "rarity": "common",
+    "distribution": "Widespread in green leafy vegetables — kale and spinach are the densest by a distance — plus corn, egg yolk, avocado and, uniquely among nuts, pistachios. They travel together, which is why the eye research almost always treats them as a pair.",
+    "blurb": "The only two carotenoids that end up in the retina, where they build the macular pigment that filters blue light. Being fat-soluble, they need a little fat alongside them to be absorbed — a bare salad delivers far less than a dressed one.",
+    "citations": [
+      {
+        "title": "Fruits and vegetables that are sources for lutein and zeaxanthin: the macular pigment in human eyes (Sommerburg et al., Br J Ophthalmol 1998)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9828775/",
+        "pmid": "9828775",
+        "year": 1998
+      },
+      {
+        "title": "Pistachio Consumption Increases Macular Pigment Optical Density in Healthy Adults: A Randomized Controlled Trial (Scott et al., J Nutr 2024)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39426460/",
+        "pmid": "39426460",
+        "year": 2024
+      }
+    ]
+  },
+  {
+    "id": "nitrate",
+    "name": "Dietary nitrate",
+    "kind": "other",
+    "rarity": "common",
+    "distribution": "Vegetables supply roughly 80% of the nitrate people eat, concentrated in the leafy greens and beets — beetroot, spinach, rocket, lettuce and celery are the heavy accumulators. It is also added to cured meats, a very different context that carries its own risks.",
+    "blurb": "An inorganic ion that bacteria on your tongue reduce to nitrite, which the body then turns into nitric oxide — the signal that relaxes blood vessels. That chain is why beetroot juice lowers blood pressure, and why antibacterial mouthwash blunts the effect.",
+    "citations": [
+      {
+        "title": "Food sources of nitrates and nitrites: the physiologic context for potential health benefits (Hord et al., Am J Clin Nutr 2009)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19439460/",
+        "pmid": "19439460",
+        "year": 2009
+      }
+    ]
+  },
+  {
+    "id": "ala",
+    "name": "ALA (plant omega-3)",
+    "kind": "fatty-acid",
+    "rarity": "common",
+    "distribution": "The plant omega-3, found across many seeds, nuts and their oils — flaxseed and chia are the densest, with walnuts the standout nut and canola the standout everyday cooking oil. Unlike EPA and DHA, you can get plenty of it without eating fish.",
+    "blurb": "An essential fat: your body cannot make it, so it has to come from food. It is the raw material for EPA and DHA, but the conversion is poor — typically only a few percent — which is why ALA is not a straight swap for oily fish.",
+    "citations": [
+      {
+        "title": "Omega-3 Fatty Acids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+        "source": "other",
+        "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/"
+      },
+      {
+        "title": "Effect of Alpha-Linolenic Acid Supplementation on Cardiovascular Disease Risk Profile in Individuals with Obesity or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials (Yin et al., Adv Nutr 2023)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37778442/",
+        "pmid": "37778442",
+        "year": 2023
+      }
+    ]
   }
 ]

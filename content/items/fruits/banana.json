@@ -39,6 +39,7 @@
   "surprisingFacts": [
     { "text": "Bananas carry both tryptophan and the vitamin B6 needed to turn it into serotonin — though the amounts are modest, so the 'bananas make you happy' claim is more chemistry than pharmacology." }
   ],
+  "compounds": ["serotonin"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }
