@@ -10,6 +10,7 @@ import path from 'node:path';
 import { z } from 'zod';
 import {
   CATEGORIES,
+  compoundsFileSchema,
   conditionsFileSchema,
   fdcMapFileSchema,
   itemSchema,
@@ -39,6 +40,7 @@ function zodErrors(where: string, e: z.ZodError): void {
 // --- Tag vocabularies -------------------------------------------------------
 let organIds = new Set<string>();
 let conditionIds = new Set<string>();
+let compoundIds = new Set<string>();
 
 try {
   const organs = organsFileSchema.parse(readJson(path.join(CONTENT, 'organs.json')));
@@ -59,6 +61,19 @@ try {
 } catch (e) {
   if (e instanceof z.ZodError) zodErrors('conditions.json', e);
   else err(`conditions.json: ${(e as Error).message}`);
+}
+
+try {
+  const compounds = compoundsFileSchema.parse(readJson(path.join(CONTENT, 'compounds.json')));
+  compoundIds = new Set(compounds.map((c) => c.id));
+  const seen = new Set<string>();
+  for (const c of compounds) {
+    if (seen.has(c.id)) err(`compounds.json: duplicate compound id "${c.id}"`);
+    seen.add(c.id);
+  }
+} catch (e) {
+  if (e instanceof z.ZodError) zodErrors('compounds.json', e);
+  else err(`compounds.json: ${(e as Error).message}`);
 }
 
 // --- USDA maps --------------------------------------------------------------
@@ -115,6 +130,13 @@ for (const category of CATEGORIES) {
       }
     }
 
+    const seenCompounds = new Set<string>();
+    for (const c of item.compounds) {
+      if (!compoundIds.has(c)) err(`${where}: references unknown compound "${c}"`);
+      if (seenCompounds.has(c)) err(`${where}: duplicate compound "${c}"`);
+      seenCompounds.add(c);
+    }
+
     if (item.fdcId) {
       const mapped = fdcMap[item.slug] as { fdcId?: number } | undefined;
       if (!mapped) warn(`${where}: fdcId set but "${item.slug}" missing from fdc-map.json`);
@@ -136,7 +158,7 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions${
+  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions, ${compoundIds.size} compounds${
     warnings.length ? `, ${warnings.length} warning(s)` : ''
   }`,
 );

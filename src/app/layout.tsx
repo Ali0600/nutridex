@@ -59,6 +59,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Link href="/organs" className="hover:text-leaf-700">Body parts</Link>
               <Link href="/goals" className="hover:text-leaf-700">Goals</Link>
               <Link href="/nutrients" className="hover:text-leaf-700">Nutrients</Link>
+              <Link href="/compounds" className="hover:text-leaf-700">Compounds</Link>
               <Link href="/super-foods" className="hover:text-leaf-700">Super Foods</Link>
             </nav>
             <Disclaimer />

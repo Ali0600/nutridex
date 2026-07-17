@@ -76,11 +76,13 @@ export default function HomePage() {
 
       <section className="py-6">
         <h2 className="text-sm font-semibold tracking-wide text-neutral-400 uppercase">Explore the database</h2>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <LinkTile href="/items" emoji="🍽️" title="All foods" subtitle={`${items.length} foods, searchable`} />
           <LinkTile href="/organs" emoji="🫀" title="By body part" subtitle="Heart, brain, gut, skin…" />
           <LinkTile href="/goals" emoji="🎯" title="By goal" subtitle="Conditions, goals, deficiencies" />
           <LinkTile href="/nutrients" emoji="🧪" title="By nutrient" subtitle="Vitamin & mineral rankings" />
+          <LinkTile href="/compounds" emoji="🔬" title="By compound" subtitle="The rare stuff, and who has it" />
+          <LinkTile href="/categories" emoji="🗂️" title="By category" subtitle="Teas, fruits, oils…" />
         </div>
       </section>
 

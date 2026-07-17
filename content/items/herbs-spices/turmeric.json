@@ -43,6 +43,7 @@
   "surprisingFacts": [
     { "text": "Curcumin is poorly absorbed on its own — but the piperine in black pepper can increase its absorption many-fold, which is why turmeric dishes and supplements almost always include pepper." }
   ],
+  "compounds": ["curcumin"],
   "affiliateSlots": [
     {
       "label": "Shop turmeric powder on Amazon",
@@ -50,5 +51,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

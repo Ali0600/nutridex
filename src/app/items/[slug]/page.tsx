@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getItem, getItems } from '@/lib/content';
+import { getCompoundsForItem, getItem, getItems } from '@/lib/content';
 import { nutrientPanel } from '@/lib/nutrients';
 import { CATEGORY_EMOJI, CATEGORY_LABELS } from '@/lib/labels';
 import { SITE_URL } from '@/lib/site';
 import { BenefitList } from '@/components/BenefitList';
 import { AffiliateSlot } from '@/components/AffiliateSlot';
 import { JsonLd } from '@/components/JsonLd';
+import { RarityBadge } from '@/components/RarityBadge';
 
 export function generateStaticParams() {
   return getItems().map((i) => ({ slug: i.slug }));
@@ -36,6 +37,7 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
   if (!item) notFound();
 
   const panel = nutrientPanel(item);
+  const compounds = getCompoundsForItem(item);
 
   return (
     <article className="py-6">
@@ -85,6 +87,32 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
           <BenefitList benefits={item.benefits} />
         </div>
       </section>
+
+      {compounds.length > 0 && (
+        <section className="mt-8">
+          <h2 className="text-xl font-bold text-neutral-900">Notable compounds</h2>
+          <p className="mt-1 text-sm text-neutral-500">
+            Bioactives {item.name.toLowerCase()} contains, and how rare each one is in the diet.
+          </p>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">
+            {compounds.map((c) => (
+              <Link
+                key={c.id}
+                href={`/compounds/${c.id}`}
+                className="group rounded-lg border border-neutral-200 p-3 transition hover:border-leaf-300 hover:bg-leaf-50"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="font-medium text-neutral-900 group-hover:text-leaf-700">
+                    {c.name}
+                  </span>
+                  <RarityBadge rarity={c.rarity} />
+                </div>
+                <p className="mt-1 text-sm text-neutral-600">{c.distribution}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {item.surprisingFacts.length > 0 && (
         <section className="mt-8">

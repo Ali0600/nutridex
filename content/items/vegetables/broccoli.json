@@ -58,6 +58,7 @@
   "surprisingFacts": [
     { "text": "The enzyme that makes sulforaphane is destroyed by heat, so hard-boiled broccoli makes little — chopping it and letting it rest, or a quick steam, preserves far more." }
   ],
+  "compounds": ["sulforaphane", "myrosinase"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-05"
+  "updatedAt": "2026-07-17"
 }

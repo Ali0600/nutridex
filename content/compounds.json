@@ -1,0 +1,249 @@
+[
+  {
+    "id": "oleocanthal",
+    "name": "Oleocanthal",
+    "kind": "polyphenol",
+    "rarity": "signature",
+    "distribution": "In the human diet, essentially only extra-virgin olive oil — it forms when olives are crushed at the mill. Refined or \"light\" olive oil is stripped of it, and cured table olives carry about a thousandth as much. Related non-food plants (privet, ash, lilac) make it too, but nothing else you eat does.",
+    "blurb": "The polyphenol behind the peppery sting that fresh extra-virgin olive oil leaves at the back of your throat. In the lab it inhibits the COX-1 and COX-2 enzymes — the same targets as ibuprofen — though a realistic drizzle delivers only a small fraction of a painkiller dose, and levels swing hugely with cultivar and freshness.",
+    "citations": [
+      {
+        "title": "Oleocanthal, an Antioxidant Phenolic Compound in Extra Virgin Olive Oil: A Comprehensive Systematic Review of Its Potential in Inflammation and Cancer (González-Rodríguez et al., Antioxidants 2023)",
+        "source": "PMC",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10741130/",
+        "pmid": "38136231",
+        "year": 2023
+      },
+      {
+        "title": "Phytochemistry: ibuprofen-like activity in extra-virgin olive oil (Beauchamp et al., Nature 2005)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16136122/",
+        "pmid": "16136122",
+        "year": 2005
+      }
+    ]
+  },
+  {
+    "id": "actinidin",
+    "name": "Actinidin",
+    "kind": "enzyme",
+    "rarity": "signature",
+    "distribution": "Confined to the kiwifruit genus (Actinidia) — the only member most people ever eat. Green kiwifruit is far richer in it than the gold varieties, which carry very little.",
+    "blurb": "A protein-digesting enzyme that makes up a large share of kiwifruit's protein. It's why kiwi tenderises meat, why it stops jelly setting, and why studies find it helps break down protein in the stomach.",
+    "citations": [
+      {
+        "title": "Mapping, complementation, and targets of the cysteine protease actinidin in kiwifruit (Nieuwenhuizen et al., Plant Physiol 2012)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22039217/",
+        "pmid": "22039217",
+        "year": 2012
+      },
+      {
+        "title": "Actinidin in Green and SunGold Kiwifruit Improves Digestion of Alternative Proteins — An In Vitro Investigation (Kaur et al., Foods 2022)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36140865/",
+        "pmid": "36140865",
+        "year": 2022
+      }
+    ]
+  },
+  {
+    "id": "curcumin",
+    "name": "Curcumin",
+    "kind": "polyphenol",
+    "rarity": "signature",
+    "distribution": "Essentially only turmeric root, where curcuminoids make up roughly 2–4% of the dried spice. Its close relative ginger makes gingerols by a related pathway but is not a curcumin source.",
+    "blurb": "The pigment that makes turmeric yellow, and one of the most-studied natural anti-inflammatories. The catch is absorption: on its own very little reaches the blood, which is why it is usually paired with black pepper.",
+    "citations": [
+      {
+        "title": "Biosynthesis of curcuminoids and gingerols in turmeric (Curcuma longa) and ginger (Zingiber officinale) (Ramirez-Ahumada et al., Phytochemistry 2006)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16890967/",
+        "pmid": "16890967",
+        "year": 2006
+      },
+      {
+        "title": "Influence of piperine on the pharmacokinetics of curcumin in animals and human volunteers (Shoba et al., Planta Med 1998)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9619120/",
+        "pmid": "9619120",
+        "year": 1998
+      }
+    ]
+  },
+  {
+    "id": "l-theanine",
+    "name": "L-Theanine",
+    "kind": "amino-acid",
+    "rarity": "signature",
+    "distribution": "Essentially only the tea plant, Camellia sinensis — which means every true tea (green, black, oolong, white, matcha) has it and no herbal infusion does: peppermint, ginger and chamomile \"teas\" contain none. The one known outside source is a wild mushroom, Xerocomus badius.",
+    "blurb": "An amino acid found almost nowhere else in food, and the reason tea feels calm-alert rather than jittery like coffee. It crosses into the brain and is studied for raising alpha-wave activity and taking the edge off caffeine.",
+    "citations": [
+      {
+        "title": "Distribution and biosynthesis of theanine in Theaceae plants (Deng et al., Plant Physiol Biochem 2010)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19828327/",
+        "pmid": "19828327",
+        "year": 2010
+      },
+      {
+        "title": "Occurrence, biosynthesis and metabolism of theanine (γ-glutamyl-L-ethylamide) in plants: a comprehensive review (Vuong et al., Crit Rev Food Sci Nutr 2015)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26058162/",
+        "pmid": "26058162",
+        "year": 2015
+      }
+    ]
+  },
+  {
+    "id": "sulforaphane",
+    "name": "Sulforaphane",
+    "kind": "organosulfur",
+    "rarity": "rare",
+    "distribution": "Only cruciferous vegetables — broccoli, kale, cabbage, sprouts, cauliflower, rocket and their relatives — because only they carry its precursor, glucoraphanin. Broccoli sprouts are by far the densest source, with many times the amount in the mature vegetable.",
+    "blurb": "Not present in the intact plant: it is created the moment you chop or chew a crucifer, when the enzyme myrosinase meets its precursor glucoraphanin. It switches on the body's Nrf2 pathway, turning up antioxidant and detoxification genes.",
+    "citations": [
+      {
+        "title": "The chemical diversity and distribution of glucosinolates and isothiocyanates among plants (Fahey et al., Phytochemistry 2001)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11198818/",
+        "pmid": "11198818",
+        "year": 2001
+      },
+      {
+        "title": "Broccoli sprouts: an exceptionally rich source of inducers of enzymes that protect against chemical carcinogens (Fahey et al., PNAS 1997)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9294217/",
+        "pmid": "9294217",
+        "year": 1997
+      },
+      {
+        "title": "Metabolome insights into nutrients and glucosinolates in broccoli and lacinato kale (Sci Rep 2025)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40112720/",
+        "pmid": "40112720",
+        "year": 2025
+      }
+    ]
+  },
+  {
+    "id": "myrosinase",
+    "name": "Myrosinase",
+    "kind": "enzyme",
+    "rarity": "rare",
+    "distribution": "Carried by cruciferous vegetables and a handful of their wider relatives (papaya, capers, moringa, nasturtium). It is not exclusively a plant enzyme — the cabbage aphid evolved its own version, and some of your gut bacteria can do the same job, which is why cooked crucifers still yield some sulforaphane.",
+    "blurb": "The enzyme that turns a crucifer's dormant glucosinolates into active isothiocyanates like sulforaphane. It sits in separate cells from its substrate until you damage the plant — chopping, chewing or blitzing is what triggers the reaction. Boiling destroys it.",
+    "citations": [
+      {
+        "title": "Myrosinase: insights on structural, catalytic, regulatory, and environmental interactions (Bhat & Vyas, Crit Rev Biotechnol 2019)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30939944/",
+        "pmid": "30939944",
+        "year": 2019
+      },
+      {
+        "title": "Total myrosinase activity estimates in brassica vegetable produce (Okunade et al., J Agric Food Chem 2014)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25051514/",
+        "pmid": "25051514",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "id": "allicin",
+    "name": "Allicin",
+    "kind": "organosulfur",
+    "rarity": "rare",
+    "distribution": "The garlic-type alliums, and garlic overwhelmingly so. Onions, leeks and chives carry related sulphur compounds but little to no allicin — its precursor, alliin, is largely a garlic speciality.",
+    "blurb": "The smell of freshly crushed garlic. Like sulforaphane it does not exist in the intact clove: crushing lets the enzyme alliinase convert alliin into allicin within seconds. It is also unstable — it starts breaking down almost immediately, and cooking straight away destroys it.",
+    "citations": [
+      {
+        "title": "Occurrence and taxonomic significance of cysteine sulphoxides in the genus Allium L. (Alliaceae) (Kubec et al., Phytochemistry 2006)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16626766/",
+        "pmid": "16626766",
+        "year": 2006
+      },
+      {
+        "title": "Allicin, the Odor of Freshly Crushed Garlic: A Review of Recent Progress in Understanding Allicin's Effects on Cells (Borlinghaus et al., Molecules 2021)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33801955/",
+        "pmid": "33801955",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "id": "piperine",
+    "name": "Piperine",
+    "kind": "alkaloid",
+    "rarity": "rare",
+    "distribution": "The pepper genus Piper — black pepper above all, where it makes up a few percent of the dried corn, plus long pepper. Note this is unrelated to chilli \"pepper\", which owes its heat to capsaicin instead.",
+    "blurb": "What makes black pepper pungent — and a genuinely useful kitchen trick: it inhibits the enzymes and transporters that would otherwise clear curcumin from your blood, raising its bioavailability many-fold. That is the science behind pairing turmeric with pepper.",
+    "citations": [
+      {
+        "title": "Occurrence of piperidine alkaloids in Piper species collected in different areas (Dutra et al., J Nat Med 2014)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23625168/",
+        "pmid": "23625168",
+        "year": 2014
+      },
+      {
+        "title": "Determination and risk characterisation of bio-active piperine in black pepper and selected food products (EFSA-related analysis, Food Chem Toxicol 2021)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33732511/",
+        "pmid": "33732511",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "id": "betalain",
+    "name": "Betalains",
+    "kind": "pigment",
+    "rarity": "rare",
+    "distribution": "Only one corner of the plant kingdom — the order Caryophyllales, about 17 families — plus a few fungi. In food that means beetroot above all, along with chard, amaranth, prickly pear, dragon fruit, and the red and black varieties of quinoa. Strikingly, no plant makes both betalains and anthocyanins: it is always one or the other.",
+    "blurb": "The pigment that makes beetroot violently red — and the reason beets stain everything. Unlike most red plant pigments these are nitrogen-based, not anthocyanins, and they are studied as antioxidants in their own right.",
+    "citations": [
+      {
+        "title": "Biological Properties and Applications of Betalains (Madadi et al., Molecules 2021)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33925891/",
+        "pmid": "33925891",
+        "year": 2021
+      },
+      {
+        "title": "Characterization of betalains, saponins and antioxidant power in differently colored quinoa (Chenopodium quinoa) varieties (Escribano et al., Food Chem 2017)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28551238/",
+        "pmid": "28551238",
+        "year": 2017
+      }
+    ]
+  },
+  {
+    "id": "astaxanthin",
+    "name": "Astaxanthin",
+    "kind": "carotenoid",
+    "rarity": "rare",
+    "distribution": "Almost nothing you eat makes it — it is built by microalgae, some yeasts and bacteria, and reaches your plate second-hand through the animals that eat them: salmon, trout, shrimp, krill and crayfish. Farmed salmon get it added to their feed to match the wild colour.",
+    "blurb": "The carotenoid that makes salmon flesh pink and cooked shellfish turn red. It is a fat-soluble antioxidant that sits across cell membranes rather than within one side of them, which is why it is studied so heavily.",
+    "citations": [
+      {
+        "title": "Astaxanthin: sources, extraction, stability, biological activities and its commercial applications — a review (Ambati et al., Mar Drugs 2014)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/24402174/",
+        "pmid": "24402174",
+        "year": 2014
+      },
+      {
+        "title": "Carotenoids in marine animals (Maoka, Mar Drugs 2011)",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21566799/",
+        "pmid": "21566799",
+        "year": 2011
+      }
+    ]
+  }
+]

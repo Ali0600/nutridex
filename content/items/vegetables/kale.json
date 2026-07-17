@@ -42,6 +42,7 @@
   "surprisingFacts": [
     { "text": "The carotenoids in kale are fat-soluble, so a little olive oil or another fat with your greens meaningfully increases how much lutein and zeaxanthin you absorb." }
   ],
+  "compounds": ["sulforaphane", "myrosinase"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }

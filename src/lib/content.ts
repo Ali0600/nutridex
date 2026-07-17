@@ -3,10 +3,12 @@ import path from 'node:path';
 import {
   CATEGORIES,
   type Category,
+  type Compound,
   type Condition,
   type Item,
   type NutrientsFile,
   type Organ,
+  compoundsFileSchema,
   conditionsFileSchema,
   itemSchema,
   nutrientsFileSchema,
@@ -79,6 +81,32 @@ export function getConditions(): Condition[] {
 
 export function getCondition(id: string): Condition | undefined {
   return getConditions().find((c) => c.id === id);
+}
+
+let _compounds: Compound[] | null = null;
+export function getCompounds(): Compound[] {
+  if (!_compounds) {
+    _compounds = compoundsFileSchema.parse(readJson(path.join(CONTENT_DIR, 'compounds.json')));
+  }
+  return _compounds;
+}
+
+export function getCompound(id: string): Compound | undefined {
+  return getCompounds().find((c) => c.id === id);
+}
+
+/**
+ * Items that contain the given compound. NOTE: the length of this is a fact about *our*
+ * database, not about the diet — the compound's own `rarity`/`distribution` is the
+ * real-world claim. Don't render this count as rarity.
+ */
+export function getItemsForCompound(compoundId: string): Item[] {
+  return getItems().filter((i) => i.compounds.includes(compoundId));
+}
+
+/** Compound records for a given item, in the order the item lists them. */
+export function getCompoundsForItem(item: Item): Compound[] {
+  return item.compounds.map((id) => getCompound(id)).filter((c): c is Compound => Boolean(c));
 }
 
 /** Items whose any benefit is tagged with the given organ id. */

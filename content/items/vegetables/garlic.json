@@ -28,6 +28,7 @@
   "surprisingFacts": [
     { "text": "Allicin doesn't exist in an intact clove — it's created when garlic is crushed or chopped and two compounds meet. Letting crushed garlic rest ~10 minutes before cooking lets more allicin form and survive the heat." }
   ],
+  "compounds": ["allicin"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }
