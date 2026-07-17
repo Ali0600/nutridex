@@ -43,6 +43,7 @@
   "surprisingFacts": [
     { "text": "Wild (lowbush) blueberries are smaller than cultivated ones but pack noticeably more anthocyanin per gram — the pigment is concentrated in the skin, and wild berries have more skin per volume." }
   ],
+  "compounds": ["anthocyanin"],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }

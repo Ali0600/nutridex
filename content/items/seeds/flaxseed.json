@@ -42,6 +42,7 @@
   "surprisingFacts": [
     { "text": "Whole flaxseeds pass through the gut largely undigested — you have to grind them to absorb the lignans and ALA. Buy them whole and grind as needed, since the ground fat goes rancid faster." }
   ],
+  "compounds": ["lignan", "ala"],
   "affiliateSlots": [
     {
       "label": "Shop ground flaxseed on Amazon",
@@ -49,5 +50,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

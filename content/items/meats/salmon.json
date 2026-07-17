@@ -40,7 +40,7 @@
   "surprisingFacts": [
     { "text": "The pink colour comes from astaxanthin, a carotenoid antioxidant salmon get from eating krill and algae — farmed salmon are fed it to match the wild colour." }
   ],
-  "compounds": ["astaxanthin"],
+  "compounds": ["astaxanthin", "epa-dha"],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }
