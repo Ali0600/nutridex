@@ -66,6 +66,13 @@
     { "text": "Buying pistachios in the shell makes you eat more slowly and see the empty shells pile up — studies find this 'evidence-based' portion cue leads people to eat fewer calories." }
   ],
   "compounds": ["lutein-zeaxanthin"],
+  "cautions": [
+    {
+      "effect": "Calorie-dense enough that large daily handfuls add up quickly, and a big jump in fibre and fat can unsettle your stomach. Nothing toxic at food amounts. Salted versions add up on sodium.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

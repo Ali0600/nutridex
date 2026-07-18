@@ -26,6 +26,13 @@
   "surprisingFacts": [
     { "text": "The strongest evidence is for enteric-coated peppermint oil capsules, which survive the stomach to release menthol in the intestine — tea is gentler but works through the same menthol." }
   ],
+  "cautions": [
+    {
+      "effect": "Caffeine-free and gentle. Some people find mint relaxes the valve at the top of the stomach and slightly worsens reflux, but there's no meaningful ceiling.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }

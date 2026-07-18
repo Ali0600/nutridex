@@ -58,6 +58,13 @@
   "surprisingFacts": [
     { "text": "Whole almonds deliver fewer calories than their label implies — some fat stays locked in the nut's cell walls and passes through undigested, an effect measured in controlled feeding studies." }
   ],
+  "cautions": [
+    {
+      "effect": "Calorie-dense enough that large daily handfuls add up quickly, and a big jump in fibre and fat can unsettle your stomach. Nothing toxic at food amounts.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop raw almonds on Amazon",
@@ -65,5 +72,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

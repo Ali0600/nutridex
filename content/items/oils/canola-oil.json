@@ -43,6 +43,13 @@
     { "text": "'Canola' isn't a plant — it's rapeseed bred in 1970s Canada to strip out bitter, heart-toxic erucic acid. The name is short for 'Canadian oil, low acid.'" }
   ],
   "compounds": ["ala"],
+  "cautions": [
+    {
+      "effect": "It's almost pure fat, so the only real ceiling is calories — roughly 120 kcal a tablespoon. Nothing about it is toxic in culinary amounts.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

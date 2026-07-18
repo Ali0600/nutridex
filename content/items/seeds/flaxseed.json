@@ -43,6 +43,22 @@
     { "text": "Whole flaxseeds pass through the gut largely undigested — you have to grind them to absorb the lignans and ALA. Buy them whole and grind as needed, since the ground fat goes rancid faster." }
   ],
   "compounds": ["lignan", "ala"],
+  "cautions": [
+    {
+      "effect": "Like chia, ground flax absorbs a lot of water — too little fluid alongside a big increase and it binds rather than loosens. Expect bloating and gas while your gut adjusts.",
+      "threshold": "Raise the amount gradually and drink plenty with it.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Rheological characterization of chia seed gum as a thickening agent used for dysphagia management (Foods 2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38945723/",
+          "pmid": "38945723",
+          "year": 2024
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop ground flaxseed on Amazon",

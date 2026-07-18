@@ -44,6 +44,22 @@
     { "text": "Because you ingest the whole ground leaf instead of discarding steeped leaves, matcha gives you several times the catechins of an equivalent cup of brewed green tea." }
   ],
   "compounds": ["l-theanine"],
+  "cautions": [
+    {
+      "effect": "You swallow the whole leaf rather than an infusion, so matcha carries more caffeine than the same volume of brewed green tea — jitteriness and poor sleep come on sooner. The tannins also blunt iron absorption when taken with meals.",
+      "threshold": "Several bowls, or any close to bedtime.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Matcha Green Tea: Chemical Composition, Phenolic Acids, Caffeine and Fatty Acid Profile (Foods 2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38672839/",
+          "pmid": "38672839",
+          "year": 2024
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop matcha powder on Amazon",

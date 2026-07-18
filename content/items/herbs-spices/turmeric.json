@@ -44,6 +44,23 @@
     { "text": "Curcumin is poorly absorbed on its own — but the piperine in black pepper can increase its absorption many-fold, which is why turmeric dishes and supplements almost always include pepper." }
   ],
   "compounds": ["curcumin"],
+  "cautions": [
+    {
+      "effect": "Culinary amounts are fine; large doses can cause stomach upset and nausea, and turmeric can make gallbladder pain worse by stimulating contraction. High-dose SUPPLEMENTS — not the spice — are the ones behind reported cases of liver injury, especially formulations with added piperine to boost absorption.",
+      "threshold": "Supplement-strength extracts rather than what you cook with.",
+      "severity": "notable",
+      "affects": "supplements, not the spice",
+      "citations": [
+        {
+          "title": "Drug-Induced Liver Injury Secondary to Turmeric Supplement Containing Piperine: A Case Report (2025)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41281037/",
+          "pmid": "41281037",
+          "year": 2025
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop turmeric powder on Amazon",

@@ -39,6 +39,13 @@
   "surprisingFacts": [
     { "text": "A single ounce of sunflower seeds covers roughly half a day's vitamin E — one of the most concentrated food sources of the vitamin." }
   ],
+  "cautions": [
+    {
+      "effect": "Calorie-dense enough that large daily handfuls add up quickly, and a big jump in fibre and fat can unsettle your stomach. Nothing toxic at food amounts. Salted versions add up on sodium.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

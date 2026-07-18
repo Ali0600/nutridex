@@ -42,6 +42,13 @@
   "surprisingFacts": [
     { "text": "Unlike most dried beans, lentils need no soaking and cook in about 20 minutes — red lentils collapse into a purée, green and black ones hold their shape." }
   ],
+  "cautions": [
+    {
+      "effect": "Gas and bloating from the fibre; they need no soaking but should be cooked through.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

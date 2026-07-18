@@ -42,6 +42,13 @@
     { "text": "Most of sesame's calcium sits in the hull — so unhulled seeds carry far more than the hulled seeds used for most tahini and burger buns." }
   ],
   "compounds": ["lignan"],
+  "cautions": [
+    {
+      "effect": "Calorie-dense enough that large daily handfuls add up quickly, and a big jump in fibre and fat can unsettle your stomach. Nothing toxic at food amounts. Sesame is a common allergen.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

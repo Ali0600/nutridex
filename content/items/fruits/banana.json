@@ -40,6 +40,20 @@
     { "text": "Bananas carry both tryptophan and the vitamin B6 needed to turn it into serotonin — though the amounts are modest, so the 'bananas make you happy' claim is more chemistry than pharmacology." }
   ],
   "compounds": ["serotonin"],
+  "cautions": [
+    {
+      "effect": "For almost everyone, nothing — healthy kidneys clear excess potassium easily. It only matters if your kidneys don't, where high-potassium foods need managing.",
+      "severity": "mild",
+      "affects": "with reduced kidney function",
+      "citations": [
+        {
+          "title": "Potassium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Potassium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

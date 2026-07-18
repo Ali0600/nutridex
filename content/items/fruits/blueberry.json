@@ -44,6 +44,13 @@
     { "text": "Wild (lowbush) blueberries are smaller than cultivated ones but pack noticeably more anthocyanin per gram — the pigment is concentrated in the skin, and wild berries have more skin per volume." }
   ],
   "compounds": ["anthocyanin"],
+  "cautions": [
+    {
+      "effect": "Nothing beyond ordinary overeating — a lot at once can loosen stools thanks to the fibre and sorbitol, and that's it.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

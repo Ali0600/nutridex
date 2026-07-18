@@ -101,7 +101,6 @@ if (fs.existsSync(nutrientsPath)) {
 const slugs = new Set<string>();
 let itemCount = 0;
 let cautionsPresent = 0;
-let cautionsMissing = 0;
 
 for (const category of CATEGORIES) {
   const dir = path.join(CONTENT, 'items', category);
@@ -132,12 +131,10 @@ for (const category of CATEGORIES) {
       }
     }
 
-    // Every item should say what happens if you overdo it — an absent section is
-    // ambiguous (the reader can't tell "safe" from "not researched"). Still a warning
-    // while coverage is being filled in; becomes an error once all items are authored.
+    // Every item must say what happens if you overdo it. An absent section is ambiguous —
+    // the reader can't tell "safe" from "not researched" — so silence is not an option.
     if (item.cautions.length === 0) {
-      cautionsMissing++;
-      warn(`${where}: no cautions yet — add one (use severity "none" if there's no real ceiling)`);
+      err(`${where}: no cautions — add one (use severity "none" if there's no real ceiling)`);
     } else {
       cautionsPresent++;
     }
@@ -163,22 +160,14 @@ for (const category of CATEGORIES) {
 }
 
 // --- Report -----------------------------------------------------------------
-// Caution coverage is summarised rather than listed per-item — 28 identical warnings
-// would drown the ones that matter.
-const cautionNotes = warnings.filter((w) => w.includes('no cautions yet'));
-for (const w of warnings.filter((w) => !w.includes('no cautions yet'))) console.warn(`⚠️  ${w}`);
-if (cautionNotes.length) {
-  console.warn(
-    `⚠️  cautions: ${cautionsPresent}/${itemCount} items authored, ${cautionsMissing} to go`,
-  );
-}
+for (const w of warnings) console.warn(`⚠️  ${w}`);
 if (errors.length) {
   for (const e of errors) console.error(`❌ ${e}`);
   console.error(`\ncontent:validate — ${errors.length} error(s) across ${itemCount} item(s)`);
   process.exit(1);
 }
 console.log(
-  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions, ${compoundIds.size} compounds${
+  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions, ${compoundIds.size} compounds, ${cautionsPresent} with cautions${
     warnings.length ? `, ${warnings.length} warning(s)` : ''
   }`,
 );

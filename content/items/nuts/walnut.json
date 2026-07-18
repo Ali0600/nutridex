@@ -47,6 +47,13 @@
     }
   ],
   "compounds": ["serotonin", "ala"],
+  "cautions": [
+    {
+      "effect": "Calorie-dense enough that large daily handfuls add up quickly, and a big jump in fibre and fat can unsettle your stomach. Nothing toxic at food amounts.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop walnuts on Amazon",

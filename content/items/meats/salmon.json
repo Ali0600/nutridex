@@ -41,6 +41,13 @@
     { "text": "The pink colour comes from astaxanthin, a carotenoid antioxidant salmon get from eating krill and algae — farmed salmon are fed it to match the wild colour." }
   ],
   "compounds": ["astaxanthin", "epa-dha"],
+  "cautions": [
+    {
+      "effect": "Salmon is a low-mercury fish and health bodies encourage eating it regularly rather than limiting it. Nothing to watch beyond ordinary portions.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

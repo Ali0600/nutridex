@@ -44,6 +44,13 @@
     { "text": "Common 'pearl' barley has been polished to remove the bran, so it cooks faster but loses fiber — hulled or hull-less barley keeps the whole grain and its beta-glucan." }
   ],
   "compounds": ["beta-glucan"],
+  "cautions": [
+    {
+      "effect": "A sudden jump in fibre brings bloating, gas and looser stools until your gut adjusts — increase the amount gradually and drink enough water. Barley contains gluten.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }
