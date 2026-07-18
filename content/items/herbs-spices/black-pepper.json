@@ -27,6 +27,22 @@
     { "text": "A pinch of black pepper is why turmeric lattes and curry work: piperine can increase curcumin absorption by up to ~20-fold, turning a poorly-absorbed pigment into something the body can actually use." }
   ],
   "compounds": ["piperine"],
+  "cautions": [
+    {
+      "effect": "Piperine is the reason pepper boosts turmeric's absorption — but it does the same to some medicines, raising blood levels of drugs you did not intend to boost. Large amounts can also irritate the gut.",
+      "severity": "notable",
+      "affects": "if you take prescription medication",
+      "citations": [
+        {
+          "title": "Influence of piperine on the pharmacokinetics of curcumin in animals and human volunteers (Shoba et al., Planta Med 1998)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/9619120/",
+          "pmid": "9619120",
+          "year": 1998
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

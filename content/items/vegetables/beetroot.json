@@ -54,6 +54,21 @@
     }
   ],
   "compounds": ["betalain", "nitrate"],
+  "cautions": [
+    {
+      "effect": "Pink or deep-red urine, and sometimes reddish stool, a day or so after eating beets. It is harmless and it is the pigment, not blood — though it startles people. It happens to roughly 10–14% of people, more often if iron stores are low.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Beeturia (StatPearls, 2026)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30725697/",
+          "pmid": "30725697",
+          "year": 2026
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

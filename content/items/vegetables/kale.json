@@ -43,6 +43,20 @@
     { "text": "The carotenoids in kale are fat-soluble, so a little olive oil or another fat with your greens meaningfully increases how much lutein and zeaxanthin you absorb." }
   ],
   "compounds": ["sulforaphane", "myrosinase", "lutein-zeaxanthin"],
+  "cautions": [
+    {
+      "effect": "Kale is very high in vitamin K, which is what warfarin works against — big swings in how much you eat can push your INR around. The advice is consistency, not avoidance.",
+      "severity": "notable",
+      "affects": "on warfarin",
+      "citations": [
+        {
+          "title": "Vitamin K — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

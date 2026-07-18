@@ -97,6 +97,22 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-8">
+        <h2 className="text-xl font-bold text-neutral-900">How we handle safety information</h2>
+        <p className="mt-2 text-neutral-700">
+          Food pages carry an <strong>&ldquo;If you overdo it&rdquo;</strong> section describing what
+          you&apos;d actually notice from eating a lot of something. Any claim of harm carries a
+          citation, exactly like a benefit does — and where a food has no documented ceiling, we say
+          so plainly rather than leaving the section out, because a missing warning is ambiguous.
+        </p>
+        <p className="mt-2 text-neutral-700">
+          Where we mention a daily <em>upper limit</em>, that figure comes from the NIH Office of
+          Dietary Supplements and is a <strong>whole-day total from everything you eat</strong>, not
+          an allowance for that one food. Limits apply to healthy adults; needs differ in pregnancy,
+          childhood, and with medication or a health condition.
+        </p>
+      </section>
+
+      <section className="mt-8">
         <h2 className="text-xl font-bold text-neutral-900">Affiliate disclosure</h2>
         <p className="mt-2 text-neutral-700">
           Some pages include affiliate links (for example to the Amazon Associates program). If you

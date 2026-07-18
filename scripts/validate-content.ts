@@ -100,6 +100,8 @@ if (fs.existsSync(nutrientsPath)) {
 // --- Items ------------------------------------------------------------------
 const slugs = new Set<string>();
 let itemCount = 0;
+let cautionsPresent = 0;
+let cautionsMissing = 0;
 
 for (const category of CATEGORIES) {
   const dir = path.join(CONTENT, 'items', category);
@@ -130,6 +132,16 @@ for (const category of CATEGORIES) {
       }
     }
 
+    // Every item should say what happens if you overdo it — an absent section is
+    // ambiguous (the reader can't tell "safe" from "not researched"). Still a warning
+    // while coverage is being filled in; becomes an error once all items are authored.
+    if (item.cautions.length === 0) {
+      cautionsMissing++;
+      warn(`${where}: no cautions yet — add one (use severity "none" if there's no real ceiling)`);
+    } else {
+      cautionsPresent++;
+    }
+
     const seenCompounds = new Set<string>();
     for (const c of item.compounds) {
       if (!compoundIds.has(c)) err(`${where}: references unknown compound "${c}"`);
@@ -151,7 +163,15 @@ for (const category of CATEGORIES) {
 }
 
 // --- Report -----------------------------------------------------------------
-for (const w of warnings) console.warn(`⚠️  ${w}`);
+// Caution coverage is summarised rather than listed per-item — 28 identical warnings
+// would drown the ones that matter.
+const cautionNotes = warnings.filter((w) => w.includes('no cautions yet'));
+for (const w of warnings.filter((w) => !w.includes('no cautions yet'))) console.warn(`⚠️  ${w}`);
+if (cautionNotes.length) {
+  console.warn(
+    `⚠️  cautions: ${cautionsPresent}/${itemCount} items authored, ${cautionsMissing} to go`,
+  );
+}
 if (errors.length) {
   for (const e of errors) console.error(`❌ ${e}`);
   console.error(`\ncontent:validate — ${errors.length} error(s) across ${itemCount} item(s)`);

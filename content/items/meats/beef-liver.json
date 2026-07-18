@@ -47,6 +47,32 @@
   "surprisingFacts": [
     { "text": "Liver is so dense in preformed vitamin A that polar-explorer accounts describe vitamin A poisoning from eating polar-bear or seal liver — a reminder that with liver, more is not better." }
   ],
+  "cautions": [
+    {
+      "effect": "Preformed vitamin A builds up in the liver. Too much over time brings headaches, dry or peeling skin, joint and bone pain, and nausea; severe cases affect the liver itself.",
+      "threshold": "100 g of liver carries several times the 3,000 µg adult upper limit for preformed vitamin A — an occasional portion, not a staple.",
+      "severity": "serious",
+      "citations": [
+        {
+          "title": "Vitamin A and Carotenoids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "effect": "High-dose preformed vitamin A can cause birth defects, which is why liver is the one nutrient-dense food routinely advised against in pregnancy.",
+      "severity": "serious",
+      "affects": "in pregnancy",
+      "citations": [
+        {
+          "title": "Vitamin A and Carotenoids — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminA-HealthProfessional/"
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

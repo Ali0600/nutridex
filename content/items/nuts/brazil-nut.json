@@ -26,6 +26,20 @@
   "surprisingFacts": [
     { "text": "Selenium content varies enormously with the soil the tree grew in — a single Brazil nut can range from about 70 to more than 90 micrograms, meaning one nut can exceed the daily requirement. Two to three a day is plenty; more risks toxicity." }
   ],
+  "cautions": [
+    {
+      "effect": "The classic signs of too much selenium are a garlicky or metallic taste and garlic-smelling breath, then brittle hair and nails — and hair loss if you keep going. Nausea and a rash can come with it. It reverses when you cut back.",
+      "threshold": "A single nut can carry 70–90+ µg, so a small handful daily can pass the 400 µg adult upper limit. Two or three a day is plenty.",
+      "severity": "serious",
+      "citations": [
+        {
+          "title": "Selenium — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Selenium-HealthProfessional/"
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }

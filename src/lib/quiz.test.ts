@@ -57,6 +57,7 @@ function item(slug: string, superfood: boolean, conds: string[]): Item {
     ],
     surprisingFacts: [],
     compounds: [],
+    cautions: [],
     affiliateSlots: [],
     updatedAt: '2026-01-01',
   };

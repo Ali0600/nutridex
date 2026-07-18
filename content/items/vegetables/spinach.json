@@ -66,6 +66,20 @@
     }
   ],
   "compounds": ["lutein-zeaxanthin", "nitrate"],
+  "cautions": [
+    {
+      "effect": "Like kale, spinach is rich in vitamin K, so large swings in intake can unsettle warfarin dosing. Keep intake steady rather than cutting it out.",
+      "severity": "notable",
+      "affects": "on warfarin",
+      "citations": [
+        {
+          "title": "Vitamin K — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/"
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

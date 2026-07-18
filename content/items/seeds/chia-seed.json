@@ -43,6 +43,22 @@
     { "text": "Chia can soak up roughly 10–12 times its weight in liquid, turning into a pudding-like gel — the same gel that slows digestion in the gut." }
   ],
   "compounds": ["ala"],
+  "cautions": [
+    {
+      "effect": "Chia absorbs many times its weight in water. Eaten dry with too little fluid it can swell on the way down — there is a documented case of it lodging in the oesophagus — and a sudden big jump in fibre brings bloating and cramping.",
+      "threshold": "Soak them, or drink plenty alongside; increase the amount gradually.",
+      "severity": "notable",
+      "citations": [
+        {
+          "title": "Rheological characterization of chia seed gum as a thickening agent used for dysphagia management (Foods 2024)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38945723/",
+          "pmid": "38945723",
+          "year": 2024
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop chia seeds on Amazon",
