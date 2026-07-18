@@ -22,6 +22,7 @@ function item(slug: string, name: string, extra: Partial<Item> = {}): Item {
     ],
     surprisingFacts: [],
     compounds: [],
+    cautions: [],
     affiliateSlots: [],
     updatedAt: '2026-01-01',
     ...extra,

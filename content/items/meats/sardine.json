@@ -55,6 +55,23 @@
     { "text": "Being small and short-lived, sardines sit low on the food chain and accumulate very little mercury — so they're among the safest fish to eat frequently." }
   ],
   "compounds": ["epa-dha"],
+  "cautions": [
+    {
+      "effect": "Sardines are purine-rich, and purines raise uric acid — which can trigger a gout flare (sudden, intense joint pain, classically the big toe) in people who are prone to it. No effect for most people.",
+      "threshold": "Gout guidance generally treats foods above ~200 mg purines/100 g as ones to limit.",
+      "severity": "notable",
+      "affects": "if you get gout",
+      "citations": [
+        {
+          "title": "Determination of total purine and purine base content of 80 food products to aid nutritional therapy for gout and hyperuricemia (Kaneko et al., Biol Pharm Bull 2020)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32312146/",
+          "pmid": "32312146",
+          "year": 2020
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop canned sardines on Amazon",

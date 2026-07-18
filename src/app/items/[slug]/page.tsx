@@ -3,12 +3,14 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getCompoundsForItem, getItem, getItems } from '@/lib/content';
 import { nutrientPanel } from '@/lib/nutrients';
+import { ulPortions } from '@/lib/limits';
 import { CATEGORY_EMOJI, CATEGORY_LABELS } from '@/lib/labels';
 import { SITE_URL } from '@/lib/site';
 import { BenefitList } from '@/components/BenefitList';
 import { AffiliateSlot } from '@/components/AffiliateSlot';
 import { JsonLd } from '@/components/JsonLd';
 import { RarityBadge } from '@/components/RarityBadge';
+import { CautionPanel } from '@/components/CautionPanel';
 
 export function generateStaticParams() {
   return getItems().map((i) => ({ slug: i.slug }));
@@ -38,6 +40,7 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
 
   const panel = nutrientPanel(item);
   const compounds = getCompoundsForItem(item);
+  const limits = ulPortions(item);
 
   return (
     <article className="py-6">
@@ -113,6 +116,8 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
           </div>
         </section>
       )}
+
+      <CautionPanel itemName={item.name} cautions={item.cautions} ulPortions={limits} />
 
       {item.surprisingFacts.length > 0 && (
         <section className="mt-8">

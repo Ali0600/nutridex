@@ -47,6 +47,34 @@
     }
   ],
   "compounds": ["l-theanine"],
+  "cautions": [
+    {
+      "effect": "Brewed tea mostly just brings caffeine effects — jitteriness, disturbed sleep — and the tannins can blunt iron absorption if you drink it with meals.",
+      "threshold": "Several cups close to bedtime, or with every meal if your iron is low.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Iron — NIH Office of Dietary Supplements (Health Professional Fact Sheet)",
+          "source": "other",
+          "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/"
+        }
+      ]
+    },
+    {
+      "effect": "Concentrated green tea EXTRACT supplements are a different matter — they are a recognised cause of acute liver injury. Drinking brewed tea is not the same thing as swallowing a high-dose extract capsule.",
+      "severity": "notable",
+      "affects": "extract supplements, not brewed tea",
+      "citations": [
+        {
+          "title": "Green tea extract-associated acute liver injury: Case report and review (Hosseini et al., 2022)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36523867/",
+          "pmid": "36523867",
+          "year": 2022
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop green tea on Amazon",

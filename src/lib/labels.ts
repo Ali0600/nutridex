@@ -1,4 +1,4 @@
-import type { Category, Rarity } from './schema';
+import type { CautionSeverity, Category, Rarity } from './schema';
 
 export const CATEGORY_LABELS: Record<Category, string> = {
   tea: 'Teas',
@@ -51,6 +51,17 @@ export const RARITY_LABELS: Record<Rarity, { label: string; blurb: string; class
     blurb: 'Widespread across the diet',
     className: 'bg-neutral-100 text-neutral-600',
   },
+};
+
+/**
+ * Overconsumption severity. Tone is deliberately informative rather than alarming —
+ * no reds — and `none` should read as reassurance, not a missing warning.
+ */
+export const CAUTION_LABELS: Record<CautionSeverity, { label: string; className: string }> = {
+  none: { label: 'No real ceiling', className: 'bg-leaf-100 text-leaf-800' },
+  mild: { label: 'Mild', className: 'bg-neutral-100 text-neutral-700' },
+  notable: { label: 'Worth knowing', className: 'bg-amber-100 text-amber-800' },
+  serious: { label: 'Take seriously', className: 'bg-orange-100 text-orange-900' },
 };
 
 export const STRENGTH_LABELS: Record<string, { label: string; className: string }> = {

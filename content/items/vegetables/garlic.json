@@ -29,6 +29,21 @@
     { "text": "Allicin doesn't exist in an intact clove — it's created when garlic is crushed or chopped and two compounds meet. Letting crushed garlic rest ~10 minutes before cooking lets more allicin form and survive the heat." }
   ],
   "compounds": ["allicin"],
+  "cautions": [
+    {
+      "effect": "Beyond the obvious breath and body odour, a lot of raw garlic can irritate the stomach and cause heartburn. Garlic also has a mild blood-thinning effect, which matters mostly alongside anticoagulants or before surgery.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Allicin, the Odor of Freshly Crushed Garlic: A Review of Recent Progress in Understanding Allicin's Effects on Cells (Borlinghaus et al., Molecules 2021)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33801955/",
+          "pmid": "33801955",
+          "year": 2021
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

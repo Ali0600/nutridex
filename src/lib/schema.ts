@@ -70,6 +70,36 @@ export const affiliateSlotSchema = z
   });
 export type AffiliateSlot = z.infer<typeof affiliateSlotSchema>;
 
+/**
+ * How much it matters if you overdo it.
+ * - `none` — no documented ceiling beyond ordinary overeating.
+ * - `mild` — self-limiting and harmless (GI discomfort, temporary discolouration).
+ * - `notable` — real and dose-dependent, or relevant to a specific group.
+ * - `serious` — genuine toxicity or a clinically meaningful interaction.
+ */
+export const CAUTION_SEVERITIES = ['none', 'mild', 'notable', 'serious'] as const;
+export const cautionSeveritySchema = z.enum(CAUTION_SEVERITIES);
+export type CautionSeverity = z.infer<typeof cautionSeveritySchema>;
+
+export const cautionSchema = z
+  .object({
+    /** What you would actually NOTICE — observable effects first, not mechanism. */
+    effect: z.string().min(1),
+    /** Roughly how much, when it's known ("more than 3–4 nuts a day"). */
+    threshold: z.string().optional(),
+    severity: cautionSeveritySchema,
+    /** Who it applies to, when it isn't everyone ("in pregnancy", "on warfarin"). */
+    affects: z.string().optional(),
+    citations: z.array(citationSchema).default([]),
+  })
+  .refine((v) => v.severity === 'none' || v.citations.length >= 1, {
+    // Any claim of harm needs a source, same bar as a benefit. A "no documented ceiling"
+    // note asserts no harm, so it must not be forced to invent a citation.
+    error: 'a caution above severity "none" needs at least one citation',
+    path: ['citations'],
+  });
+export type Caution = z.infer<typeof cautionSchema>;
+
 export const itemSchema = z
   .object({
     slug,
@@ -84,6 +114,8 @@ export const itemSchema = z
     surprisingFacts: z.array(factSchema).default([]),
     /** Ids from `content/compounds.json` — bioactives this food actually contains. */
     compounds: z.array(slug).default([]),
+    /** What you'd notice if you overdid it. Every item should have one — see validate-content. */
+    cautions: z.array(cautionSchema).default([]),
     affiliateSlots: z.array(affiliateSlotSchema).default([]),
     updatedAt: z.iso.date(),
   })
