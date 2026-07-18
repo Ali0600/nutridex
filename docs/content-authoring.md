@@ -64,9 +64,52 @@ See [auto-blog.md](auto-blog.md).
   2. An authoritative reference for nutrient-driven claims — the **NIH Office of Dietary
      Supplements** Health Professional fact sheets
      (`https://ods.od.nih.gov/factsheets/<Nutrient>-HealthProfessional/`), source `other`.
-- **Verify the PMID resolves** before committing — a made-up id is worse than no citation.
+- **Never write a PMID from memory — always look it up.** Recalled ids are wrong far more often
+  than they're right (in one session, 4 out of 4 checked were wrong: a paper on orbital cellulitis
+  cited for lutein sources, a pregnancy-nausea meta-analysis cited for ginger's GI effects). Search
+  by title, read the abstract, then cite. Verify every id before committing:
+
+  ```bash
+  curl -s "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>%20AND%20SRC:MED&resultType=core&format=json" \
+    | python3 -c "import sys,json;d=json.load(sys.stdin)['resultList']['result'];print(d[0]['title'] if d else 'NOT FOUND')"
+  ```
+
+- **If no source supports the claim, drop the claim** — don't substitute a paper that measures
+  something adjacent. An effects paper is not a distribution paper; a composition survey is not
+  evidence of risk. (EGCG, hydroxytyrosol, rice arsenic and spinach oxalate were all left out on
+  these grounds rather than mis-cited.)
 - Match `strength` to the evidence: `strong` (meta-analyses / strong consensus),
   `moderate` (some RCTs), `preliminary` (early or mechanistic only).
+
+## Compounds (`content/compounds.json`)
+
+Bioactives a food **actually contains**, each with a cited real-world `rarity`
+(`signature | rare | uncommon | common`).
+
+- **Contains, not "does something with".** Vitamin C helps your body *build* collagen, so collagen
+  is not a compound; avocado oil helps you *absorb* lycopene but contains none; ginger acts on
+  serotonin *receptors* without containing serotonin; flax carries ALA which only partly *converts*
+  to EPA/DHA. All correctly excluded.
+- **Tag by biology, not by our prose.** Kale carries sulforaphane even though no entry mentioned it;
+  walnut carries serotonin (~87 µg/g, ~6× a banana). Conversely the herbal "teas" (ginger,
+  peppermint) are not *Camellia sinensis* and must not get tea-plant compounds.
+- **Compounds ≠ nutrients.** Anything with a USDA `nutrient_nbr` belongs in `NUTRIENTS` instead —
+  that's why selenium is a nutrient with a ranking page, not a compound.
+- `rarity` describes the **wider food supply** and needs a citation. The "in N foods here" count is
+  derived from this database and must never be rendered as world-rarity.
+
+## Cautions — "If you overdo it"
+
+Every item **must** carry at least one `cautions` entry; `content:validate` fails without one,
+because an absent section is ambiguous between "safe" and "not researched".
+
+- `effect` leads with **what you'd notice** (orange palms, red urine, garlicky breath), not mechanism.
+- Anything above `severity: 'none'` needs a citation. `none` is exempt — it asserts no harm, so it
+  must not be forced to invent a source.
+- **Separate the food from the extract.** Brewed green tea and turmeric-the-spice are mild; the
+  high-dose supplements are what the liver-injury literature describes. Conflating them misinforms
+  in both directions.
+- Prefer debunking to repeating folklore where the evidence supports it (soy and thyroid).
 
 ## Add a blog post
 
@@ -79,5 +122,22 @@ See [auto-blog.md](auto-blog.md).
 ## Add a nutrient (ranking page)
 
 Add the nutrient to `NUTRIENTS` in [`src/lib/nutrients-config.ts`](../src/lib/nutrients-config.ts)
-with its USDA `nutrient_nbr`, then re-run `npm run usda:import`. A `/nutrients/<key>` page and an
-API route appear automatically.
+with its USDA `nutrient_nbr`, then re-run `npm run usda:import` (or `usda:enrich`). A
+`/nutrients/<key>` page, an API route, sitemap entries and the item-page chip all appear
+automatically — adding selenium was genuinely a one-line change.
+
+**If you also add a `ul` (upper limit), set `ulScope` honestly — most ULs do not apply to food:**
+
+| `ulScope` | Meaning | Computed into a portion? |
+|---|---|---|
+| `total` | Limit counts all intake including food (selenium, zinc, iron, calcium, vit C, vit D) | **Yes** |
+| `supplemental-only` | Limit is for supplements/fortification (magnesium, vit E, B6, folic acid) | Never |
+| `preformed-only` | Vitamin A — the UL is retinol, but USDA reports **RAE, which merges retinol with carotenoids** | Never |
+
+`ulPortions()` in [`src/lib/limits.ts`](../src/lib/limits.ts) reads **only `total`**. Marking
+vitamin A `total` would claim sweet potato and kale approach the limit — beta-carotene does not
+cause vitamin-A toxicity. Liver's vitamin A is handled as an authored caution instead.
+
+Note the regenerated data is **merged, not overwritten**, so a food whose USDA fetch fails keeps its
+existing panel — but still diff `data/usda/nutrients.generated.json` before/after, since the script
+rewrites the whole file.
