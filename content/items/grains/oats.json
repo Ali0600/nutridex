@@ -45,6 +45,13 @@
     { "text": "Steel-cut, rolled, and instant oats are the same grain at different processing levels — the more they're cut and flattened, the faster they digest and the higher the blood-sugar spike." }
   ],
   "compounds": ["beta-glucan"],
+  "cautions": [
+    {
+      "effect": "A sudden jump in fibre brings bloating, gas and looser stools until your gut adjusts — increase the amount gradually and drink enough water.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop rolled oats on Amazon",

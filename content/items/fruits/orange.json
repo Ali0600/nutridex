@@ -54,6 +54,13 @@
   "surprisingFacts": [
     { "text": "Most of an orange's flavonoids — like hesperidin — are concentrated in the white pith and membranes, so juice strained of pulp loses much of them." }
   ],
+  "cautions": [
+    {
+      "effect": "Very little. A lot of citrus at once can irritate the mouth or worsen reflux from the acid, and the fibre may loosen stools.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-05"
+  "updatedAt": "2026-07-17"
 }

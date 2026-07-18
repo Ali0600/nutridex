@@ -44,6 +44,13 @@
     { "text": "Most of black beans' antioxidants live in the black skin — the cooking water turns purple-grey because those anthocyanins leach out." }
   ],
   "compounds": ["anthocyanin"],
+  "cautions": [
+    {
+      "effect": "Gas and bloating from the fibre and oligosaccharides. Dried beans must be soaked and boiled properly — undercooked beans cause stomach upset.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

@@ -43,6 +43,13 @@
   "surprisingFacts": [
     { "text": "The starchy water from a can of chickpeas — aquafaba — whips up like egg whites and is used as a vegan meringue and mayonnaise base." }
   ],
+  "cautions": [
+    {
+      "effect": "Gas and bloating while your gut adjusts to the fibre.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

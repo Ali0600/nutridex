@@ -42,6 +42,13 @@
   "surprisingFacts": [
     { "text": "Quinoa isn't a true cereal grain — it's the seed of a plant related to spinach and beets. Rinse it before cooking to wash off the bitter saponin coating that protects the seeds from birds." }
   ],
+  "cautions": [
+    {
+      "effect": "A sudden jump in fibre brings bloating, gas and looser stools until your gut adjusts — increase the amount gradually and drink enough water. Rinsing removes the bitter saponin coating.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop quinoa on Amazon",
@@ -49,5 +56,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

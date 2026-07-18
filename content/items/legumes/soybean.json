@@ -42,6 +42,21 @@
   "surprisingFacts": [
     { "text": "Edamame are just immature green soybeans, harvested before they harden — which is why they're eaten fresh from the pod rather than dried." }
   ],
+  "cautions": [
+    {
+      "effect": "Soy's reputation for harming the thyroid is mostly overstated — a meta-analysis of randomised trials found soy has little effect on thyroid hormones in people with normal thyroid function. It may matter more if your iodine intake is low. Large amounts can also cause gas and bloating.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Systematic Review and Meta-analysis on the Effect of Soy on Thyroid Function (Otun et al., Sci Rep 2019)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30850697/",
+          "pmid": "30850697",
+          "year": 2019
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

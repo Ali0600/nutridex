@@ -51,6 +51,13 @@
     { "text": "The peppery sting good extra-virgin olive oil leaves at the back of your throat comes from oleocanthal — a polyphenol that acts on the same anti-inflammatory pathway as ibuprofen, which is why researchers describe it as a natural anti-inflammatory." }
   ],
   "compounds": ["oleocanthal"],
+  "cautions": [
+    {
+      "effect": "It's almost pure fat, so the only real ceiling is calories — roughly 120 kcal a tablespoon. Nothing about it is toxic in culinary amounts.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [
     {
       "label": "Shop extra-virgin olive oil on Amazon",

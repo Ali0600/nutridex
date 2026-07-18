@@ -42,6 +42,13 @@
   "surprisingFacts": [
     { "text": "Avocado oil is pressed from the fruit's flesh, not a seed — one of only a handful of oils (with olive and palm) made this way, which is why unrefined versions can taste faintly of avocado." }
   ],
+  "cautions": [
+    {
+      "effect": "It's almost pure fat, so the only real ceiling is calories — roughly 120 kcal a tablespoon. Nothing about it is toxic in culinary amounts.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }

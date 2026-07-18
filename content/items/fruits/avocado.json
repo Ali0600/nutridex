@@ -42,6 +42,13 @@
     { "text": "Botanically a single-seeded berry, the avocado has more potassium per 100g than a banana — despite the banana's reputation as the potassium fruit." }
   ],
   "compounds": ["lutein-zeaxanthin"],
+  "cautions": [
+    {
+      "effect": "Nothing toxic — it's simply calorie-dense, so several a day add up faster than most fruit.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

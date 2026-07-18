@@ -52,6 +52,13 @@
     { "text": "Punicalagins are among the largest polyphenol molecules in the human diet — and pomegranate juice's antioxidant activity in lab assays often outmeasures green tea or red wine." }
   ],
   "compounds": ["anthocyanin"],
+  "cautions": [
+    {
+      "effect": "Nothing notable from the fruit or seeds beyond the fibre. Large amounts of juice are mostly a sugar consideration.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

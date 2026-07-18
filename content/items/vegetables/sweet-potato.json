@@ -25,6 +25,22 @@
   "surprisingFacts": [
     { "text": "Boiling actually gives sweet potato a lower blood-sugar impact than baking or roasting, which break the starch down into more quickly-absorbed forms." }
   ],
+  "cautions": [
+    {
+      "effect": "Eat a lot over weeks and your skin — palms, soles and around the nose especially — can turn faintly orange. That's carotenemia: harmless, not jaundice (the whites of your eyes stay white), and it fades once you cut back.",
+      "threshold": "Typically weeks of consistently high beta-carotene intake.",
+      "severity": "mild",
+      "citations": [
+        {
+          "title": "Carotenemia (StatPearls, 2026)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30521299/",
+          "pmid": "30521299",
+          "year": 2026
+        }
+      ]
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-03"
+  "updatedAt": "2026-07-17"
 }

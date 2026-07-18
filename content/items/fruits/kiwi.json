@@ -69,6 +69,13 @@
     }
   ],
   "compounds": ["actinidin", "serotonin"],
+  "cautions": [
+    {
+      "effect": "Little of note. The acid and enzymes can tingle or irritate the mouth if you eat several, and kiwi is a common allergen for people with latex allergy.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
   "updatedAt": "2026-07-17"
 }

@@ -41,6 +41,13 @@
   "surprisingFacts": [
     { "text": "White and brown rice start as the same grain — white is simply brown rice with the bran and germ polished off, which removes most of its fiber, magnesium, and B-vitamins." }
   ],
+  "cautions": [
+    {
+      "effect": "Nothing acute. Rice takes up more arsenic from soil than other grains, so variety across grains is sensible if rice is a daily staple — rinsing and cooking in plenty of water reduces it.",
+      "severity": "none",
+      "citations": []
+    }
+  ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-07"
+  "updatedAt": "2026-07-17"
 }
