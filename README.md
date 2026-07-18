@@ -9,14 +9,26 @@
 
 **Live:** [nutridex-neon.vercel.app](https://nutridex-neon.vercel.app) · deploys from `main` on green CI.
 
-## What it will do
+## What it does
+
+43 foods across 10 categories, 18 compounds, 16 nutrients — every claim cited.
 
 - **Benefit database** — each item documents its special benefits with the actual science
   (beetroot → dietary nitrates → nitric oxide → lower blood pressure), surprising facts
   (kiwi contains serotonin), and linked studies — never uncited claims.
-- **Browse by body part or goal** — skin, kidney, lungs, hair… or conditions like high
-  blood pressure, lung detox, hair loss.
-- **Nutrient rankings** — which foods actually give you the most vitamin C, iron, potassium…
+- **Compounds, ranked by real-world rarity** — the bioactives behind the benefits at
+  `/compounds`, from **signature** (oleocanthal is essentially only in extra-virgin olive oil) to
+  **common** (ALA is everywhere), each with a cited note on where it occurs and which foods have it.
+- **"If you overdo it"** — every food says what you'd actually *notice* from too much: orange palms
+  from sweet potato, red urine from beetroot, garlicky breath from Brazil nuts. Any claim of harm is
+  cited, and where there's no real ceiling it says so plainly. Portions that reach an adult's daily
+  upper limit are computed from the USDA data (~21 g of Brazil nut = a day's selenium).
+- **Browse by anything** — index pages for [categories](https://nutridex-neon.vercel.app/categories),
+  [body parts](https://nutridex-neon.vercel.app/organs),
+  [goals](https://nutridex-neon.vercel.app/goals),
+  [nutrients](https://nutridex-neon.vercel.app/nutrients) and
+  [compounds](https://nutridex-neon.vercel.app/compounds), each with live counts.
+- **Nutrient rankings** — which foods actually give you the most vitamin C, iron, selenium…
   computed from USDA FoodData Central data, not vibes.
 - **Super Foods** (and **Super Fruits**) — the standouts and why they earn the label.
 - **Search & compare** — full-text search at `/items?q=` and a side-by-side food comparison at
@@ -62,9 +74,14 @@ Analytics is via `@vercel/analytics` + `@vercel/speed-insights` (enable both in 
   React 19) + TypeScript**, where a structured JSON/MDX database is the single source of truth,
   **schema-validated in CI with zod** and served both as fully static pages and a versioned
   **JSON API** (`/api/v1`, `force-static` + CORS) designed for a future iOS client.
-- Built a **schema-enforced content model** with cross-file referential integrity (organ/condition
-  tags, citation-per-claim, superfood justification) and a custom `content:validate` gate that
-  fails the build on any uncited claim or dangling tag.
+- Built a **schema-enforced content model** with cross-file referential integrity (organ/condition/
+  compound tags, citation-per-claim, superfood justification) and a custom `content:validate` gate
+  that fails the build on any uncited claim, dangling tag, or food missing its safety section —
+  each gate **verified to fail on a known-bad input**, not just to pass.
+- Designed **domain-correctness safeguards into the type system**: nutrient upper limits carry a
+  `ulScope` discriminator so the code can only compute a portion warning from limits that actually
+  apply to food, making a whole class of wrong health claim (flagging beta-carotene foods under
+  vitamin A's retinol limit) structurally unrepresentable rather than merely avoided.
 - Engineered a **keyless data-import pipeline** distilling per-100g nutrient values from **USDA
   FoodData Central** into committed JSON that powers build-time vitamin-ranking pages — no API key
   in CI or runtime.
