@@ -11,8 +11,9 @@ export default defineConfig({
   },
   test: {
     environment: 'node',
-    // Unit tests live under src/. The Playwright E2E specs in e2e/ are run by
-    // Playwright, not vitest — keep the two runners from picking up each other's files.
-    include: ['src/**/*.test.ts'],
+    // Unit tests live under src/ and scripts/ (the content-integrity helpers are build-time
+    // tooling, not app code). The Playwright E2E specs in e2e/ are run by Playwright, not
+    // vitest — keep the two runners from picking up each other's files.
+    include: ['src/**/*.test.ts', 'scripts/**/*.test.ts'],
   },
 });

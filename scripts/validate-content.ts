@@ -17,6 +17,7 @@ import {
   nutrientsFileSchema,
   organsFileSchema,
 } from '../src/lib/schema';
+import { checkCitation, collectCitations, readCache } from './lib/citations';
 
 const ROOT = process.cwd();
 const CONTENT = path.join(ROOT, 'content');
@@ -159,6 +160,25 @@ for (const category of CATEGORIES) {
   }
 }
 
+// --- Citations --------------------------------------------------------------
+// Offline assertion against data/citations.verified.json, refreshed by
+// `npm run citations:verify`. Hermetic on purpose: an external API call in the merge gate
+// would make it flaky. Catches a PMID that resolves to a different paper, a year that
+// disagrees with the record, an invented author byline, and retracted papers.
+const citeRefs = collectCitations();
+const citeCache = readCache();
+let citationsChecked = 0;
+
+if (Object.keys(citeCache).length === 0) {
+  err('data/citations.verified.json is missing or empty — run `npm run citations:verify -- --write`');
+} else {
+  for (const ref of citeRefs) {
+    const problems = checkCitation(ref, citeCache[ref.pmid]);
+    if (problems.length === 0) citationsChecked++;
+    for (const p of problems) err(`${ref.where} (${ref.context}): ${p}`);
+  }
+}
+
 // --- Report -----------------------------------------------------------------
 for (const w of warnings) console.warn(`⚠️  ${w}`);
 if (errors.length) {
@@ -167,7 +187,7 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions, ${compoundIds.size} compounds, ${cautionsPresent} with cautions${
+  `✅ content:validate — ${itemCount} item(s), ${organIds.size} organs, ${conditionIds.size} conditions, ${compoundIds.size} compounds, ${cautionsPresent} with cautions, ${citationsChecked} citations verified${
     warnings.length ? `, ${warnings.length} warning(s)` : ''
   }`,
 );

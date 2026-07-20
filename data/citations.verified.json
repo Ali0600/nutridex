@@ -1,0 +1,840 @@
+{
+  "1656395": {
+    "title": "Mammalian lignan production from various foods",
+    "firstAuthor": "Thompson LU",
+    "groupAuthor": false,
+    "journal": "Nutr Cancer",
+    "year": 1991,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "2413754": {
+    "title": "Serotonin content of foods: effect on urinary excretion of 5-hydroxyindoleacetic acid",
+    "firstAuthor": "Feldman JM",
+    "groupAuthor": false,
+    "journal": "Am J Clin Nutr",
+    "year": 1985,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "7596371": {
+    "title": "Meta-analysis of the effects of soy protein intake on serum lipids",
+    "firstAuthor": "Anderson JW",
+    "groupAuthor": false,
+    "journal": "N Engl J Med",
+    "year": 1995,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "9294217": {
+    "title": "Broccoli sprouts: an exceptionally rich source of inducers of enzymes that protect against chemical carcinogens",
+    "firstAuthor": "Fahey JW",
+    "groupAuthor": false,
+    "journal": "Proc Natl Acad Sci U S A",
+    "year": 1997,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "9619120": {
+    "title": "Influence of piperine on the pharmacokinetics of curcumin in animals and human volunteers",
+    "firstAuthor": "Shoba G",
+    "groupAuthor": false,
+    "journal": "Planta Med",
+    "year": 1998,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "9828775": {
+    "title": "Fruits and vegetables that are sources for lutein and zeaxanthin: the macular pigment in human eyes",
+    "firstAuthor": "Sommerburg O",
+    "groupAuthor": false,
+    "journal": "Br J Ophthalmol",
+    "year": 1998,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "11198818": {
+    "title": "The chemical diversity and distribution of glucosinolates and isothiocyanates among plants",
+    "firstAuthor": "Fahey JW",
+    "groupAuthor": false,
+    "journal": "Phytochemistry",
+    "year": 2001,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "15735074": {
+    "title": "Carotenoid absorption from salad and salsa by humans is enhanced by the addition of avocado or avocado oil",
+    "firstAuthor": "Unlu NZ",
+    "groupAuthor": false,
+    "journal": "J Nutr",
+    "year": 2005,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "16136122": {
+    "title": "Phytochemistry: ibuprofen-like activity in extra-virgin olive oil",
+    "firstAuthor": "Beauchamp GK",
+    "groupAuthor": false,
+    "journal": "Nature",
+    "year": 2005,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "16626766": {
+    "title": "Occurrence and taxonomic significance of cysteine sulphoxides in the genus Allium L. (Alliaceae)",
+    "firstAuthor": "Fritsch RM",
+    "groupAuthor": false,
+    "journal": "Phytochemistry",
+    "year": 2006,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "16719536": {
+    "title": "Concentrations of anthocyanins in common foods in the United States and estimation of normal consumption",
+    "firstAuthor": "Wu X",
+    "groupAuthor": false,
+    "journal": "J Agric Food Chem",
+    "year": 2006,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "16890967": {
+    "title": "Biosynthesis of curcuminoids and gingerols in turmeric (Curcuma longa) and ginger (Zingiber officinale): identification of curcuminoid synthase and hydroxycinnamoyl-CoA thioesterases",
+    "firstAuthor": "Ramirez-Ahumada Mdel C",
+    "groupAuthor": false,
+    "journal": "Phytochemistry",
+    "year": 2006,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "16954359": {
+    "title": "The effect of polyphenols in olive oil on heart disease risk factors: a randomized trial",
+    "firstAuthor": "Covas MI",
+    "groupAuthor": false,
+    "journal": "Ann Intern Med",
+    "year": 2006,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "18250365": {
+    "title": "Acute blood pressure lowering, vasoprotective, and antiplatelet properties of dietary nitrate via bioconversion to nitrite",
+    "firstAuthor": "Webb AJ",
+    "groupAuthor": false,
+    "journal": "Hypertension",
+    "year": 2008,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "18681988": {
+    "title": "The combined effects of L-theanine and caffeine on cognitive performance and mood",
+    "firstAuthor": "Owen GN",
+    "groupAuthor": false,
+    "journal": "Nutr Neurosci",
+    "year": 2008,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "19439460": {
+    "title": "Food sources of nitrates and nitrites: the physiologic context for potential health benefits",
+    "firstAuthor": "Hord NG",
+    "groupAuthor": false,
+    "journal": "Am J Clin Nutr",
+    "year": 2009,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "19661447": {
+    "title": "Dietary nitrate supplementation reduces the O2 cost of low-intensity exercise and enhances tolerance to high-intensity exercise in humans",
+    "firstAuthor": "Bailey SJ",
+    "groupAuthor": false,
+    "journal": "J Appl Physiol (1985)",
+    "year": 2009,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "19828327": {
+    "title": "Distribution and biosynthesis of theanine in Theaceae plants",
+    "firstAuthor": "Deng WW",
+    "groupAuthor": false,
+    "journal": "Plant Physiol Biochem",
+    "year": 2010,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "20232890": {
+    "title": "Actinidin enhances gastric protein digestion as assessed using an in vitro gastric digestion model",
+    "firstAuthor": "Kaur L",
+    "groupAuthor": false,
+    "journal": "J Agric Food Chem",
+    "year": 2010,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "21566799": {
+    "title": "Carotenoids in marine animals",
+    "firstAuthor": "Maoka T.",
+    "groupAuthor": false,
+    "journal": "Mar Drugs",
+    "year": 2011,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "21669584": {
+    "title": "Effect of kiwifruit consumption on sleep quality in adults with sleep problems",
+    "firstAuthor": "Lin HH",
+    "groupAuthor": false,
+    "journal": "Asia Pac J Clin Nutr",
+    "year": 2011,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "21715508": {
+    "title": "Green tea intake lowers fasting serum total and LDL cholesterol in adults: a meta-analysis of 14 randomized controlled trials",
+    "firstAuthor": "Zheng XX",
+    "groupAuthor": false,
+    "journal": "Am J Clin Nutr",
+    "year": 2011,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "21923981": {
+    "title": "Effects of walnut consumption on cognitive performance in young adults",
+    "firstAuthor": "Pribis P",
+    "groupAuthor": false,
+    "journal": "Br J Nutr",
+    "year": 2012,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "22039217": {
+    "title": "Mapping, complementation, and targets of the cysteine protease actinidin in kiwifruit",
+    "firstAuthor": "Nieuwenhuizen NJ",
+    "groupAuthor": false,
+    "journal": "Plant Physiol",
+    "year": 2012,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "22609423": {
+    "title": "One year of pomegranate juice intake decreases oxidative stress, inflammation, and incidence of infections in hemodialysis patients: a randomized placebo-controlled trial",
+    "firstAuthor": "Shema-Didi L",
+    "groupAuthor": false,
+    "journal": "Free Radic Biol Med",
+    "year": 2012,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "23625168": {
+    "title": "Occurrence of piperidine alkaloids in Piper species collected in different areas",
+    "firstAuthor": "Bao N",
+    "groupAuthor": false,
+    "journal": "J Nat Med",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "23627682": {
+    "title": "Cassia cinnamon as a source of coumarin in cinnamon-flavored food and food supplements in the United States",
+    "firstAuthor": "Wang YH",
+    "groupAuthor": false,
+    "journal": "J Agric Food Chem",
+    "year": 2013,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "23644932": {
+    "title": "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the Age-Related Eye Disease Study 2 (AREDS2) randomized clinical trial",
+    "firstAuthor": "Age-Related Eye Disease Study 2 Research Group.",
+    "groupAuthor": true,
+    "journal": "JAMA",
+    "year": 2013,
+    "retracted": false,
+    "errata": [
+      "unknown"
+    ],
+    "checkedAt": "2026-07-20"
+  },
+  "23922235": {
+    "title": "Are curcuminoids effective C-reactive protein-lowering agents in clinical practice? Evidence from a meta-analysis",
+    "firstAuthor": "Sahebkar A.",
+    "groupAuthor": false,
+    "journal": "Phytother Res",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "24019277": {
+    "title": "Cinnamon use in type 2 diabetes: an updated systematic review and meta-analysis",
+    "firstAuthor": "Allen RW",
+    "groupAuthor": false,
+    "journal": "Ann Fam Med",
+    "year": 2013,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "24402174": {
+    "title": "Astaxanthin: sources, extraction, stability, biological activities and its commercial applications--a review",
+    "firstAuthor": "Ambati RR",
+    "groupAuthor": false,
+    "journal": "Mar Drugs",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "24642205": {
+    "title": "A systematic review and meta-analysis of the effect and safety of ginger in the treatment of pregnancy-associated nausea and vomiting",
+    "firstAuthor": "Viljoen E",
+    "groupAuthor": false,
+    "journal": "Nutr J",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "24710915": {
+    "title": "Effect of dietary pulse intake on established therapeutic lipid targets for cardiovascular risk reduction: a systematic review and meta-analysis of randomized controlled trials",
+    "firstAuthor": "Ha V",
+    "groupAuthor": false,
+    "journal": "CMAJ",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "24913818": {
+    "title": "Rapid and sustainable detoxication of airborne pollutants by broccoli sprout beverage: results of a randomized clinical trial in China",
+    "firstAuthor": "Egner PA",
+    "groupAuthor": false,
+    "journal": "Cancer Prev Res (Phila)",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "25051514": {
+    "title": "Total myrosinase activity estimates in brassica vegetable produce",
+    "firstAuthor": "Dosz EB",
+    "groupAuthor": false,
+    "journal": "J Agric Food Chem",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "25411276": {
+    "title": "Cholesterol-lowering effects of oat β-glucan: a meta-analysis of randomized controlled trials",
+    "firstAuthor": "Whitehead A",
+    "groupAuthor": false,
+    "journal": "Am J Clin Nutr",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "25421976": {
+    "title": "Dietary nitrate provides sustained blood pressure lowering in hypertensive patients: a randomized, phase 2, double-blind, placebo-controlled study",
+    "firstAuthor": "Kapil V",
+    "groupAuthor": false,
+    "journal": "Hypertension",
+    "year": 2015,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "25557383": {
+    "title": "Effect of garlic on blood pressure: a meta-analysis",
+    "firstAuthor": "Wang HP",
+    "groupAuthor": false,
+    "journal": "J Clin Hypertens (Greenwich)",
+    "year": 2015,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "25617536": {
+    "title": "Clinical and molecular evidence of the consumption of broccoli, glucoraphanin and sulforaphane in humans",
+    "firstAuthor": "Conzatti A",
+    "groupAuthor": false,
+    "journal": "Nutr Hosp",
+    "year": 2014,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "26058162": {
+    "title": "Occurrence, biosynthesis and metabolism of theanine (γ-glutamyl-L-ethylamide) in plants: a comprehensive review",
+    "firstAuthor": "Ashihara H.",
+    "groupAuthor": false,
+    "journal": "Nat Prod Commun",
+    "year": 2015,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "27533649": {
+    "title": "Efficacy of Turmeric Extracts and Curcumin for Alleviating the Symptoms of Joint Arthritis: A Systematic Review and Meta-Analysis of Randomized Clinical Trials",
+    "firstAuthor": "Daily JW",
+    "groupAuthor": false,
+    "journal": "J Med Food",
+    "year": 2016,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "27888156": {
+    "title": "Effects of pomegranate juice on blood pressure: A systematic review and meta-analysis of randomized controlled trials",
+    "firstAuthor": "Sahebkar A",
+    "groupAuthor": false,
+    "journal": "Pharmacol Res",
+    "year": 2017,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "28551238": {
+    "title": "Characterization of betalains, saponins and antioxidant power in differently colored quinoa (Chenopodium quinoa) varieties",
+    "firstAuthor": "Escribano J",
+    "groupAuthor": false,
+    "journal": "Food Chem",
+    "year": 2017,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "29541142": {
+    "title": "Effects of Ginger <i>(Zingiber officinale Roscoe)</i> on Type 2 Diabetes Mellitus and Components of the Metabolic Syndrome: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "firstAuthor": "Zhu J",
+    "groupAuthor": false,
+    "journal": "Evid Based Complement Alternat Med",
+    "year": 2018,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "29897866": {
+    "title": "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts",
+    "firstAuthor": "Estruch R",
+    "groupAuthor": false,
+    "journal": "N Engl J Med",
+    "year": 2018,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30521299": {
+    "title": "Carotenemia",
+    "firstAuthor": "Al Nasser Y",
+    "groupAuthor": false,
+    "journal": null,
+    "year": 2026,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30547302": {
+    "title": "The Role of Vitamins and Minerals in Hair Loss: A Review",
+    "firstAuthor": "Almohanna HM",
+    "groupAuthor": false,
+    "journal": "Dermatol Ther (Heidelb)",
+    "year": 2019,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30638909": {
+    "title": "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses",
+    "firstAuthor": "Reynolds A",
+    "groupAuthor": false,
+    "journal": "Lancet",
+    "year": 2019,
+    "retracted": false,
+    "errata": [
+      "30712898"
+    ],
+    "checkedAt": "2026-07-20"
+  },
+  "30654773": {
+    "title": "The impact of peppermint oil on the irritable bowel syndrome: a meta-analysis of the pooled clinical data",
+    "firstAuthor": "Alammar N",
+    "groupAuthor": false,
+    "journal": "BMC Complement Altern Med",
+    "year": 2019,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30680163": {
+    "title": "Ginger in gastrointestinal disorders: A systematic review of clinical trials",
+    "firstAuthor": "Nikkhah Bodagh M",
+    "groupAuthor": false,
+    "journal": "Food Sci Nutr",
+    "year": 2019,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30725697": {
+    "title": "Beeturia",
+    "firstAuthor": "Sauder HM",
+    "groupAuthor": false,
+    "journal": null,
+    "year": 2026,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30850697": {
+    "title": "Systematic Review and Meta-analysis on the Effect of Soy on Thyroid Function",
+    "firstAuthor": "Otun J",
+    "groupAuthor": false,
+    "journal": "Sci Rep",
+    "year": 2019,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "30939944": {
+    "title": "Myrosinase: insights on structural, catalytic, regulatory, and environmental interactions",
+    "firstAuthor": "Bhat R",
+    "groupAuthor": false,
+    "journal": "Crit Rev Biotechnol",
+    "year": 2019,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "32142510": {
+    "title": "Dietary fibre and whole grains in diabetes management: Systematic review and meta-analyses",
+    "firstAuthor": "Reynolds AN",
+    "groupAuthor": false,
+    "journal": "PLoS Med",
+    "year": 2020,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "32312146": {
+    "title": "Determination of total purine and purine base content of 80 food products to aid nutritional therapy for gout and hyperuricemia",
+    "firstAuthor": "Kaneko K",
+    "groupAuthor": false,
+    "journal": "Nucleosides Nucleotides Nucleic Acids",
+    "year": 2020,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "33732511": {
+    "title": "Determination and risk characterisation of bio-active piperine in black pepper and selected food containing black pepper consumed in Korea",
+    "firstAuthor": "Lee JG",
+    "groupAuthor": false,
+    "journal": "Food Sci Biotechnol",
+    "year": 2021,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "33801955": {
+    "title": "Allicin, the Odor of Freshly Crushed Garlic: A Review of Recent Progress in Understanding Allicin's Effects on Cells",
+    "firstAuthor": "Borlinghaus J",
+    "groupAuthor": false,
+    "journal": "Molecules",
+    "year": 2021,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "33925891": {
+    "title": "Biological Properties and Applications of Betalains",
+    "firstAuthor": "Sadowska-Bartosz I",
+    "groupAuthor": false,
+    "journal": "Molecules",
+    "year": 2021,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "34444720": {
+    "title": "Oat and Barley in the Food Supply and Use of Beta Glucan Health Claims",
+    "firstAuthor": "Hughes J",
+    "groupAuthor": false,
+    "journal": "Nutrients",
+    "year": 2021,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "34841609": {
+    "title": "The effect of almond intake on glycemic control: A systematic review and dose-response meta-analysis of randomized controlled trials",
+    "firstAuthor": "Asbaghi O",
+    "groupAuthor": false,
+    "journal": "Phytother Res",
+    "year": 2022,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "35631184": {
+    "title": "Effects of Oat Beta-Glucan Intake on Lipid Profiles in Hypercholesterolemic Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "firstAuthor": "Yu J",
+    "groupAuthor": false,
+    "journal": "Nutrients",
+    "year": 2022,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "35689651": {
+    "title": "The effect of pistachio supplementation on metabolic syndrome and its components in adults: a systematic review and meta-analysis of randomized controlled trials",
+    "firstAuthor": "Baghery F",
+    "groupAuthor": false,
+    "journal": "Nutr Rev",
+    "year": 2022,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "35866510": {
+    "title": "Comparison of canola oil and olive oil consumption on the serum lipid profile in adults: a systematic review and meta-analysis of randomized controlled trials",
+    "firstAuthor": "Pourrajab B",
+    "groupAuthor": false,
+    "journal": "Crit Rev Food Sci Nutr",
+    "year": 2023,
+    "retracted": false,
+    "errata": [
+      "35934982"
+    ],
+    "checkedAt": "2026-07-20"
+  },
+  "36140865": {
+    "title": "Actinidin in Green and SunGold Kiwifruit Improves Digestion of Alternative Proteins-An In Vitro Investigation",
+    "firstAuthor": "Kaur L",
+    "groupAuthor": false,
+    "journal": "Foods",
+    "year": 2022,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "36523867": {
+    "title": "Green tea extract-associated acute liver injury: Case report and review",
+    "firstAuthor": "Grajecki D",
+    "groupAuthor": false,
+    "journal": "Clin Liver Dis (Hoboken)",
+    "year": 2022,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "36972800": {
+    "title": "Wild blueberry (poly)phenols can improve vascular function and cognitive performance in healthy older individuals: a double-blind randomized controlled trial",
+    "firstAuthor": "Wood E",
+    "groupAuthor": false,
+    "journal": "Am J Clin Nutr",
+    "year": 2023,
+    "retracted": false,
+    "errata": [
+      "40782825"
+    ],
+    "checkedAt": "2026-07-20"
+  },
+  "37031751": {
+    "title": "The Effect of Non-Oil Seed Legume Intake on Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "firstAuthor": "Reyneke GL",
+    "groupAuthor": false,
+    "journal": "Adv Nutr",
+    "year": 2023,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "37461211": {
+    "title": "Impact of pomegranate juice on blood pressure: A systematic review and meta-analysis",
+    "firstAuthor": "Ghaemi F",
+    "groupAuthor": false,
+    "journal": "Phytother Res",
+    "year": 2023,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "37545930": {
+    "title": "Ginger supplementation for the treatment of non-alcoholic fatty liver disease: a meta-analysis of randomized controlled trials",
+    "firstAuthor": "Zhou Q",
+    "groupAuthor": false,
+    "journal": "Afr Health Sci",
+    "year": 2023,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "37778442": {
+    "title": "Effect of Alpha-Linolenic Acid Supplementation on Cardiovascular Disease Risk Profile in Individuals with Obesity or Overweight: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "firstAuthor": "Yin S",
+    "groupAuthor": false,
+    "journal": "Adv Nutr",
+    "year": 2023,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "38136231": {
+    "title": "Oleocanthal, an Antioxidant Phenolic Compound in Extra Virgin Olive Oil (EVOO): A Comprehensive Systematic Review of Its Potential in Inflammation and Cancer",
+    "firstAuthor": "González-Rodríguez M",
+    "groupAuthor": false,
+    "journal": "Antioxidants (Basel)",
+    "year": 2023,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "38672839": {
+    "title": "Matcha Green Tea: Chemical Composition, Phenolic Acids, Caffeine and Fatty Acid Profile",
+    "firstAuthor": "Kika J",
+    "groupAuthor": false,
+    "journal": "Foods",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "38863920": {
+    "title": "Effects of Combination of Curcumin and Piperine Supplementation on Glycemic Profile in Patients with Prediabetes and Type 2 Diabetes Mellitus: A Systematic Review and Meta-analysis",
+    "firstAuthor": "Widjanarko ND",
+    "groupAuthor": false,
+    "journal": "J ASEAN Fed Endocr Soc",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "38917708": {
+    "title": "The effectiveness of chia seed in improving glycemic status: A systematic review and meta-analysis",
+    "firstAuthor": "Pam P",
+    "groupAuthor": false,
+    "journal": "Diabetes Metab Syndr",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "38945723": {
+    "title": "Rheological characterization of chia seed gum as a thickening agent used for dysphagia management",
+    "firstAuthor": "Li L",
+    "groupAuthor": false,
+    "journal": "Int J Biol Macromol",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "39053603": {
+    "title": "Health Effects of Various Edible Vegetable Oil: An Umbrella Review",
+    "firstAuthor": "Voon PT",
+    "groupAuthor": false,
+    "journal": "Adv Nutr",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "39426460": {
+    "title": "Pistachio Consumption Increases Macular Pigment Optical Density in Healthy Adults: A Randomized Controlled Trial",
+    "firstAuthor": "Scott TM",
+    "groupAuthor": false,
+    "journal": "J Nutr",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "39739131": {
+    "title": "Legume intakes on cardiometabolic profile and gut microbiome function: systematic review and meta-analyses of randomised controlled trials",
+    "firstAuthor": "Hossain MA",
+    "groupAuthor": false,
+    "journal": "Eur J Nutr",
+    "year": 2024,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "40112720": {
+    "title": "Metabolome insights into nutrients and glucosinolates in broccoli and lacinato kale",
+    "firstAuthor": "Gao W",
+    "groupAuthor": false,
+    "journal": "Food Chem",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "40499336": {
+    "title": "The effect of flaxseed supplementation on anthropometric indices, blood pressure, and lipid profile in diabetic patients: A GRADE-assessed systematic review and meta-analysis of randomized controlled trials",
+    "firstAuthor": "Musazadeh V",
+    "groupAuthor": false,
+    "journal": "Diabetes Metab Syndr",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "40507112": {
+    "title": "Exploring the Benefits of Extra Virgin Olive Oil on Cardiovascular Health Enhancement and Disease Prevention: A Systematic Review",
+    "firstAuthor": "Ussia S",
+    "groupAuthor": false,
+    "journal": "Nutrients",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "40644772": {
+    "title": "The beneficial effects of sesame (Sesamum indicum L.) products and their bioactive compounds on cardiovascular disease risk factors in patients with diabetes: A GRADE-Assessed systematic review and meta-analysis",
+    "firstAuthor": "Jafari A",
+    "groupAuthor": false,
+    "journal": "Diabetes Metab Syndr",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  },
+  "41281037": {
+    "title": "Drug-Induced Liver Injury Secondary to Turmeric Supplement Containing Piperine: A Case Report",
+    "firstAuthor": "Koo N",
+    "groupAuthor": false,
+    "journal": "Cureus",
+    "year": 2025,
+    "retracted": false,
+    "errata": [],
+    "checkedAt": "2026-07-20"
+  }
+}

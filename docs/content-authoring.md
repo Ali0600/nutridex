@@ -67,12 +67,31 @@ See [auto-blog.md](auto-blog.md).
 - **Never write a PMID from memory — always look it up.** Recalled ids are wrong far more often
   than they're right (in one session, 4 out of 4 checked were wrong: a paper on orbital cellulitis
   cited for lutein sources, a pregnancy-nausea meta-analysis cited for ginger's GI effects). Search
-  by title, read the abstract, then cite. Verify every id before committing:
+  by title, read the abstract, then cite.
 
-  ```bash
-  curl -s "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>%20AND%20SRC:MED&resultType=core&format=json" \
-    | python3 -c "import sys,json;d=json.load(sys.stdin)['resultList']['result'];print(d[0]['title'] if d else 'NOT FOUND')"
-  ```
+- **Run `npm run citations:verify -- --write` after adding or changing any citation.** This resolves
+  every cited PMID against Europe PMC and refreshes `data/citations.verified.json`, which
+  `content:validate` then asserts against **offline** in CI. Adding a citation without refreshing
+  the cache fails the build — that's deliberate, so an unverified id can't reach `main`.
+
+  The gate compares four things and will fail the build on any of them:
+
+  | Check | The real defect it caught |
+  | --- | --- |
+  | PMID resolves at all | — (fails closed on an id nobody has verified) |
+  | Title matches the record | kiwi cited PMID 20476733 — an **art-conservation paper** — for "supports digestion of protein" |
+  | `year` matches the record | broccoli said 2015; the paper (Conzatti, *Nutr Hosp*) is 2014 |
+  | Byline's first author matches | 16 of 147 citations named an author who wasn't on the paper |
+  | Not retracted | — |
+
+  It deliberately does **not** compare the journal name: "PNAS" and "Proc Natl Acad Sci U S A" are
+  both correct and no abbreviation map makes that sound. Corporate authors (AREDS2) and books
+  (StatPearls) are exempt from the author check for the same reason.
+
+- **The byline is part of the citation, not decoration.** `(Author et al., Journal Year)` is what a
+  reader uses to judge provenance without clicking, so it has to come from the record — not from
+  memory. An audit of all 147 citations found the *papers* were right and the *bylines* were
+  invented on 16 of them.
 
 - **If no source supports the claim, drop the claim** — don't substitute a paper that measures
   something adjacent. An effects paper is not a distribution paper; a composition survey is not

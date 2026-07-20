@@ -15,6 +15,7 @@
     "test": "vitest run --passWithNoTests",
     "test:e2e": "playwright test",
     "content:validate": "tsx scripts/validate-content.ts",
+    "citations:verify": "tsx scripts/verify-citations.ts",
     "usda:import": "tsx scripts/import-usda.ts",
     "usda:enrich": "tsx scripts/enrich-usda-api.ts",
     "research": "tsx scripts/research.ts",
