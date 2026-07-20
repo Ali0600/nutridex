@@ -13,6 +13,9 @@
 
 43 foods across 10 categories, 18 compounds, 16 nutrients — every claim cited.
 
+- **Every citation is machine-verified** — all 101 cited PMIDs are resolved against Europe PMC and
+  checked in CI for title, year, first author and retraction status, offline against a committed
+  cache. A citation whose id points at a different paper fails the build.
 - **Benefit database** — each item documents its special benefits with the actual science
   (beetroot → dietary nitrates → nitric oxide → lower blood pressure), surprising facts
   (kiwi contains serotonin), and linked studies — never uncited claims.
@@ -59,7 +62,8 @@ npm run lint             # eslint
 npm run typecheck        # tsc --noEmit
 npm test                 # vitest unit + API-contract tests
 npm run test:e2e         # Playwright E2E (search, quiz, compare) against a prod build
-npm run content:validate # zod-validate all content (also runs in CI)
+npm run content:validate # zod-validate all content + verify citations offline (also runs in CI)
+npm run citations:verify -- --write   # re-resolve every cited PMID against Europe PMC
 npm run usda:import      # regenerate nutrients from bulk USDA CSVs (keyless)
 npm run usda:enrich      # regenerate nutrients from the USDA API (needs FDC_API_KEY in .env.local)
 npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe PMC)
@@ -74,6 +78,12 @@ Analytics is via `@vercel/analytics` + `@vercel/speed-insights` (enable both in 
   React 19) + TypeScript**, where a structured JSON/MDX database is the single source of truth,
   **schema-validated in CI with zod** and served both as fully static pages and a versioned
   **JSON API** (`/api/v1`, `force-static` + CORS) designed for a future iOS client.
+- Built a **citation-integrity pipeline** for a 147-citation scientific dataset: resolved every
+  cited identifier against the Europe PMC API, found and corrected a citation pointing at an
+  unrelated paper plus 16 fabricated author attributions, then closed the gap permanently with a
+  **hermetic CI gate** (asserting against a committed cache so the merge path never touches the
+  network) plus a **scheduled re-check** that catches papers retracted *after* they were cited —
+  each check proven to fail on a known-bad input before being trusted.
 - Built a **schema-enforced content model** with cross-file referential integrity (organ/condition/
   compound tags, citation-per-claim, superfood justification) and a custom `content:validate` gate
   that fails the build on any uncited claim, dangling tag, or food missing its safety section —

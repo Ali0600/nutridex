@@ -87,7 +87,7 @@
         "year": 2010
       },
       {
-        "title": "Occurrence, biosynthesis and metabolism of theanine (γ-glutamyl-L-ethylamide) in plants: a comprehensive review (Vuong et al., Crit Rev Food Sci Nutr 2015)",
+        "title": "Occurrence, biosynthesis and metabolism of theanine (γ-glutamyl-L-ethylamide) in plants: a comprehensive review (Ashihara, Nat Prod Commun 2015)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/26058162/",
         "pmid": "26058162",
@@ -118,7 +118,7 @@
         "year": 1997
       },
       {
-        "title": "Metabolome insights into nutrients and glucosinolates in broccoli and lacinato kale (Sci Rep 2025)",
+        "title": "Metabolome insights into nutrients and glucosinolates in broccoli and lacinato kale (Gao et al., Food Chem 2025)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/40112720/",
         "pmid": "40112720",
@@ -142,7 +142,7 @@
         "year": 2019
       },
       {
-        "title": "Total myrosinase activity estimates in brassica vegetable produce (Okunade et al., J Agric Food Chem 2014)",
+        "title": "Total myrosinase activity estimates in brassica vegetable produce (Dosz et al., J Agric Food Chem 2014)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/25051514/",
         "pmid": "25051514",
@@ -159,7 +159,7 @@
     "blurb": "The smell of freshly crushed garlic. Like sulforaphane it does not exist in the intact clove: crushing lets the enzyme alliinase convert alliin into allicin within seconds. It is also unstable — it starts breaking down almost immediately, and cooking straight away destroys it.",
     "citations": [
       {
-        "title": "Occurrence and taxonomic significance of cysteine sulphoxides in the genus Allium L. (Alliaceae) (Kubec et al., Phytochemistry 2006)",
+        "title": "Occurrence and taxonomic significance of cysteine sulphoxides in the genus Allium L. (Alliaceae) (Fritsch et al., Phytochemistry 2006)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/16626766/",
         "pmid": "16626766",
@@ -183,14 +183,14 @@
     "blurb": "What makes black pepper pungent — and a genuinely useful kitchen trick: it inhibits the enzymes and transporters that would otherwise clear curcumin from your blood, raising its bioavailability many-fold. That is the science behind pairing turmeric with pepper.",
     "citations": [
       {
-        "title": "Occurrence of piperidine alkaloids in Piper species collected in different areas (Dutra et al., J Nat Med 2014)",
+        "title": "Occurrence of piperidine alkaloids in Piper species collected in different areas (Bao et al., J Nat Med 2014)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/23625168/",
         "pmid": "23625168",
         "year": 2014
       },
       {
-        "title": "Determination and risk characterisation of bio-active piperine in black pepper and selected food products (EFSA-related analysis, Food Chem Toxicol 2021)",
+        "title": "Determination and risk characterisation of bio-active piperine in black pepper and selected food products (Lee et al., Food Sci Biotechnol 2021)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33732511/",
         "pmid": "33732511",
@@ -207,7 +207,7 @@
     "blurb": "The pigment that makes beetroot violently red — and the reason beets stain everything. Unlike most red plant pigments these are nitrogen-based, not anthocyanins, and they are studied as antioxidants in their own right.",
     "citations": [
       {
-        "title": "Biological Properties and Applications of Betalains (Madadi et al., Molecules 2021)",
+        "title": "Biological Properties and Applications of Betalains (Sadowska-Bartosz et al., Molecules 2021)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33925891/",
         "pmid": "33925891",
@@ -270,7 +270,7 @@
     "blurb": "A soluble fibre that dissolves into a gel in the gut, trapping bile acids so the liver has to pull cholesterol out of the blood to replace them. It's the specific reason porridge lowers LDL — and one of the few food claims regulators have actually approved.",
     "citations": [
       {
-        "title": "Oat and Barley in the Food Supply and Use of Beta Glucan Health Claims (Smith et al., Nutrients 2021)",
+        "title": "Oat and Barley in the Food Supply and Use of Beta Glucan Health Claims (Hughes et al., Nutrients 2021)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34444720/",
         "pmid": "34444720",
@@ -352,11 +352,11 @@
         "year": 1998
       },
       {
-        "title": "Pistachio Consumption Increases Macular Pigment Optical Density in Healthy Adults: A Randomized Controlled Trial (Scott et al., J Nutr 2024)",
+        "title": "Pistachio Consumption Increases Macular Pigment Optical Density in Healthy Adults: A Randomized Controlled Trial (Scott et al., J Nutr 2025)",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39426460/",
         "pmid": "39426460",
-        "year": 2024
+        "year": 2025
       }
     ]
   },
