@@ -108,6 +108,23 @@ so a local run can pick a free port while CI keeps 3000.
 **Takeaway:** make a dev/test harness's port configurable (env or auto-pick a free one) instead of
 hardcoding — and don't `kill` a process on a "busy" port until you've confirmed it's actually yours.
 
+## A hermetic gate + a scheduled network job beats one gate that tries to do both
+
+Citation integrity needs the network — only Europe PMC knows whether a PMID is real. But putting a
+live API call in the PR gate makes the merge path depend on someone else's uptime, and a gate that
+flakes is a gate people learn to re-run rather than read. The split: `npm run citations:verify`
+does the network work and writes `data/citations.verified.json`; `content:validate` asserts against
+that committed cache **offline**, so CI is deterministic. A weekly workflow re-runs the networked
+half to catch what changes *after* a citation ships — retractions and errata (4 cited papers
+already carry one). Two rules fall out: the verifier never caches a record it couldn't resolve (a
+cached blank would read as "verified fine"), and both entry points import the same comparison
+module so they can't drift apart in what they enforce.
+**Why it came up:** closing the hole that let a citation point at an unrelated paper — the CI
+script had no reference to `pmid`, `citation` or `url` at all.
+**Takeaway:** when a check needs external data, split it — network on a schedule writing a
+committed artifact, hermetic assertion in the merge path. Keep the comparison logic in one module
+both call, or the two surfaces will quietly enforce different things.
+
 ## Encode a domain constraint as a type discriminator, not a code comment
 
 Nutrient upper limits (ULs) look uniform but aren't: selenium's 400 µg counts *all* intake including
