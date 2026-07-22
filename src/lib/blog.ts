@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-green-tea-protect-your-brain',
+    title: 'Does green tea protect your brain as you age?',
+    description:
+      'A 2026 meta-analysis pooled 18 observational studies — nearly 59,000 people — on green tea and cognitive function. Here is what the association looks like, the plausible mechanism, and why "observational" is the whole caveat.',
+    date: '2026-07-22',
+    author: 'NutriDex',
+    tags: ['brain', 'brain-focus', 'green-tea'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:
