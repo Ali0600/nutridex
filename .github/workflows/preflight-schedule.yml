@@ -23,12 +23,12 @@ jobs:
         with:
           mode: repo
           node-version: '22'
-          # Report-only: a weekly cron scan gates nothing, and a known-but-unactionable CVE in an
-          # already-merged dep (e.g. a transitive medium with no upstream fix yet) would leave this
-          # run permanently red — the "trains you to ignore it" antipattern. The findings still land
-          # in the tracking issue; the PR gate (preflight.yml, policy-file) stays strict on anything
-          # NEW. See the Preflight docs' repo-mode notes.
-          fail-on-cve: 'false'
+          # Report every finding to the tracking issue, but only turn this weekly run RED on an
+          # actively-exploited CVE (CISA KEV) — not on the pile of high-but-unexploited advisories a
+          # real app inevitably accrues in already-merged deps (which are the "trains you to ignore
+          # it" antipattern when they keep a cron permanently red). The PR gate (preflight.yml,
+          # policy-file) stays strict on anything NEW; this only tunes the scheduled scan's alarm.
+          fail-level: kev
       - name: Upload findings to the Security tab
         if: always() && hashFiles('preflight.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3
