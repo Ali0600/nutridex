@@ -23,6 +23,12 @@ jobs:
         with:
           mode: repo
           node-version: '22'
+          # Report-only: a weekly cron scan gates nothing, and a known-but-unactionable CVE in an
+          # already-merged dep (e.g. a transitive medium with no upstream fix yet) would leave this
+          # run permanently red — the "trains you to ignore it" antipattern. The findings still land
+          # in the tracking issue; the PR gate (preflight.yml, policy-file) stays strict on anything
+          # NEW. See the Preflight docs' repo-mode notes.
+          fail-on-cve: 'false'
       - name: Upload findings to the Security tab
         if: always() && hashFiles('preflight.sarif') != ''
         uses: github/codeql-action/upload-sarif@v3
