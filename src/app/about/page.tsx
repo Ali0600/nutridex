@@ -7,7 +7,7 @@ import { SITE_NAME, SITE_URL } from '@/lib/site';
 
 const title = 'About & editorial policy';
 const description =
-  'How NutriDex works: every benefit is backed by a linked study, nutrient data comes from USDA FoodData Central, and affiliate links are disclosed. Not medical advice.';
+  'How NutriDex works: every benefit links to a published source, citations are machine-verified against Europe PMC, nutrient data is from USDA FoodData Central, and affiliate links are disclosed. Not medical advice.';
 
 export const metadata: Metadata = {
   title,
@@ -17,7 +17,11 @@ export const metadata: Metadata = {
 };
 
 const STRENGTHS: { key: keyof typeof STRENGTH_LABELS; blurb: string }[] = [
-  { key: 'strong', blurb: 'Backed by meta-analyses or large randomized trials — the highest-confidence evidence.' },
+  {
+    key: 'strong',
+    blurb:
+      'Established nutrient science, or backed by meta-analyses and large randomized trials — the highest-confidence evidence.',
+  },
   { key: 'moderate', blurb: 'Backed by smaller trials or consistent observational studies; promising but not settled.' },
   { key: 'preliminary', blurb: 'Early, limited, or mechanistic evidence — interesting, but treat with caution.' },
 ];
@@ -39,17 +43,39 @@ export default function AboutPage() {
       <h1 className="text-3xl font-bold text-neutral-900">About NutriDex</h1>
       <p className="mt-3 text-lg text-neutral-600">
         NutriDex is an independent project that explains what foods actually do for your body — every
-        benefit paired with the mechanism behind it (the &ldquo;why&rdquo;) and a link to the study
+        benefit paired with the mechanism behind it (the &ldquo;why&rdquo;) and a link to the source
         that supports it. No uncited claims, no miracle cures.
       </p>
 
       <section className="mt-8">
         <h2 className="text-xl font-bold text-neutral-900">How we cite</h2>
         <p className="mt-2 text-neutral-700">
-          Every benefit on the site links to at least one published study, and the whole database is
-          checked in continuous integration — a claim without a citation fails the build rather than
-          shipping. Each benefit also carries an evidence-strength label so you know how settled the
-          science is:
+          Every benefit links to at least one published source — a human study or meta-analysis for a
+          claim about an <em>effect</em>, or an authoritative reference like the{' '}
+          <a
+            href="https://ods.od.nih.gov/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-leaf-700 underline"
+          >
+            NIH Office of Dietary Supplements
+          </a>{' '}
+          for a basic nutrient-<em>composition</em> fact (that Brazil nuts are exceptionally high in
+          selenium, say). A benefit without a citation fails the build rather than shipping.
+        </p>
+        <p className="mt-2 text-neutral-700">
+          Every study we cite is pinned to its PubMed ID, and those IDs are re-checked against the{' '}
+          <a
+            href="https://europepmc.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-leaf-700 underline"
+          >
+            Europe PMC
+          </a>{' '}
+          database in continuous integration — so a citation whose ID points at the wrong paper is
+          caught before it ships. Each benefit also carries an evidence-strength label so you know how
+          settled the science is:
         </p>
         <ul className="mt-4 space-y-2">
           {STRENGTHS.map(({ key, blurb }) => (
@@ -99,8 +125,9 @@ export default function AboutPage() {
       <section className="mt-8">
         <h2 className="text-xl font-bold text-neutral-900">How we handle safety information</h2>
         <p className="mt-2 text-neutral-700">
-          Food pages carry an <strong>&ldquo;If you overdo it&rdquo;</strong> section describing what
-          you&apos;d actually notice from eating a lot of something. Any claim of harm carries a
+          Food pages carry an <strong>&ldquo;If you overdo it&rdquo;</strong>{' '}
+          section describing what you&apos;d actually notice from eating a lot of something. Any claim
+          of harm carries a
           citation, exactly like a benefit does — and where a food has no documented ceiling, we say
           so plainly rather than leaving the section out, because a missing warning is ambiguous.
         </p>
