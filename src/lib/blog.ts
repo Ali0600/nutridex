@@ -14,6 +14,15 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'does-kiwifruit-help-constipation',
+    title: 'Does kiwifruit help constipation?',
+    description:
+      'A systematic review pooled seven randomized trials of kiwifruit for constipation. The direction is promising, the certainty is genuinely low — here is what it found, and what it did not.',
+    date: '2026-08-06',
+    author: 'NutriDex',
+    tags: ['gut', 'gut-health', 'kiwi'],
+  },
+  {
     slug: 'does-pistachio-lower-blood-pressure',
     title: 'Does eating pistachios lower blood pressure?',
     description:

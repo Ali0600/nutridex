@@ -54,6 +54,22 @@
           "year": 2010
         }
       ]
+    },
+    {
+      "claim": "May modestly ease constipation, though the pooled evidence is low-certainty",
+      "mechanism": "Kiwifruit's fiber holds a lot of water, adding bulk and softening stool — the same lever a fiber supplement pulls. A meta-analysis of seven randomized trials found kiwifruit performed comparably to psyllium on bowel-movement frequency and produced softer stools, and reduced abdominal pain at moderate certainty; the frequency estimates themselves were favourable but their confidence intervals included no effect.",
+      "organs": ["gut"],
+      "conditions": ["gut-health"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "Kiwifruit and Kiwifruit Extracts for Treatment of Constipation: A Systematic Review and Meta-Analysis (Eltorki et al., Can J Gastroenterol Hepatol 2022)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36247043/",
+          "pmid": "36247043",
+          "year": 2022
+        }
+      ]
     }
   ],
   "surprisingFacts": [
@@ -77,5 +93,5 @@
     }
   ],
   "affiliateSlots": [],
-  "updatedAt": "2026-07-17"
+  "updatedAt": "2026-08-06"
 }
