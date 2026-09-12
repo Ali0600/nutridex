@@ -1,56 +1,58 @@
 # NutriDex 🥝
 
-> Every food, explained — a science-backed nutrition database of teas, fruits, vegetables,
-> meats, nuts, seeds, legumes, grains, and spices, with the mechanism behind each benefit
-> and the studies to back it up.
+> Every food, explained. A nutrition database of teas, fruits, vegetables, meats, nuts,
+> seeds, legumes, grains, and spices. Each benefit comes with the science behind it and
+> the studies that back it up.
 
 [![CI](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/ci.yml)
 [![Preflight](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml/badge.svg)](https://github.com/Ali0600/nutridex/actions/workflows/preflight.yml)
 
-**Live:** [nutridex-neon.vercel.app](https://nutridex-neon.vercel.app) · deploys from `main` on green CI.
+**Live:** [nutridex-neon.vercel.app](https://nutridex-neon.vercel.app) · deploys from `main` once CI is green.
 
 ## What it does
 
-43 foods across 10 categories, 18 compounds, 16 nutrients — every claim cited.
+43 foods in 10 categories, 18 compounds, 16 nutrients. Every claim has a citation.
 
-- **Every citation is machine-verified** — all 101 cited PMIDs are resolved against Europe PMC and
-  checked in CI for title, year, first author and retraction status, offline against a committed
-  cache. A citation whose id points at a different paper fails the build.
-- **Benefit database** — each item documents its special benefits with the actual science
+- **Every citation is machine-checked** — all 83 cited PMIDs (PubMed ids) are looked up on
+  Europe PMC. CI checks each one's title, year, first author and retraction status against a
+  committed cache, so the build never touches the network. If an id points at a different paper,
+  the build fails.
+- **Benefit database** — each food explains its benefits with the actual science
   (beetroot → dietary nitrates → nitric oxide → lower blood pressure), surprising facts
-  (kiwi contains serotonin), and linked studies — never uncited claims.
-- **Compounds, ranked by real-world rarity** — the bioactives behind the benefits at
-  `/compounds`, from **signature** (oleocanthal is essentially only in extra-virgin olive oil) to
-  **common** (ALA is everywhere), each with a cited note on where it occurs and which foods have it.
-- **"If you overdo it"** — every food says what you'd actually *notice* from too much: orange palms
-  from sweet potato, red urine from beetroot, garlicky breath from Brazil nuts. Any claim of harm is
-  cited, and where there's no real ceiling it says so plainly. Portions that reach an adult's daily
-  upper limit are computed from the USDA data (~21 g of Brazil nut = a day's selenium).
+  (kiwi contains serotonin), and linked studies. No uncited claims.
+- **Compounds, ranked by how rare they are** — the active compounds behind the benefits live at
+  `/compounds`. They range from **signature** (oleocanthal is found almost only in extra-virgin
+  olive oil) to **common** (ALA is everywhere). Each has a cited note on where it occurs and which
+  foods have it.
+- **"If you overdo it"** — every food says what you would actually *notice* from too much: orange
+  palms from sweet potato, red urine from beetroot, garlicky breath from Brazil nuts. Any claim of
+  harm is cited. Where there is no real ceiling, it says so plainly. Portions that reach an adult's
+  daily upper limit are computed from the USDA data (~21 g of Brazil nut = a day's selenium).
 - **Browse by anything** — index pages for [categories](https://nutridex-neon.vercel.app/categories),
   [body parts](https://nutridex-neon.vercel.app/organs),
   [goals](https://nutridex-neon.vercel.app/goals),
   [nutrients](https://nutridex-neon.vercel.app/nutrients) and
   [compounds](https://nutridex-neon.vercel.app/compounds), each with live counts.
 - **Nutrient rankings** — which foods actually give you the most vitamin C, iron, selenium…
-  computed from USDA FoodData Central data, not vibes.
-- **Super Foods** (and **Super Fruits**) — the standouts and why they earn the label.
+  Computed from USDA FoodData Central data, not guesswork.
+- **Super Foods** (and **Super Fruits**) — the standouts, and why they earn the label.
 - **Search & compare** — full-text search at `/items?q=` and a side-by-side food comparison at
   `/compare` (benefits + per-100g nutrients).
-- **Symptom & deficiency quiz** — pick what you're dealing with (including low vitamin D / B12 /
-  magnesium), answer a few symptom questions, get matched to the foods most likely to help.
-- **Blog** — SEO articles with citations and disclosed affiliate slots, grown by a **daily
-  auto-blog research routine** (see [docs/auto-blog.md](docs/auto-blog.md)).
+- **Symptom & deficiency quiz** — pick what you are dealing with (including low vitamin D / B12 /
+  magnesium), answer a few symptom questions, and get the foods most likely to help.
+- **Blog** — SEO articles with citations and clearly marked affiliate slots. A **daily
+  auto-blog research routine** keeps it growing (see [docs/auto-blog.md](docs/auto-blog.md)).
 
-A JSON API (`/api/v1`) serves the same dataset to a future iOS app.
+A JSON API (`/api/v1`) serves the same data for a future iOS app.
 
 ## Stack
 
 Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · MDX · zod ·
-content-in-git (the database is reviewable JSON, validated in CI) · Vercel.
+content-in-git (the database is plain JSON you can review, checked in CI) · Vercel.
 
-Every dependency in this repo is pre-flighted with [Preflight](https://github.com/Ali0600/preflight)
-— see [docs/preflight-dogfood-report.md](docs/preflight-dogfood-report.md) for the honest
-field report of using it to build this site.
+Every dependency in this repo is checked with [Preflight](https://github.com/Ali0600/preflight)
+before it goes in. See [docs/preflight-dogfood-report.md](docs/preflight-dogfood-report.md) for an
+honest field report on using it to build this site.
 
 ## Development
 
@@ -70,56 +72,26 @@ npm run research -- kiwi sleep   # find citation-ready studies (keyless, Europe 
 npm run blog:research    # daily auto-blog brief: fresh studies + coverage gaps
 ```
 
-Analytics is via `@vercel/analytics` + `@vercel/speed-insights` (enable both in the Vercel dashboard).
-
-## Experience Gained
-
-- Architected and shipped a **content-in-git nutrition platform** on **Next.js 16 (App Router,
-  React 19) + TypeScript**, where a structured JSON/MDX database is the single source of truth,
-  **schema-validated in CI with zod** and served both as fully static pages and a versioned
-  **JSON API** (`/api/v1`, `force-static` + CORS) designed for a future iOS client.
-- Built a **citation-integrity pipeline** for a 147-citation scientific dataset: resolved every
-  cited identifier against the Europe PMC API, found and corrected a citation pointing at an
-  unrelated paper plus 16 fabricated author attributions, then closed the gap permanently with a
-  **hermetic CI gate** (asserting against a committed cache so the merge path never touches the
-  network) plus a **scheduled re-check** that catches papers retracted *after* they were cited —
-  each check proven to fail on a known-bad input before being trusted.
-- Built a **schema-enforced content model** with cross-file referential integrity (organ/condition/
-  compound tags, citation-per-claim, superfood justification) and a custom `content:validate` gate
-  that fails the build on any uncited claim, dangling tag, or food missing its safety section —
-  each gate **verified to fail on a known-bad input**, not just to pass.
-- Designed **domain-correctness safeguards into the type system**: nutrient upper limits carry a
-  `ulScope` discriminator so the code can only compute a portion warning from limits that actually
-  apply to food, making a whole class of wrong health claim (flagging beta-carotene foods under
-  vitamin A's retinol limit) structurally unrepresentable rather than merely avoided.
-- Engineered a **keyless data-import pipeline** distilling per-100g nutrient values from **USDA
-  FoodData Central** into committed JSON that powers build-time vitamin-ranking pages — no API key
-  in CI or runtime.
-- Implemented a **data-driven, backend-free recommendation quiz** (pure scoring in TypeScript,
-  unit-tested with Vitest) mapping user-reported symptoms → conditions → tagged foods.
-- Stood up a **CI/CD pipeline with branch-protection merge-gating**: lint · typecheck ·
-  content-validation · tests · build on every PR, plus a **third-party security Action** gating
-  dependency changes and a **scheduled weekly re-scan** — with production deploys (Vercel) wired to
-  only ever build already-green commits.
-- Applied **SEO/structured-data engineering** end to end: per-route metadata, dynamic sitemap &
-  robots, schema.org JSON-LD per page type, and dynamically-generated per-item OpenGraph images.
-- **Dogfooded a supply-chain scanner** (Preflight) across the whole build and produced an
-  evidence-based [usefulness report](docs/preflight-dogfood-report.md), filing 7 upstream issues
-  (including a gate-correctness bug where the CI Action passed a CVE the CLI failed on).
-- **Automated the content pipeline** with a keyless literature-research tool over the Europe PMC API
-  (ranks studies by evidence level, emits schema-ready citations) and a **weekly scheduled agent**
-  that drafts new, cited blog posts as review PRs — see [docs/auto-blog.md](docs/auto-blog.md).
-- Shipped a **compliant affiliate-monetization layer**: a centralized, env-overridable link builder
-  (Amazon Associates tag in one config module, not scattered through content), FTC/Amazon-Operating-
-  Agreement disclosure page wired site-wide, and `rel="sponsored nofollow"` search links on curated
-  items.
-- Hardened delivery with **production observability and quality gates**: a keyless **scheduled uptime
-  monitor** (GitHub Actions pings `/api/v1/health`, auto-files and auto-closes a tracking issue on
-  outage/recovery), a **Lighthouse CI budget** hard-gating accessibility & SEO on every PR, **Playwright
-  end-to-end tests** for the critical journeys (search, quiz, compare) with browser binaries cached in
-  CI, and **Vitest contract tests** for the public JSON API.
+Analytics uses `@vercel/analytics` + `@vercel/speed-insights`. Enable both in the Vercel dashboard.
 
 ## Disclaimer
 
 NutriDex is general education, not medical advice. Talk to a clinician before changing
 your diet, especially if you take medication or manage a health condition.
+
+## Experience Gained
+
+- Built a content-in-git nutrition site on **Next.js 16 (App Router) + React 19 + TypeScript**: zod-checked JSON/MDX
+  served as static pages, a versioned **JSON API** (`/api/v1`) for a future iOS app, and a backend-free symptom quiz scored in pure TypeScript (Vitest-tested).
+- Checked all **147 citations** against the Europe PMC API, fixed 1 id that pointed at an unrelated paper plus **16 fabricated
+  author attributions**, then locked it in with an offline CI gate (committed cache) and a scheduled retraction re-check, each proven to fail on bad input.
+- Made the content model police itself: `content:validate` fails the build on 3 kinds of error (uncited claim, dangling tag,
+  missing safety section), and a `ulScope` type discriminator makes a wrong retinol-limit warning on beta-carotene foods impossible to express.
+- Built 2 keyless data pipelines: per-100g nutrients from **USDA FoodData Central** for the ranking pages, and a Europe PMC
+  research tool (ranks studies by evidence level) feeding a weekly agent that drafts cited blog posts as review PRs ([docs/auto-blog.md](docs/auto-blog.md)).
+- Applied SEO and monetization end to end: per-route metadata, dynamic sitemap and robots, schema.org JSON-LD per page type,
+  per-item OpenGraph images, and 1 env-overridable affiliate link builder with a site-wide FTC disclosure page and `rel="sponsored nofollow"` links.
+- Stood up CI/CD with branch-protection gating (5 checks per PR: lint, typecheck, content validation, tests, build; a security
+  Action plus weekly re-scan; Vercel deploys only green commits) and dogfooded that scanner, filing 7 upstream issues ([report](docs/preflight-dogfood-report.md)).
+- Hardened delivery: an uptime monitor pings `/api/v1/health` every 15 minutes and auto-files/closes an outage issue, Lighthouse CI
+  hard-gates accessibility and SEO on every PR, Playwright covers 3 critical journeys (search, quiz, compare), and Vitest contract-tests the API.
