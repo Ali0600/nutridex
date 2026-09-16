@@ -39,6 +39,22 @@
           "year": 2008
         }
       ]
+    },
+    {
+      "claim": "Regular drinking is associated with lower odds of cognitive decline",
+      "mechanism": "This is an observational association, not a proven cause: green tea's catechin EGCG can cross the blood–brain barrier and acts as an antioxidant and anti-inflammatory in preclinical work, a plausible reason a lifelong habit might track with better cognition. A meta-analysis of 18 observational studies (58,929 people) found higher green tea consumption associated with lower odds of cognitive impairment, though drinkers may simply differ in other healthy ways.",
+      "organs": ["brain"],
+      "conditions": ["brain-focus"],
+      "strength": "moderate",
+      "citations": [
+        {
+          "title": "The Association between Green Tea Consumption and Cognitive Function: A Meta-Analysis of Current Evidence (Zhou et al., Neuroepidemiology 2026)",
+          "source": "PubMed",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39947165/",
+          "pmid": "39947165",
+          "year": 2026
+        }
+      ]
     }
   ],
   "surprisingFacts": [
@@ -82,5 +98,5 @@
       "disclosure": "affiliate"
     }
   ],
-  "updatedAt": "2026-07-17"
+  "updatedAt": "2026-07-22"
 }
